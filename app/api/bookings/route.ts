@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     const nodemailer = await import('nodemailer')
 
     const transporter = nodemailer.default.createTransport({
-      host: process.env.SMTP_HOST, // e.g. smtp.gmail.com
+      host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 465,
       secure: true,
       auth: {
@@ -27,9 +27,16 @@ export async function POST(req: NextRequest) {
       },
     })
 
+    const recipient = process.env.EMAIL_TO || process.env.SMTP_USER
+
+    if (!recipient) {
+      console.error('EMAIL_TO is missing in env')
+      return NextResponse.json({ success: false, error: 'EMAIL_TO not set' }, { status: 500 })
+    }
+
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: process.env.EMAIL_TO,
+      to: recipient,
       subject: 'New Booking Request – Living In Style',
       text: `You have received a new booking request:
 
