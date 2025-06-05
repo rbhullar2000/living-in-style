@@ -19,15 +19,17 @@ export async function POST(req: NextRequest) {
     const nodemailer = await import('nodemailer')
 
     const transporter = nodemailer.default.createTransport({
-      service: 'gmail',
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT || '465'),
+      secure: true, // true for port 465
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     })
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: process.env.SMTP_USER,
       to: process.env.EMAIL_TO,
       subject: 'New Booking Request – Living In Style',
       text: `You have received a new booking request:
