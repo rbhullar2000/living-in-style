@@ -8,7 +8,6 @@ export async function POST(req: NextRequest) {
     const data = await req.json()
     const { name, email, checkIn, checkOut, guests, price } = data
 
-    // Validate data
     if (!name || !email || !checkIn || !checkOut || !guests || !price) {
       return NextResponse.json({ success: false, error: 'Missing booking fields' }, { status: 400 })
     }
@@ -19,9 +18,9 @@ export async function POST(req: NextRequest) {
     const nodemailer = await import('nodemailer')
 
     const transporter = nodemailer.default.createTransport({
-      host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || '465'),
-      secure: true, // true for port 465
+      host: process.env.SMTP_HOST, // e.g. smtp.gmail.com
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: true,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -48,7 +47,7 @@ Please follow up with the client.`,
     await transporter.sendMail(mailOptions)
 
     return NextResponse.json({ success: true })
-  } catch (error) {
+  } catch (error: any) {
     console.error('Booking email failed:', error)
     return NextResponse.json({ success: false, error: 'Email failed to send.' }, { status: 500 })
   }
