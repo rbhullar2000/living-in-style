@@ -30,8 +30,8 @@ export async function POST(req: NextRequest) {
     const recipient = process.env.EMAIL_TO || process.env.SMTP_USER
 
     if (!recipient) {
-      console.error('EMAIL_TO is missing in env')
-      return NextResponse.json({ success: false, error: 'EMAIL_TO not set' }, { status: 500 })
+      console.error('EMAIL_TO is missing in environment variables.')
+      return NextResponse.json({ success: false, error: 'Recipient email not set.' }, { status: 500 })
     }
 
     const mailOptions = {
