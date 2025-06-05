@@ -14,17 +14,26 @@ export async function POST(req: NextRequest) {
     const nodemailer = await import('nodemailer')
 
     const transporter = nodemailer.default.createTransport({
-      service: 'gmail',
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: true,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     })
 
+    const recipient = process.env.EMAIL_TO || process.env.SMTP_USER
+
+    if (!recipient) {
+      console.error('EMAIL_TO is missing in environment variables.')
+      return NextResponse.json({ success: false, error: 'Recipient email not set.' }, { status: 500 })
+    }
+
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO,
-      subject: `New Contact Message – Living In Style`,
+      from: process.env.SMTP_USER,
+      to: recipient,
+      subject: `New Contact Message – ${subject}`,
       text: `You have received a new contact form submission:
 
 Name: ${name}
@@ -40,7 +49,7 @@ Please follow up with the client.`,
     await transporter.sendMail(mailOptions)
 
     return NextResponse.json({ success: true })
-  } catch (error) {
+  } catch (error: any) {
     console.error('Contact email failed:', error)
     return NextResponse.json({ success: false, error: 'Email failed to send.' }, { status: 500 })
   }
