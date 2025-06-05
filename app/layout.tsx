@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Living In Style | Short-Term Furnished Rentals BC',
+  description: 'Discover premium short-term furnished rentals across British Columbia with Living In Style. Ideal for business travelers, relocations, and extended stays.',
   generator: 'v0.dev',
 }
 
