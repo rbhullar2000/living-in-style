@@ -130,7 +130,7 @@ export const properties: Property[] = [
 ]
   },
   {
-    id: "Coal Harbour",
+    id: "CoalHarbour",
     title: "Prestigious Coal Harbour Stay",
     location: "1477 West Pender St, Vancouver, BC",
     lat: 49.2903,
@@ -182,7 +182,7 @@ export const properties: Property[] = [
 ]
   },
   {
-    id: "Cultus Lake",
+    id: "CultusLake",
     title: "Cultus Lake Retreat",
     location: "Cultus Lake, BC",
     lat: 49.0539,
