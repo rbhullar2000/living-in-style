@@ -135,7 +135,7 @@ export const properties: Property[] = [
     location: "1477 West Pender St, Vancouver, BC",
     lat: 49.2903,
     lng: -123.1241,
-    price: 5000,
+    price: 4500,
     rating: 4.7,
     reviewCount: 52,
     beds: 1,
