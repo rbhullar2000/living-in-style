@@ -77,7 +77,7 @@ export const properties: Property[] = [
 ]
   },
   {
-    id: "2",
+    id: "FairmontPacificRim",
     title: "Fairmont Pacific Rim Penthouse",
     location: "1038 Canada Place, Vancouver, BC",
     lat: 49.2885,
@@ -130,7 +130,7 @@ export const properties: Property[] = [
 ]
   },
   {
-    id: "3",
+    id: "Coal Harbour",
     title: "Prestigious Coal Harbour Stay",
     location: "1477 West Pender St, Vancouver, BC",
     lat: 49.2903,
@@ -182,7 +182,7 @@ export const properties: Property[] = [
 ]
   },
   {
-    id: "4",
+    id: "Cultus Lake",
     title: "Cultus Lake Retreat",
     location: "Cultus Lake, BC",
     lat: 49.0539,
