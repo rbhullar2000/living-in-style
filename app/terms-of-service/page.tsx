@@ -85,9 +85,9 @@ export default function TermsOfServicePage() {
           <div>
             <h2 className="text-xl font-semibold">10. Cleaning Fee</h2>
             <ul className="list-disc list-inside pl-4">
-              <li>1-bedroom: $200</li>
-              <li>2-bedroom: $250</li>
-              <li>3–4 bedroom: $300</li>
+              <li>1-bedroom: $300</li>
+              <li>2-bedroom: $350</li>
+              <li>3–4 bedroom: $500</li>
             </ul>
           </div>
 
