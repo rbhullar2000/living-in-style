@@ -58,23 +58,23 @@ export const properties: Property[] = [
       "/Lhermitage_office.JPG?height=600&width=800&text=Modern+Condo+Office",
     ],
     featured: true,
-   reviewsList: [
-  {
-    name: "Sarah Johnson",
-    rating: 5,
-    comment: "This was the perfect downtown stay. The condo was spotless, beautifully decorated, and in an unbeatable location. I loved being able to walk to Yaletown, grab breakfast at Cafe Medina, and relax on the balcony in the evenings. Will definitely book again."
-  },
-  {
-    name: "James Wu",
-    rating: 5,
-    comment: "The building amenities like the lounge, gym and rooftop garden really made it feel like a luxury hotel. It was clean, quiet, and had everything I needed for a comfortable stay."
-  },
-  {
-    name: "Emily Tran",
-    rating: 4,
-    comment: "The unit itself was very well-appointed and the kitchen had everything I needed. The location is super central, which was great for getting around."
-  }
-]
+//   reviewsList: [
+//  {
+//    name: "Sarah Johnson",
+//   rating: 5,
+//    comment: "This was the perfect downtown stay. The condo was spotless, beautifully decorated, and in an unbeatable location. I loved being able to walk to Yaletown, grab breakfast at Cafe Medina, and relax on the balcony in the evenings. Will definitely book again."
+//  },
+//  {
+//    name: "James Wu",
+//    rating: 5,
+//    comment: "The building amenities like the lounge, gym and rooftop garden really made it feel like a luxury hotel. It was clean, quiet, and had everything I needed for a comfortable stay."
+//  },
+//  {
+//    name: "Emily Tran",
+//    rating: 4,
+//    comment: "The unit itself was very well-appointed and the kitchen had everything I needed. The location is super central, which was great for getting around."
+//  }
+//]
   },
   {
     id: "FairmontPacificRim",
