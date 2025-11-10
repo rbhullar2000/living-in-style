@@ -115,16 +115,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
               </div>
               */}
 
-              {/* Optional: replace reviews with trust/benefits */}
-              <div className="mt-8">
-                <h2 className="text-2xl font-semibold mb-4">Why Guests Love Staying Here</h2>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-                  <li>Located at <strong>L’Hermitage Hotel & Residences</strong> (788 Richards St) in the heart of downtown.</li>
-                  <li>Access to hotel-style amenities: gym, library, lounge, and rooftop garden.</li>
-                  <li>Steps to Café Medina, IGA Marketplace, and top restaurants and salons.</li>
-                  <li>Walk to Yaletown, BC Place, Rogers Arena, and the Granville Entertainment District.</li>
-                </ul>
-              </div>
+             
             </div>
 
             <div className="lg:col-span-1">
