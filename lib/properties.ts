@@ -36,7 +36,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "This stylish condo on Robson Street blends modern design with unbeatable location. Enjoy a fully equipped kitchen with stainless steel appliances, open-air balcony, and elegant furnishings. Amenities include access to L’Hermitage Hotel’s gym, library, lounge, and rooftop garden. Located steps from Cafe Medina, IGA, Tim Hortons, and top salons. Walk to Yaletown, BC Place, Rogers Arena, and the Granville Entertainment District.",
+      "This elegant residence at L’Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. Residents enjoy exclusive access to L’Hermitage Hotel amenities, including a fitness centre, library, resident lounge, and rooftop garden terrace. Step outside and you’re moments from Café Medina, IGA Marketplace, Tim Hortons, and some of Vancouver’s top salons and boutiques. Within minutes, you can walk to Yaletown, BC Place, Rogers Arena, the Vancouver Public Library, and the Granville Entertainment District. Whether you’re visiting Vancouver for business or pleasure, this premium condo in the L’Hermitage Residences offers a five-star living experience in one of the city’s most desirable addresses.",
     amenities: [
       "High-speed WiFi",
       "50 inch television",
