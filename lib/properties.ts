@@ -85,9 +85,6 @@ export const properties: Property[] = [
                   <li>Walk to Yaletown, BC Place, Rogers Arena, and the Granville Entertainment District.</li>
                 </ul>
               </div>
-
-
-\
     
   },
   {
