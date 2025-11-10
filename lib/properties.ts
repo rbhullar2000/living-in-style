@@ -49,7 +49,7 @@ export const properties: Property[] = [
       "Fitness center",
       "Pet friendly",
     ],
-    availability: "Available August 1st",
+    //availability: "Available August 1st",
     images: [
       "/Lhermitage_kitchen.JPG?height=600&width=800&text=Modern+Condo+Kitchen",
       "/Lhermitage_livingroom.JPG?height=600&width=800&text=Modern+Condo+Living+Room",
@@ -58,7 +58,7 @@ export const properties: Property[] = [
       "/Lhermitage_office.JPG?height=600&width=800&text=Modern+Condo+Office",
     ],
     featured: true,
-    reviewsList: [
+ /*   reviewsList: [
   {
     name: "Sarah Johnson",
     rating: 5,
@@ -74,7 +74,7 @@ export const properties: Property[] = [
     rating: 4,
     comment: "The unit itself was very well-appointed and the kitchen had everything I needed. The location is super central, which was great for getting around."
   }
-]
+]*/
   },
   {
     id: "FairmontPacificRim",
