@@ -30,7 +30,7 @@ export const properties: Property[] = [
     lat: 49.2809,
     lng: -123.1166,
     price: 4000,
-    rating: 4.9,
+   // rating: 4.9,
     reviewCount: 124,
     beds: 1,
     baths: 1,
