@@ -103,7 +103,7 @@ export const properties: Property[] = [
       "Chef's kitchen",
       "Daily housekeeping service",
     ],
-    availability: "Available from March 1st 2026",
+    //availability: "Available from March 1st 2026",
     images: [
       "/fairmont_livingroom.jpg?height=600&width=800&text=Penthouse+Living+Room",
       "/fairmont_livingroom2.jpg?height=600&width=800&text=Penthouse+Living+Room+2",
@@ -156,7 +156,7 @@ export const properties: Property[] = [
       "Fitness center",
       "Indoor pool and hot tub",
     ],
-    availability: "Available December 1st",
+    //availability: "Available December 1st",
     images: [
       "/coalHarbour_livingroom.jpg?height=600&width=800&text=Coal_Harbour+Living+Room",
       "/coalHarbour_kitchen.jpg?height=600&width=800&text=Coal_Harbour+Kitchen",
@@ -208,7 +208,7 @@ export const properties: Property[] = [
       "Washer and dryer",
       "High-speed WiFi",
     ],
-    availability: "Available July 2026",
+    //availability: "Available July 2026",
     images: [
       "/cabin_outside.jpg?height=600&width=800&text=Studio+Main+Area",
       "/cabin_outside2.jpg?height=600&width=800&text=Studio+Kitchen",
