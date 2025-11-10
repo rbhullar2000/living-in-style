@@ -31,6 +31,10 @@ export function Header() {
             Find Properties
           </Link>
 
+          <Link href="/terms-of-service" className="text-sm font-medium hover:text-primary">
+  Terms of Service
+</Link>
+
           <Link href="/contact" className="text-sm font-medium hover:text-primary">
           Contact
           </Link>
