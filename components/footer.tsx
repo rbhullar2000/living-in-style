@@ -7,9 +7,9 @@ export function Footer() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">FurnishedStay</h3>
+            <h3 className="text-lg font-semibold mb-4">Furnished Stay</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Find the perfect furnished property for your short or long-term stay.
+              
             </p>
           {/*}  <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-foreground">
