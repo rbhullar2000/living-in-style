@@ -99,18 +99,12 @@ wrongful doing.</p>
            
           </div>
 
-          <div>
-            <h2 className="text-xl font-semibold">10. Smoking</h2>
-            <p>
-              All units are non-smoking. Smoking is only permitted on the patio. Evidence of smoking indoors may result in forfeiture of deposit.
-            </p>
-          </div>
 
           
 
         
           <div>
-            <h2 className="text-xl font-semibold">11. Occupancy Limits</h2>
+            <h2 className="text-xl font-semibold">10. Occupancy Limits</h2>
             <ul className="list-disc list-inside pl-4">
               <li>1-bedroom: 2 guests max</li>
               <li>2-bedroom: 4 guests max</li>
@@ -119,7 +113,7 @@ wrongful doing.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">12. Cleaning Fee</h2>
+            <h2 className="text-xl font-semibold">11. Cleaning Fee</h2>
             <ul className="list-disc list-inside pl-4">
               <li>1-bedroom: $300</li>
               <li>2-bedroom: $350</li>
@@ -128,12 +122,12 @@ wrongful doing.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">13. Parking</h2>
+            <h2 className="text-xl font-semibold">12. Parking</h2>
             <p>Parking for one vehicle is $200/month (if available).</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">14. Falsified Reservations</h2>
+            <h2 className="text-xl font-semibold">13. Falsified Reservations</h2>
             <p>
               Reservations under false pretenses result in cancellation and forfeiture of all funds.
             </p>
@@ -141,36 +135,36 @@ wrongful doing.</p>
 
 
           <div>
-            <h2 className="text-xl font-semibold">15. Property Access</h2>
+            <h2 className="text-xl font-semibold">14. Property Access</h2>
             <p>Management may access the property at any time.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">16. Maintenance & Notices</h2>
+            <h2 className="text-xl font-semibold">15. Maintenance & Notices</h2>
             <p>
               Guests must report issues or strata notices that need urgent attention to a Caprock Capital Group representative.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">17. Written Exceptions</h2>
+            <h2 className="text-xl font-semibold">16. Written Exceptions</h2>
             <p>Any exceptions to these terms must be approved in writing.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">18. Keys and Fobs</h2>
+            <h2 className="text-xl font-semibold">17. Keys and Fobs</h2>
             <p>Lost key/fob: $200 fee. Lockout requiring staff: $100 trip charge.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">19. Lost or Stolen Items</h2>
+            <h2 className="text-xl font-semibold">18. Lost or Stolen Items</h2>
             <p>
               Caprock Capital Group is not responsible for lost/stolen property. Do not leave valuables in the unit or vehicle.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">20. Liability</h2>
+            <h2 className="text-xl font-semibold">19. Liability</h2>
             <p>
               Caprock Capital Group is not liable for personal injuries or guest property damage during the stay.
             </p>
