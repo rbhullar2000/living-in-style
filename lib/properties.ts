@@ -61,7 +61,7 @@ export const properties: Property[] = [
    reviewsList: [
   {
     name: "Sarah Johnson",
-   rating: 5,
+   //rating: 5,
     comment: "This was the perfect downtown stay. The condo was spotless, beautifully decorated, and in an unbeatable location. I loved being able to walk to Yaletown, grab breakfast at Cafe Medina, and relax on the balcony in the evenings. Will definitely book again."
   },
   {
@@ -84,7 +84,7 @@ export const properties: Property[] = [
     lat: 49.2885,
     lng: -123.1170,
     price: 12000,
-    rating: 4.8,
+   // rating: 4.8,
     reviewCount: 86,
     beds: 4,
     baths: 3,
@@ -137,7 +137,7 @@ export const properties: Property[] = [
     lat: 49.2903,
     lng: -123.1241,
     price: 4500,
-    rating: 4.7,
+ //   rating: 4.7,
     reviewCount: 52,
     beds: 1,
     baths: 1,
@@ -189,7 +189,7 @@ export const properties: Property[] = [
     lat: 49.0539,
     lng: -121.9888,
     price: 6000,
-    rating: 4.6,
+ //   rating: 4.6,
     reviewCount: 38,
     beds: 3,
     baths: 2,
