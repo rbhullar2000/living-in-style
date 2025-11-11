@@ -19,6 +19,43 @@ export default function TermsOfServicePage() {
             </p>
           </div>
 
+ <div>
+            <h2 className="text-xl font-semibold">2. Payment</h2>
+            <p>
+              Payment can be made via cash or e-transfer. Tenants must pay the rent on time. If the rent is late, Caprock Capital Inc. may cancel the agreement.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold">3. Reservation Deposit</h2>
+            <p>
+              A $500 deposit is required within 24 hours of booking. If not received, the reservation will be canceled.
+            </p>
+          </div>
+
+           <div>
+            <h2 className="text-xl font-semibold">4. Damage Deposit</h2>
+            <p>
+              A $1,500 damage deposit is required. It's refundable within 48 hours of departure. We require
+            </p>
+           If security deposit is not sufficient to cover the damage deposit, additional funds will be required. If
+damage deposit is provided by credit card authorization, the landlord will cancel authorization if
+provisions are met.
+a. b. No damage is done to the unit or its contents, beyond normal wear and tear.
+All debris, rubbish, and discards are placed in the dumpster, and soiled dishes are placed in the
+dishwasher and turned on and one load of laundry (towels and pillowcases) are started.
+c. d. e. All charges accrued during the stay are paid prior to the departure.
+No linens are lost or damaged.
+The renter is not evicted by the owner (or representative of the owner), the local law enforcement,
+or the security company employed by the complex.
+f. All keys are returned. There is a $100 charge for each set of entry fob and key that is lost. In the case
+that the key is lost and a Caprock Capital Inc. representative is required to unlock the suite door with
+the master key, Tenants will be subject to a $50 trip charge.
+g. In the case that damages are done to a suite that exceeds the reservation deposit, the Tenant will be
+responsible for costs incurred.
+          </div>
+          
+
           <div>
             <h2 className="text-xl font-semibold">2. Noise Policy</h2>
             <p>
@@ -38,26 +75,9 @@ export default function TermsOfServicePage() {
             <p>No pets are allowed unless approved in writing beforehand.</p>
           </div>
 
-          <div>
-            <h2 className="text-xl font-semibold">5. Reservation Deposit</h2>
-            <p>
-              A $500 deposit is required within 24 hours of booking. If not received, the reservation will be canceled.
-            </p>
-          </div>
+          
 
-          <div>
-            <h2 className="text-xl font-semibold">6. Damage Deposit</h2>
-            <p>
-              A $2,000 damage deposit is required (some properties may require more). It's refundable within 48 hours of departure if:
-            </p>
-            <ul className="list-disc list-inside pl-4">
-              <li>No damage beyond normal wear and tear</li>
-              <li>Garbage disposed, dishwasher started, and laundry begun</li>
-              <li>All charges paid</li>
-              <li>No missing or damaged linens</li>
-              <li>No eviction or law enforcement involvement</li>
-            </ul>
-          </div>
+         
 
           <div>
             <h2 className="text-xl font-semibold">7. Final Payment</h2>
