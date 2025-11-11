@@ -25,26 +25,27 @@ export default function LivingInStylePage() {
 
         <h1 className="text-3xl font-bold mb-6">About Living In Style</h1>
 
-        <p className="mb-6">
-          <strong>Living In Style</strong> is the lifestyle division of Caprock Capital Group, created to serve those who believe that how you live matters as much as where you live. Rooted in the strength, stability, and trust that define Caprock, Living In Style is about more than real estate—it's about thoughtful spaces, elevated service, and the comfort of knowing everything has been considered.
-        </p>
+<p className="mb-6">
+  <strong>Living In Style</strong> is the lifestyle division of Caprock Capital Group, created to provide high-quality, fully furnished rentals for professionals, executives, and long-term travelers. Backed by the reliability and trust of Caprock, we focus on comfort, convenience, and practical design that makes every stay effortless.
+</p>
 
-        <p className="mb-6">
-          Our mission is simple: to deliver refined living experiences for modern professionals, executives, and individuals who seek more than just a place to stay. Every suite, home, and offering under the Living In Style brand is curated with precision—from premium furnishings and fully stocked kitchens to boutique decor and hotel-grade amenities. We make transitions seamless, and short- or long-term stays feel like home.
-        </p>
+<p className="mb-6">
+  Each property is carefully selected and maintained to meet high standards of cleanliness, functionality, and modern appeal. Suites are move-in ready, featuring premium furnishings, stocked kitchens, fast Wi-Fi, and hotel-grade amenities — everything you need to feel at home from day one.
+</p>
 
-        <p className="mb-6">
-          Whether you're relocating, traveling for business, or simply value living well, Living In Style gives you the confidence to settle in quickly and live with ease. Our homes are situated in desirable neighborhoods and designed to reflect a clean, modern aesthetic. Functionality, warmth, and design-forward thinking come together to create a welcoming environment where quality is felt in every detail.
-        </p>
+<p className="mb-6">
+  Whether you’re in Vancouver for business, relocation, or an extended visit, Living In Style offers spaces that are well-located, well-equipped, and managed with care. We handle the details so you can focus on your work and lifestyle without compromise.
+</p>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-4">A Philosophy of Purposeful Living</h2>
-        <p className="mb-6">
-          Living In Style was founded on a belief that lifestyle and financial wellbeing are deeply connected. That’s why our spaces are not only beautiful, but also built on smart, sustainable investment principles championed by Caprock Capital Group. We view housing as both a service and a strategy—each property is selected with care, maintained with pride, and tailored to meet the evolving expectations of our clients.
-        </p>
+<h2 className="text-2xl font-semibold mt-10 mb-4">Our Approach</h2>
 
-        <p className="mb-6">
-          Our guests benefit from more than just premium housing—they enjoy concierge-level support, transparency in pricing, and responsive service from a team that understands both hospitality and finance. It's a unique combination of luxury and professionalism that few others offer.
-        </p>
+<p className="mb-6">
+  Living In Style connects design, comfort, and financial integrity. Every property operates on sound investment principles guided by Caprock Capital Group, ensuring quality housing options that serve both residents and owners responsibly.
+</p>
+
+<p className="mb-6">
+  Our clients value transparency, responsiveness, and a professional experience. From booking to check-out, we deliver consistent service, clear communication, and reliable accommodations that match the standards of modern living.
+</p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">Who We Serve</h2>
         <p className="mb-6 whitespace-pre-line">
