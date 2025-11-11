@@ -5,7 +5,7 @@ export function HowItWorks() {
     {
       icon: <Search className="h-10 w-10" />,
       title: "Search",
-      description: "Browse our extensive collection of fully furnished properties in your desired location.",
+      description: "Browse our fully furnished properties in your desired location or contact to inquire about any location.",
     },
     {
       icon: <Calendar className="h-10 w-10" />,
