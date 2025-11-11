@@ -67,7 +67,7 @@ responsible for costs incurred.</p>
            <div>
             <h2 className="text-xl font-semibold">6. Assign or Sublet</h2>
  <p>
-The Tenant may not assign or sublet the rental unit to another person. Any reservation obtained under false
+The Tenant may NOT assign or sublet the rental unit to another person. Any reservation obtained under false
 pretence will be subject to forfeiture of advance payment, deposit, and/or rental money and the party will not
 be permitted to check-in.
  </p>
