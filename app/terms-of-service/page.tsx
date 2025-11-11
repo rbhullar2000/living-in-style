@@ -88,8 +88,6 @@ be permitted to check-in.
 
           <div>
             <h2 className="text-xl font-semibold">9. Building Rules and Regulations</h2>
-            <p>
-              BUILDING RULES AND REGULATIONS</p>
 <p>I. NOISE LEVELS: Excessive noise causing disturbances to neighbouring suites is not permitted,
 especially between the hours of 10pm to 8am daily. In the case of a noise complaint, Tenants may be
 subject to a $200 fine.</p>
@@ -141,42 +139,38 @@ wrongful doing.</p>
             </p>
           </div>
 
-          <div>
-            <h2 className="text-xl font-semibold">15. Shoes-Off Policy</h2>
-            <p>Do not wear shoes inside the property.</p>
-          </div>
 
           <div>
-            <h2 className="text-xl font-semibold">16. Property Access</h2>
+            <h2 className="text-xl font-semibold">15. Property Access</h2>
             <p>Management may access the property at any time.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">17. Maintenance & Notices</h2>
+            <h2 className="text-xl font-semibold">16. Maintenance & Notices</h2>
             <p>
               Guests must report issues or strata notices that need urgent attention to a Caprock Capital Group representative.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">18. Written Exceptions</h2>
+            <h2 className="text-xl font-semibold">17. Written Exceptions</h2>
             <p>Any exceptions to these terms must be approved in writing.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">19. Keys and Fobs</h2>
+            <h2 className="text-xl font-semibold">18. Keys and Fobs</h2>
             <p>Lost key/fob: $200 fee. Lockout requiring staff: $100 trip charge.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">20. Lost or Stolen Items</h2>
+            <h2 className="text-xl font-semibold">19. Lost or Stolen Items</h2>
             <p>
               Caprock Capital Group is not responsible for lost/stolen property. Do not leave valuables in the unit or vehicle.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">21. Liability</h2>
+            <h2 className="text-xl font-semibold">20. Liability</h2>
             <p>
               Caprock Capital Group is not liable for personal injuries or guest property damage during the stay.
             </p>
