@@ -37,15 +37,6 @@ export default function LivingInStylePage() {
   Whether you’re in Vancouver for business, relocation, or an extended visit, Living In Style offers spaces that are well-located, well-equipped, and managed with care. We handle the details so you can focus on your work and lifestyle without compromise.
 </p>
 
-<h2 className="text-2xl font-semibold mt-10 mb-4">Our Approach</h2>
-
-<p className="mb-6">
-  Living In Style connects design, comfort, and financial integrity. Every property operates on sound investment principles guided by Caprock Capital Group, ensuring quality housing options that serve both residents and owners responsibly.
-</p>
-
-<p className="mb-6">
-  Our clients value transparency, responsiveness, and a professional experience. From booking to check-out, we deliver consistent service, clear communication, and reliable accommodations that match the standards of modern living.
-</p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">Who We Serve</h2>
         <p className="mb-6 whitespace-pre-line">
