@@ -8,7 +8,7 @@ export default function TermsOfServicePage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="max-w-3xl mx-auto px-4 py-12 text-gray-800 flex-grow">
+     <main className="max-w-3xl mx-auto px-4 py-12 text-gray-800 flex-grow text-sm">
         <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
         <section className="space-y-6">
