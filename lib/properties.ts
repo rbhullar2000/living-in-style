@@ -142,8 +142,8 @@ export const properties: Property[] = [
     beds: 1,
     baths: 1,
     guests: 4,
-    description:
-      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park. This spacious and elegant condo blends luxury with sophistication, featuring floor-to-ceiling windows, 9-foot ceilings, brushed hardwood floors, and spa-inspired marble and glass bathrooms. The Italian Dada kitchen is outfitted with premium Gaggenau appliances, delivering both form and function. A rare opportunity to live in one of Vancouver’s most sought-after waterfront communities.",
+description: 
+  "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park. <p> This spacious and elegant condo combines luxury with sophistication, featuring floor-to-ceiling windows, 9-foot ceilings, brushed hardwood flooring, and spa-inspired marble and glass bathrooms. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances and sleek modern cabinetry, blending high performance with timeless design. <p> A rare opportunity to live in one of Vancouver’s most sought-after waterfront communities — where refined living meets natural beauty and urban convenience.",
     amenities: [
       "Gourmet kitchen with Gaggenau appliances",
       "Floor-to-ceiling windows",
