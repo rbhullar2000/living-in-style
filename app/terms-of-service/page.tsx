@@ -115,9 +115,9 @@ wrongful doing.</p>
           <div>
             <h2 className="text-xl font-semibold">11. Cleaning Fee</h2>
             <ul className="list-disc list-inside pl-4">
-              <li>1-bedroom: $300</li>
-              <li>2-bedroom: $350</li>
-              <li>3–4 bedroom: $500</li>
+              <li>1-bedroom: $250</li>
+              <li>2-bedroom: $300</li>
+              <li>3–4 bedroom: $400</li>
             </ul>
           </div>
 
