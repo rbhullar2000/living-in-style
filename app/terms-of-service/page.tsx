@@ -151,20 +151,16 @@ wrongful doing.</p>
             <p>Any exceptions to these terms must be approved in writing.</p>
           </div>
 
+        
           <div>
-            <h2 className="text-xl font-semibold">17. Keys and Fobs</h2>
-            <p>Lost key/fob: $200 fee. Lockout requiring staff: $100 trip charge.</p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-semibold">18. Lost or Stolen Items</h2>
+            <h2 className="text-xl font-semibold">17. Lost or Stolen Items</h2>
             <p>
               Caprock Capital Group is not responsible for lost/stolen property. Do not leave valuables in the unit or vehicle.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">19. Liability</h2>
+            <h2 className="text-xl font-semibold">18. Liability</h2>
             <p>
               Caprock Capital Group is not liable for personal injuries or guest property damage during the stay.
             </p>
