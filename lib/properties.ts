@@ -43,11 +43,11 @@ export const properties: Property[] = [
       "Fully equipped gourmet kitchen",
       "In-unit washer/dryer",
       "Central air conditioning",
-      "Parking space included",
+      "Parking space available",
       "24/7 Concierge",
       "Rooftop terrace access",
       "Fitness center",
-      "Pet friendly",
+      "Hotel lounge",
     ],
     //availability: "Available August 1st",
     images: [
