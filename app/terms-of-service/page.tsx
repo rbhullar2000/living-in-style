@@ -44,15 +44,15 @@ provisions are met.
 <p>a. No damage is done to the unit or its contents, beyond normal wear and tear.</p>
 <p>b. All debris, rubbish, and discards are placed in the dumpster, and soiled dishes are placed in the
 dishwasher and turned on and one load of laundry (towels and pillowcases) are started.</p>
-c. d. e. All charges accrued during the stay are paid prior to the departure.
-No linens are lost or damaged.
-The renter is not evicted by the owner (or representative of the owner), the local law enforcement,
-or the security company employed by the complex.
-f. All keys are returned. There is a $100 charge for each set of entry fob and key that is lost. In the case
+<p>c. All charges accrued during the stay are paid prior to the departure.</p>
+<p>d. No linens are lost or damaged.</p>
+<p>e. The renter is not evicted by the owner (or representative of the owner), the local law enforcement,
+or the security company employed by the complex.</p>
+<p>f. All keys are returned. There is a $100 charge for each set of entry fob and key that is lost. In the case
 that the key is lost and a Caprock Capital Inc. representative is required to unlock the suite door with
-the master key, Tenants will be subject to a $50 trip charge.
-g. In the case that damages are done to a suite that exceeds the reservation deposit, the Tenant will be
-responsible for costs incurred.
+the master key, Tenants will be subject to a $50 trip charge.</p>
+<p>g. In the case that damages are done to a suite that exceeds the reservation deposit, the Tenant will be
+responsible for costs incurred.</p>
           </div>
           
 
