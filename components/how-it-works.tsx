@@ -5,17 +5,17 @@ export function HowItWorks() {
     {
       icon: <Search className="h-10 w-10" />,
       title: "Search",
-      description: "Browse our fully furnished properties in your desired location or contact to inquire about any location.",
+      description: "Browse our fully furnished properties in your desired location or contact to inquire about another location.",
     },
     {
       icon: <Calendar className="h-10 w-10" />,
       title: "Book",
-      description: "Select your move-in dates and submit a booking request to the property owner.",
+      description: "Submit a booking request to Living In Style.",
     },
     {
       icon: <Home className="h-10 w-10" />,
       title: "Confirm",
-      description: "Receive confirmation from the property owner and prepare for your stay.",
+      description: "Receive confirmation from Living In Style and prepare for your stay.",
     },
     {
       icon: <Key className="h-10 w-10" />,
