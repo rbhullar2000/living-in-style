@@ -50,11 +50,6 @@ export default function LivingInStylePage() {
           From day one, Living In Style has prioritized trust, consistency, and thoughtful design. We know that a calm, clean, and inspiring home can elevate productivity, reduce stress, and help you feel rooted—even when you're far from home.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-4">Backed by Caprock Capital Group</h2>
-        <p className="mb-6">
-          As part of the Caprock Capital Group family, Living In Style benefits from deep industry expertise, financial discipline, and operational excellence. We’re proud to deliver rental solutions that meet the highest standards, backed by a company built on strength and driven by trust.
-        </p>
-
         <p className="mb-6">
           We invite you to experience what it means to truly live in style. Whether you're staying for a few weeks or a few months, your home should meet your standards—without the hassle.
         </p>
