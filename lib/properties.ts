@@ -29,7 +29,7 @@ export const properties: Property[] = [
     location: "788 Richards, Vancouver, BC",
     lat: 49.2809,
     lng: -123.1166,
-    price: 3500,
+    price: 3750,
    // rating: 4.9,
     reviewCount: 124,
     beds: 1,
