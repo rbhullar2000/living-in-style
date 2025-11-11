@@ -43,9 +43,6 @@ export function HeroSection() {
            <p className="text-xl text-white/90 max-w-2xl mx-auto">
             NOW TAKING BOOKINGS FOR FIFA WORLD CUP 2026 VANCOUVER
           </p>
-
-          <p
-           </p>
         
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Discover premium furnished properties for short and long-term rentals worldwide.
