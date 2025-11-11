@@ -12,12 +12,7 @@ export default function TermsOfServicePage() {
         <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
         <section className="space-y-6">
-          <div>
-            <h2 className="text-xl font-semibold">1. Check-In / Check-Out</h2>
-            <p>
-              Check-in time is after 4:00 PM PST; check-out is at 10:00 AM PST. Early or late check-in/out must be arranged in advance. Late check-outs causing delays may incur a $500 fine.
-            </p>
-          </div>
+         
 
  <div>
             <h2 className="text-xl font-semibold">2. Payment</h2>
@@ -54,7 +49,42 @@ the master key, Tenants will be subject to a $50 trip charge.</p>
 <p>g. In the case that damages are done to a suite that exceeds the reservation deposit, the Tenant will be
 responsible for costs incurred.</p>
           </div>
+
+            <div>
+            <h2 className="text-xl font-semibold">7. Final Payment</h2>
+            <p>
+              Full payment is due 30 days before arrival. For bookings made less than 30 days in advance, full payment and deposit are due at time of booking.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold">8. Cancellations</h2>
+            <p>
+              Cancellations more than 30 days before arrival forfeit the $500 deposit. Less than 30 days: deposit is only refundable if unit is re-rented at the same rate. No refunds for early departure. If the unit becomes unavailable, a similar unit may be substituted or a full refund issued.
+            </p>
+          </div>
+
+           <div>
+            <h2 className="text-xl font-semibold">8. ASSIGN OR SUBLET</h2>
+ <p>
+The Tenant may not assign or sublet the rental unit to another person. Any reservation obtained under false
+pretence will be subject to forfeiture of advance payment, deposit, and/or rental money and the party will not
+be permitted to check-in.
+ </p>
+          </div>
           
+           <div>
+            <h2 className="text-xl font-semibold">1. Check-In / Check-Out</h2>
+            <p>
+              Check-in time is after 4:00 PM PST; check-out is at 10:00 AM PST. Early or late check-in/out must be arranged in advance. Late check-outs causing delays may incur a $500 fine.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold">4. Pet Policy</h2>
+            <p>No pets are allowed unless approved in writing beforehand.</p>
+          </div>
+
 
           <div>
             <h2 className="text-xl font-semibold">2. Noise Policy</h2>
@@ -70,29 +100,12 @@ responsible for costs incurred.</p>
             </p>
           </div>
 
-          <div>
-            <h2 className="text-xl font-semibold">4. Pet Policy</h2>
-            <p>No pets are allowed unless approved in writing beforehand.</p>
-          </div>
-
+          
           
 
          
 
-          <div>
-            <h2 className="text-xl font-semibold">7. Final Payment</h2>
-            <p>
-              Full payment is due 30 days before arrival. For bookings made less than 30 days in advance, full payment and deposit are due at time of booking.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-semibold">8. Cancellations</h2>
-            <p>
-              Cancellations more than 30 days before arrival forfeit the $500 deposit. Less than 30 days: deposit is only refundable if unit is re-rented at the same rate. No refunds for early departure. If the unit becomes unavailable, a similar unit may be substituted or a full refund issued.
-            </p>
-          </div>
-
+        
           <div>
             <h2 className="text-xl font-semibold">9. Occupancy Limits</h2>
             <ul className="list-disc list-inside pl-4">
