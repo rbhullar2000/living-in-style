@@ -87,14 +87,22 @@ be permitted to check-in.
 
 
           <div>
-            <h2 className="text-xl font-semibold">9. Noise Policy</h2>
+            <h2 className="text-xl font-semibold">9. Building Rules and Regulations</h2>
             <p>
-              Excessive noise is not permitted, especially between 10:00 PM and 8:00 AM. Noise complaints may result in a $200 fine.
-            </p>
+              BUILDING RULES AND REGULATIONS</p>
+<p>I. NOISE LEVELS: Excessive noise causing disturbances to neighbouring suites is not permitted,
+especially between the hours of 10pm to 8am daily. In the case of a noise complaint, Tenants may be
+subject to a $200 fine.</p>
+<p>II. ALL SUITES ARE NON-SMOKING UNITS. If smoking is detected inside the suite, Tenants are subject to
+losing their deposits.</p>
+<p>III. Tenants must abide by strata rules and regulations and be respectful to the common area. Tenants
+will be responsible for any damages done to the common area or fines imposed by the strata due to
+wrongful doing.</p>
+           
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">3. Smoking</h2>
+            <h2 className="text-xl font-semibold">10. Smoking</h2>
             <p>
               All units are non-smoking. Smoking is only permitted on the patio. Evidence of smoking indoors may result in forfeiture of deposit.
             </p>
@@ -104,7 +112,7 @@ be permitted to check-in.
 
         
           <div>
-            <h2 className="text-xl font-semibold">10. Occupancy Limits</h2>
+            <h2 className="text-xl font-semibold">11. Occupancy Limits</h2>
             <ul className="list-disc list-inside pl-4">
               <li>1-bedroom: 2 guests max</li>
               <li>2-bedroom: 4 guests max</li>
@@ -113,7 +121,7 @@ be permitted to check-in.
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">11. Cleaning Fee</h2>
+            <h2 className="text-xl font-semibold">12. Cleaning Fee</h2>
             <ul className="list-disc list-inside pl-4">
               <li>1-bedroom: $300</li>
               <li>2-bedroom: $350</li>
@@ -122,36 +130,36 @@ be permitted to check-in.
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">12. Parking</h2>
-            <p>$200/month for one vehicle. (if available)</p>
+            <h2 className="text-xl font-semibold">13. Parking</h2>
+            <p>Parking for one vehicle is $200/month (if available).</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">13. Falsified Reservations</h2>
+            <h2 className="text-xl font-semibold">14. Falsified Reservations</h2>
             <p>
               Reservations under false pretenses result in cancellation and forfeiture of all funds.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">14. Shoes-Off Policy</h2>
+            <h2 className="text-xl font-semibold">15. Shoes-Off Policy</h2>
             <p>Do not wear shoes inside the property.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">15. Property Access</h2>
+            <h2 className="text-xl font-semibold">16. Property Access</h2>
             <p>Management may access the property at any time.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">16. Maintenance & Notices</h2>
+            <h2 className="text-xl font-semibold">17. Maintenance & Notices</h2>
             <p>
               Guests must report issues or strata notices that need urgent attention to a Caprock Capital Group representative.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">17. Written Exceptions</h2>
+            <h2 className="text-xl font-semibold">18. Written Exceptions</h2>
             <p>Any exceptions to these terms must be approved in writing.</p>
           </div>
 
