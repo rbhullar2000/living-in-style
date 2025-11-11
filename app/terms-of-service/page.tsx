@@ -41,8 +41,8 @@ export default function TermsOfServicePage() {
            If security deposit is not sufficient to cover the damage deposit, additional funds will be required. If
 damage deposit is provided by credit card authorization, the landlord will cancel authorization if
 provisions are met.
-a. b. No damage is done to the unit or its contents, beyond normal wear and tear.
-All debris, rubbish, and discards are placed in the dumpster, and soiled dishes are placed in the
+<p>a. No damage is done to the unit or its contents, beyond normal wear and tear.
+<p>b. All debris, rubbish, and discards are placed in the dumpster, and soiled dishes are placed in the
 dishwasher and turned on and one load of laundry (towels and pillowcases) are started.
 c. d. e. All charges accrued during the stay are paid prior to the departure.
 No linens are lost or damaged.
