@@ -35,15 +35,14 @@ export function HeroSection() {
               priority
             />
           </div>
-
-          <h1 className="text-xl text-white/90 max-w-2xl mx-auto">
-            Now taking bookings for FIFA World Cup 2026 Vancouver
-          </h1>
-
-          
+   
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             Find Your Perfect Furnished Home
           </h1>
+
+           <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            NOW TAKING BOOKINGS FOR FIFA WORLD CUP 2026 VANCOUVER
+          </p>
 
           
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
