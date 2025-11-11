@@ -31,7 +31,7 @@ export function Header() {
             Find Properties
           </Link>
 
-           <Link href="/about" className="text-sm font-medium hover:text-primary">
+           <Link href="/about/living-in-style" className="text-sm font-medium hover:text-primary">
             About
           </Link>
 
