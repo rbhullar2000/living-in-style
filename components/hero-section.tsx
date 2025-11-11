@@ -40,13 +40,17 @@ export function HeroSection() {
             Find Your Perfect Furnished Home
           </h1>
 
-           <p className="text-xl text-black max-w-2xl mx-auto">
-            NOW TAKING BOOKINGS FOR FIFA WORLD CUP 2026 VANCOUVER
-          </p>
-        
+          
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Discover premium furnished properties for short and long-term rentals worldwide.
           </p>
+
+ <p className="text-xl text-black max-w-2xl mx-auto">
+            NOW TAKING BOOKINGS FOR FIFA WORLD CUP 2026 VANCOUVER
+          </p>
+        
+
+          
         </div>
 {/*}
           <div className="bg-background rounded-lg p-4 shadow-lg">
