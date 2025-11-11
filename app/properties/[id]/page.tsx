@@ -84,7 +84,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
               <div className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">About this property</h2>
-                <p className="text-muted-foreground">{property.description}</p>
+                <div className="text-muted-foreground whitespace-pre-line">
+  {property.description
+    .replace(/<p>\s*/g, "\n\n")   // turn <p> into paragraph breaks
+    .replace(/<\/p>/g, "")        // remove </p>
+    .replace(/<br\s*\/?>/g, "\n") // support <br>
+  }
+</div>
               </div>
 
               <div className="mb-8">
