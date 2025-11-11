@@ -24,7 +24,7 @@ export default function Home() {
           <FeaturedProperties />
           <div className="flex justify-center mt-8">
             <Button asChild size="lg">
-              <Link href="/properties">View All Properties</Link>
+              <Link href="/properties">View Properties</Link>
             </Button>
           </div>
         </section>
