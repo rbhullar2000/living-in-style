@@ -60,7 +60,7 @@ responsible for costs incurred.</p>
           <div>
             <h2 className="text-xl font-semibold">8. Cancellations</h2>
             <p>
-              Cancellations more than 30 days before arrival forfeit the $500 deposit. Less than 30 days: deposit is only refundable if unit is re-rented at the same rate. No refunds for early departure. If the unit becomes unavailable, a similar unit may be substituted or a full refund issued.
+              Cancellations more than 30 days before arrival forfeit the $500 deposit. No refunds for early departure. If the unit becomes unavailable, a similar unit may be substituted or a full refund issued.
             </p>
           </div>
 
@@ -101,9 +101,6 @@ be permitted to check-in.
           </div>
 
           
-          
-
-         
 
         
           <div>
