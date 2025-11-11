@@ -93,47 +93,43 @@ export function Header() {
         </Button>
       </div>
 
-      {isMenuOpen && (
-        <div className="container md:hidden py-4 pb-6">
-          <nav className="flex flex-col gap-4">
-            <Link
-              href="/properties"
-              className="text-sm font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Find Properties
-            </Link>
-            <Link
-  href="/contact"
-  className="text-sm font-medium hover:text-primary"
-  onClick={() => setIsMenuOpen(false)}
->
-  Contact
-</Link>
- {/*}           <Link
-              href="/how-it-works"
-              className="text-sm font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How It Works
-            </Link>
-            <Link
-              href="/list-property"
-              className="text-sm font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              List Your Property
-            </Link>
-            <Separator className="my-2" />
-            <Link href="/login" className="text-sm font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
-              Sign In
-            </Link>
-            <Button asChild className="w-full" onClick={() => setIsMenuOpen(false)}>
-              <Link href="/register">Sign Up</Link>
-            </Button> */}
-          </nav> 
-        </div>
-      )}   
+{isMenuOpen && (
+  <div className="container md:hidden py-4 pb-6">
+    <nav className="flex flex-col gap-4">
+      <Link
+        href="/properties"
+        className="text-sm font-medium hover:text-primary"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Find Properties
+      </Link>
+
+      <Link
+        href="/about/living-in-style"
+        className="text-sm font-medium hover:text-primary"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        About
+      </Link>
+
+      <Link
+        href="/terms-of-service"
+        className="text-sm font-medium hover:text-primary"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Terms of Service
+      </Link>
+
+      <Link
+        href="/contact"
+        className="text-sm font-medium hover:text-primary"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Contact
+      </Link>
+    </nav>
+  </div>
+)}
     </header>
   )
 }
