@@ -31,7 +31,7 @@ export default function TermsOfServicePage() {
            <div>
             <h2 className="text-xl font-semibold">3. Damage Deposit</h2>
             <p>
-              A $1,500 damage deposit is required. It's refundable within 48 hours of departure. We require
+              A $1,500 damage deposit is required. It's refundable within 48 hours of departure.
             </p>
            If security deposit is not sufficient to cover the damage deposit, additional funds will be required. If
 damage deposit is provided by credit card authorization, the landlord will cancel authorization if
@@ -115,7 +115,7 @@ wrongful doing.</p>
           <div>
             <h2 className="text-xl font-semibold">11. Cleaning Fee</h2>
             <ul className="list-disc list-inside pl-4">
-              <li>1-bedroom: $250</li>
+              <li>1-bedroom: $200</li>
               <li>2-bedroom: $300</li>
               <li>3–4 bedroom: $400</li>
             </ul>
