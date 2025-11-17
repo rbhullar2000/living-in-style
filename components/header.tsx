@@ -24,7 +24,7 @@ export function Header() {
          <Link href="/" className="flex flex-col leading-tight">
   <span className="text-xl font-bold">Living In Style</span>
   <span className="text-sm text-muted-foreground">
-    Luxury Short-Term Furnished Rentals in BC
+    Premium Furnished Rentals in BC
   </span>
 </Link>
         </div>
