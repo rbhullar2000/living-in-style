@@ -22,7 +22,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="text-2xl font-bold">
-            Living In Style
+            Luxury Short-Term Furnished Rentals in BC | LivingInStyle.ca
           </Link>
         </div>
 
