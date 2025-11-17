@@ -21,9 +21,9 @@ export function Header() {
     <header className="border-b bg-background sticky top-0 z-40">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold">
-            Luxury Short-Term Furnished Rentals in BC | LivingInStyle.ca
-          </Link>
+         <Link href="/" className="text-lg font-semibold leading-tight">
+  Luxury Short-Term Furnished Rentals in BC | LivingInStyle.ca
+</Link>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
