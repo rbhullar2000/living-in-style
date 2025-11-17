@@ -21,8 +21,11 @@ export function Header() {
     <header className="border-b bg-background sticky top-0 z-40">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
-         <Link href="/" className="text-lg font-semibold leading-tight">
-  Luxury Short-Term Furnished Rentals in BC | LivingInStyle.ca
+         <Link href="/" className="flex flex-col leading-tight">
+  <span className="text-xl font-bold">Living In Style</span>
+  <span className="text-sm text-muted-foreground">
+    Luxury Short-Term Furnished Rentals in BC
+  </span>
 </Link>
         </div>
 
