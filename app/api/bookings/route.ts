@@ -6,10 +6,24 @@ export const runtime = 'nodejs'
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json()
-    const { name, email, checkIn, checkOut, guests, price } = data
+    
+    const { 
+      name, 
+      email, 
+      phone,
+      organization,
+      organizationType,
+      checkIn, 
+      checkOut, 
+      guests, 
+      price,
+      message,
+      bookingType,
+      property
+    } = data
 
-    if (!name || !email || !checkIn || !checkOut || !guests || !price) {
-      return NextResponse.json({ success: false, error: 'Missing booking fields' }, { status: 400 })
+    if (!name || !email || !checkIn || !checkOut || !guests) {
+      return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 })
     }
 
     const formattedCheckIn = format(new Date(checkIn), 'MMMM d, yyyy')
@@ -34,21 +48,62 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, error: 'Recipient email not set.' }, { status: 500 })
     }
 
-    const mailOptions = {
-      from: process.env.SMTP_USER,
-      to: recipient,
-      subject: 'New Booking Request – Living In Style',
-      text: `You have received a new booking request:
+    const isFifaBooking = bookingType === 'FIFA 2026'
+    
+    const subject = isFifaBooking 
+      ? 'New FIFA 2026 Event Booking Request – Living In Style'
+      : 'New Booking Request – Living In Style'
+
+    let emailText = `You have received a new ${isFifaBooking ? 'FIFA 2026 event ' : ''}booking request:
 
 Name: ${name}
-Email: ${email}
+Email: ${email}`
+
+    if (phone) {
+      emailText += `
+Phone: ${phone}`
+    }
+
+    if (isFifaBooking && organization) {
+      emailText += `
+
+Organization: ${organization}
+Organization Type: ${organizationType || 'Not specified'}`
+    }
+
+    if (property) {
+      emailText += `
+
+Property: ${property}`
+    }
+
+    emailText += `
 
 Check-in: ${formattedCheckIn}
 Check-out: ${formattedCheckOut}
-Guests: ${guests}
-Monthly Rate: $${Number(price).toLocaleString()}
+Guests: ${guests}`
 
-Please follow up with the client.`,
+    if (price) {
+      emailText += `
+Monthly Rate: $${Number(price).toLocaleString()}`
+    }
+
+    if (message) {
+      emailText += `
+
+Additional Message:
+${message}`
+    }
+
+    emailText += `
+
+Please follow up with the client.`
+
+    const mailOptions = {
+      from: process.env.SMTP_USER,
+      to: recipient,
+      subject,
+      text: emailText,
     }
 
     await transporter.sendMail(mailOptions)
