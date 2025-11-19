@@ -25,7 +25,7 @@ export interface Property {
 export const properties: Property[] = [
   {
     id: "LHermitage",
-    title: "Beautiful Downtown Condo",
+    title: "Luxury 1-Bed at L’Hermitage Hotel & Residences",
     location: "788 Richards, Vancouver, BC",
     lat: 49.2809,
     lng: -123.1166,
