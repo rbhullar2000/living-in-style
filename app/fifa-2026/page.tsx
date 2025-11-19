@@ -341,12 +341,12 @@ export default function FifaPage() {
                     <MessageCircle className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <h3 className="font-semibold mb-2">WhatsApp</h3>
                     <a 
-                      href="https://wa.me/16049160916" 
+                      href="https://wa.me/17788897964" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
                     >
-                      +1 (604) 916-0916
+                      +1 (778) 889-7964
                     </a>
                   </CardContent>
                 </Card>
