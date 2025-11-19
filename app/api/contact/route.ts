@@ -1,6 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
+export const runtime = "nodejs"
+
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json()
