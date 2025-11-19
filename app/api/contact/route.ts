@@ -61,7 +61,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        error: "Email failed to send.",
+        error: error.message || "Email failed to send.",
+        details: process.env.NODE_ENV === "development" ? error.stack : undefined,
       },
       { status: 500 },
     )
