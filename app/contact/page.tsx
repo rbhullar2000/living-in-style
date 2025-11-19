@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -9,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Mail, Phone, MapPin, Clock, CheckCircle2, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, CheckCircle2, AlertCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -21,28 +23,37 @@ export default function ContactPage() {
     message: "",
   })
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState<string>("")
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus("sending")
+    setErrorMessage("")
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    })
-
-    if (res.ok) {
-      setStatus("success")
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        inquiryType: "",
-        message: "",
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       })
-    } else {
+
+      if (res.ok) {
+        setStatus("success")
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          inquiryType: "",
+          message: "",
+        })
+      } else {
+        const errorData = await res.json()
+        setErrorMessage(errorData.error || "An unknown error occurred")
+        setStatus("error")
+      }
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : "Network error occurred")
       setStatus("error")
     }
   }
@@ -61,7 +72,8 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have questions about our properties or services? We're here to help you find your perfect furnished accommodation.
+              Have questions about our properties or services? We're here to help you find your perfect furnished
+              accommodation.
             </p>
           </div>
 
@@ -78,7 +90,10 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-sm mb-1">Email</p>
-                      <a href="mailto:info@livinginstyle.ca" className="text-sm text-muted-foreground hover:text-primary">
+                      <a
+                        href="mailto:info@livinginstyle.ca"
+                        className="text-sm text-muted-foreground hover:text-primary"
+                      >
                         info@livinginstyle.ca
                       </a>
                     </div>
@@ -97,7 +112,9 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-sm mb-1">Location</p>
                       <p className="text-sm text-muted-foreground">
-                        Serving Vancouver, Whistler,<br />and surrounding areas
+                        Serving Vancouver, Whistler,
+                        <br />
+                        and surrounding areas
                       </p>
                     </div>
                   </div>
@@ -105,9 +122,7 @@ export default function ContactPage() {
                     <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-sm mb-1">Response Time</p>
-                      <p className="text-sm text-muted-foreground">
-                        Within 24 hours
-                      </p>
+                      <p className="text-sm text-muted-foreground">Within 24 hours</p>
                     </div>
                   </div>
                 </CardContent>
@@ -119,7 +134,7 @@ export default function ContactPage() {
                   <p className="text-sm text-muted-foreground mb-4">
                     For immediate assistance, call or WhatsApp us directly.
                   </p>
-                  <Button variant="outline" className="w-full" asChild>
+                  <Button variant="outline" className="w-full bg-transparent" asChild>
                     <a href="https://wa.me/16049160916" target="_blank" rel="noopener noreferrer">
                       Chat on WhatsApp
                     </a>
@@ -183,7 +198,10 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="inquiryType">Inquiry Type</Label>
-                        <Select value={formData.inquiryType} onValueChange={(value) => updateFormData("inquiryType", value)}>
+                        <Select
+                          value={formData.inquiryType}
+                          onValueChange={(value) => updateFormData("inquiryType", value)}
+                        >
                           <SelectTrigger id="inquiryType">
                             <SelectValue placeholder="Select type" />
                           </SelectTrigger>
@@ -246,9 +264,11 @@ export default function ContactPage() {
                     {status === "error" && (
                       <div className="flex items-center gap-2 p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-lg">
                         <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0" />
-                        <p className="text-sm text-red-800 dark:text-red-300">
-                          Something went wrong. Please try again or contact us directly at info@livinginstyle.ca
-                        </p>
+                        <div className="text-sm text-red-800 dark:text-red-300">
+                          <p className="font-semibold mb-1">Something went wrong</p>
+                          {errorMessage && <p className="mb-2">Error: {errorMessage}</p>}
+                          <p>Please try again or contact us directly at info@livinginstyle.ca</p>
+                        </div>
                       </div>
                     )}
                   </form>
