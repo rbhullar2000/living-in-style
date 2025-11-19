@@ -5,15 +5,15 @@ export const runtime = 'nodejs'
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json()
-    const { name, email, subject, message } = data
+    const { name, email, phone, subject, inquiryType, message } = data
 
     if (!name || !email || !subject || !message) {
-      return NextResponse.json({ success: false, error: 'Missing contact fields' }, { status: 400 })
+      return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 })
     }
 
     const nodemailer = await import('nodemailer')
 
-    const transporter = nodemailer.default.createTransport({
+    const transporter = nodemailer.default.createTransporter({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 465,
       secure: true,
@@ -38,6 +38,8 @@ export async function POST(req: NextRequest) {
 
 Name: ${name}
 Email: ${email}
+${phone ? `Phone: ${phone}` : ''}
+${inquiryType ? `Inquiry Type: ${inquiryType}` : ''}
 Subject: ${subject}
 
 Message:
