@@ -23,32 +23,30 @@ export async function POST(req: NextRequest) {
       property,
     } = data
 
-    console.log("[v0] Booking form submission received:", { name, email, property, checkIn, checkOut })
-    console.log("[v0] SMTP Config check:", {
-      host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
-      user: process.env.SMTP_USER,
-      hasPassword: !!process.env.SMTP_PASS,
-      emailTo: process.env.EMAIL_TO,
-    })
-
     if (!name || !email || !checkIn || !checkOut || !guests) {
-      console.log("[v0] Missing required fields")
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 })
     }
 
     const formattedCheckIn = format(new Date(checkIn), "MMMM d, yyyy")
     const formattedCheckOut = format(new Date(checkOut), "MMMM d, yyyy")
 
-    console.log("[v0] Creating nodemailer transporter...")
+    const smtpPort = Number.parseInt(process.env.SMTP_PORT || "587")
+    const useSSL = smtpPort === 465
+
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: Number.parseInt(process.env.SMTP_PORT || "465"),
-      secure: true,
+      port: smtpPort,
+      secure: useSSL, // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+      tls: {
+        // Don't fail on invalid certs
+        rejectUnauthorized: false,
+      },
+      connectionTimeout: 10000, // 10 seconds
+      greetingTimeout: 10000,
     })
 
     const isFifaBooking = bookingType === "FIFA 2026"
@@ -95,7 +93,6 @@ export async function POST(req: NextRequest) {
       `
     }
 
-    console.log("[v0] Attempting to send booking email...")
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: process.env.EMAIL_TO,
@@ -104,16 +101,13 @@ export async function POST(req: NextRequest) {
       html: emailHtml,
     })
 
-    console.log("[v0] Booking email sent successfully!")
     return NextResponse.json({ success: true })
   } catch (error: any) {
     console.error("[v0] Booking email failed:", error)
-    console.error("[v0] Error details:", error.message, error.stack)
     return NextResponse.json(
       {
         success: false,
         error: error.message || "Email failed to send.",
-        details: process.env.NODE_ENV === "development" ? error.stack : undefined,
       },
       { status: 500 },
     )
