@@ -47,76 +47,86 @@ export default function FifaPage() {
           </div>
         </section>
 
-        {/* Special Event Pricing Section */}
-        <section className="py-16 bg-muted">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">FIFA 2026 Event Pricing</h2>
-                <p className="text-muted-foreground text-lg">
-                  Premium rates for June & July 2026 tournament dates
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border-2 border-primary">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Nightly Rate</CardTitle>
-                    <CardDescription>Flexible short-term pricing</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-4xl font-bold mb-2">$1,200 - $3,000</div>
-                    <div className="text-muted-foreground mb-4">per night</div>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        30-day minimum stay
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Premium June/July dates
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Parking included
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
+{/* Special Event Pricing Section */}
+<section className="py-16 bg-muted">
+  <div className="container">
+    <div className="max-w-4xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          FIFA 2026 Event Pricing
+        </h2>
+        <p className="text-muted-foreground text-lg">
+          Premium rates for June &amp; July 2026 tournament dates
+        </p>
+      </div>
 
-                <Card className="border-2 border-blue-600">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Monthly Rate</CardTitle>
-                    <CardDescription>Best value for full event</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-4xl font-bold mb-2">$30,000 - $60,000</div>
-                    <div className="text-muted-foreground mb-4">per month</div>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Priority for full-event bookings
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Concierge services included
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Flexible payment terms
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* Nightly */}
+        <Card className="border-2 border-primary">
+          <CardHeader>
+            <CardTitle className="text-2xl">Nightly Rate</CardTitle>
+            <CardDescription>Flexible short-term pricing</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="text-4xl font-bold mb-2">$1,200 – $3,000</div>
+            <div className="text-muted-foreground mb-4">per night (30-night minimum)</div>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-600" />
+                30-night minimum stay
+              </li>
+              <li className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-600" />
+                Rates vary by match schedule &amp; demand
+              </li>
+              <li className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-600" />
+                Parking included
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
 
-              <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
-                <p className="text-sm text-muted-foreground mb-2">Special consideration for:</p>
-                <p className="font-semibold">Full tournament bookings & corporate packages</p>
-              </div>
+        {/* Event packages */}
+        <Card className="border-2 border-blue-600">
+          <CardHeader>
+            <CardTitle className="text-2xl">Event Packages</CardTitle>
+            <CardDescription>Best value for 30–60+ day stays</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="text-4xl font-bold mb-2">$30,000 – $60,000</div>
+            <div className="text-muted-foreground mb-4">
+              total for June/July stay (pricing depends on exact dates &amp; length of stay)
             </div>
-          </div>
-        </section>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-600" />
+                Priority for full-tournament &amp; full-month bookings
+              </li>
+              <li className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-600" />
+                Concierge-style support &amp; corporate invoicing available
+              </li>
+              <li className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-600" />
+                Flexible payment terms for corporate clients
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
+        <p className="text-sm text-muted-foreground mb-2">
+          Exact pricing is customized based on dates, number of guests and specific requirements.
+        </p>
+        <p className="font-semibold">
+          Special consideration for full-tournament bookings &amp; corporate packages.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Property Details Section */}
         <section id="property" className="py-16">
