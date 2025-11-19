@@ -23,13 +23,24 @@ export async function POST(req: NextRequest) {
       property,
     } = data
 
+    console.log("[v0] Booking form submission received:", { name, email, property, checkIn, checkOut })
+    console.log("[v0] SMTP Config check:", {
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
+      user: process.env.SMTP_USER,
+      hasPassword: !!process.env.SMTP_PASS,
+      emailTo: process.env.EMAIL_TO,
+    })
+
     if (!name || !email || !checkIn || !checkOut || !guests) {
+      console.log("[v0] Missing required fields")
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 })
     }
 
     const formattedCheckIn = format(new Date(checkIn), "MMMM d, yyyy")
     const formattedCheckOut = format(new Date(checkOut), "MMMM d, yyyy")
 
+    console.log("[v0] Creating nodemailer transporter...")
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number.parseInt(process.env.SMTP_PORT || "465"),
@@ -84,6 +95,7 @@ export async function POST(req: NextRequest) {
       `
     }
 
+    console.log("[v0] Attempting to send booking email...")
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: process.env.EMAIL_TO,
@@ -92,9 +104,11 @@ export async function POST(req: NextRequest) {
       html: emailHtml,
     })
 
+    console.log("[v0] Booking email sent successfully!")
     return NextResponse.json({ success: true })
   } catch (error: any) {
-    console.error("Booking email failed:", error)
+    console.error("[v0] Booking email failed:", error)
+    console.error("[v0] Error details:", error.message, error.stack)
     return NextResponse.json(
       {
         success: false,
