@@ -7,9 +7,20 @@ export async function POST(req: NextRequest) {
     const data = await req.json()
     const { name, email, phone, subject, inquiryType, message } = data
 
+    console.log('[v0] Contact form submission received:', { name, email, subject })
+
     if (!name || !email || !subject || !message) {
+      console.log('[v0] Missing required fields')
       return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 })
     }
+
+    console.log('[v0] SMTP Config:', {
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
+      user: process.env.SMTP_USER,
+      hasPassword: !!process.env.SMTP_PASS,
+      emailTo: process.env.EMAIL_TO
+    })
 
     const nodemailer = await import('nodemailer')
 
@@ -26,7 +37,7 @@ export async function POST(req: NextRequest) {
     const recipient = process.env.EMAIL_TO || process.env.SMTP_USER
 
     if (!recipient) {
-      console.error('EMAIL_TO is missing in environment variables.')
+      console.error('[v0] EMAIL_TO is missing in environment variables.')
       return NextResponse.json({ success: false, error: 'Recipient email not set.' }, { status: 500 })
     }
 
@@ -48,11 +59,14 @@ ${message}
 Please follow up with the client.`,
     }
 
+    console.log('[v0] Attempting to send email...')
     await transporter.sendMail(mailOptions)
+    console.log('[v0] Email sent successfully!')
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
-    console.error('Contact email failed:', error)
+    console.error('[v0] Contact email failed:', error.message)
+    console.error('[v0] Full error:', error)
     return NextResponse.json({ success: false, error: 'Email failed to send.' }, { status: 500 })
   }
 }
