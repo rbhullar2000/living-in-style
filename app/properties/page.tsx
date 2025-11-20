@@ -122,7 +122,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
             <div className="lg:col-span-1">
               <div className="sticky top-8">
-                <BookingForm price={property.price} priceUnit={property.priceUnit} />
+                <BookingForm price={property.price} pricePeriod={property.pricePeriod} />
               </div>
             </div>
           </div>
