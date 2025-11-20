@@ -1,8 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { format } from "date-fns"
-import nodemailer from "nodemailer"
-
-export const runtime = "nodejs"
 
 export async function POST(req: NextRequest) {
   try {
@@ -30,24 +27,7 @@ export async function POST(req: NextRequest) {
     const formattedCheckIn = format(new Date(checkIn), "MMMM d, yyyy")
     const formattedCheckOut = format(new Date(checkOut), "MMMM d, yyyy")
 
-    const smtpPort = Number.parseInt(process.env.SMTP_PORT || "587")
-    const useSSL = smtpPort === 465
-
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: smtpPort,
-      secure: useSSL, // true for 465, false for other ports
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-      tls: {
-        // Don't fail on invalid certs
-        rejectUnauthorized: false,
-      },
-      connectionTimeout: 10000, // 10 seconds
-      greetingTimeout: 10000,
-    })
+    const resendApiKey = process.env.RESEND_API_KEY
 
     const isFifaBooking = bookingType === "FIFA 2026"
 
@@ -93,13 +73,59 @@ export async function POST(req: NextRequest) {
       `
     }
 
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: process.env.EMAIL_TO,
-      replyTo: email,
-      subject,
-      html: emailHtml,
+    if (!resendApiKey) {
+      // Fallback to nodemailer if Resend is not configured
+      const nodemailer = await import("nodemailer")
+
+      const smtpPort = Number.parseInt(process.env.SMTP_PORT || "587")
+      const useSSL = smtpPort === 465
+
+      const transporter = nodemailer.default.createTransport({
+        host: process.env.SMTP_HOST,
+        port: smtpPort,
+        secure: useSSL,
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+        tls: {
+          rejectUnauthorized: false,
+        },
+        connectionTimeout: 10000,
+        greetingTimeout: 10000,
+      })
+
+      await transporter.sendMail({
+        from: process.env.SMTP_USER,
+        to: process.env.EMAIL_TO,
+        replyTo: email,
+        subject,
+        html: emailHtml,
+      })
+
+      return NextResponse.json({ success: true })
+    }
+
+    // Use Resend API
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${resendApiKey}`,
+      },
+      body: JSON.stringify({
+        from: "Living In Style <onboarding@resend.dev>",
+        to: process.env.EMAIL_TO,
+        reply_to: email,
+        subject,
+        html: emailHtml,
+      }),
     })
+
+    if (!response.ok) {
+      const errorData = await response.json()
+      throw new Error(errorData.message || "Failed to send email via Resend")
+    }
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
