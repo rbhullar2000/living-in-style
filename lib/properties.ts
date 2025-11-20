@@ -11,7 +11,7 @@ export interface Property {
   lat: number
   lng: number
   price: number
-  priceUnit?: "month" | "week"
+  pricePeriod?: "week" | "month"
   rating: number
   reviewCount: number
   beds: number
@@ -28,7 +28,7 @@ export interface Property {
 export const properties: Property[] = [
   {
     id: "LHermitage",
-    title: "Luxury 1-Bed at L'Hermitage Hotel & Residences",
+    title: "Luxury 1-Bed at L’Hermitage Hotel & Residences",
     location: "788 Richards, Vancouver, BC",
     lat: 49.2809,
     lng: -123.1166,
@@ -39,7 +39,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "This elegant residence at L'Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. <p> The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining. Whether you're preparing dinner in the gourmet kitchen or enjoying a quiet morning coffee on the balcony, this suite provides an elevated living experience. <p> Residents enjoy exclusive access to L'Hermitage Hotel's renowned amenities, including a fitness centre, a beautifully appointed library, an elegant resident lounge, and a tranquil rooftop garden terrace — perfect for reading, socializing, or simply unwinding above the city. The hotel's 24-hour concierge and professional staff ensure every detail is taken care of, offering true peace of mind. <p> Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure. <p> Within minutes, you can walk to Yaletown, BC Place, Rogers Arena, and the Vancouver Public Library, or explore the vibrant Granville Entertainment District for an evening out. Whether you're visiting Vancouver for business, relocation, or an extended stay, this premium condo at L'Hermitage Residences combines the prestige of hotel-style living with the luxury of a modern home.",
+      "This elegant residence at L’Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. <p> The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining. Whether you’re preparing dinner in the gourmet kitchen or enjoying a quiet morning coffee on the balcony, this suite provides an elevated living experience. <p> Residents enjoy exclusive access to L’Hermitage Hotel’s renowned amenities, including a fitness centre, a beautifully appointed library, an elegant resident lounge, and a tranquil rooftop garden terrace — perfect for reading, socializing, or simply unwinding above the city. The hotel’s 24-hour concierge and professional staff ensure every detail is taken care of, offering true peace of mind. <p> Step outside and you’ll find yourself surrounded by Vancouver’s most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver’s best salons, restaurants, and boutique shops, giving you endless options for dining and leisure. <p> Within minutes, you can walk to Yaletown, BC Place, Rogers Arena, and the Vancouver Public Library, or explore the vibrant Granville Entertainment District for an evening out. Whether you’re visiting Vancouver for business, relocation, or an extended stay, this premium condo at L’Hermitage Residences combines the prestige of hotel-style living with the... <truncated>",
     amenities: [
       "High-speed WiFi",
       "50 inch television",
@@ -95,7 +95,7 @@ export const properties: Property[] = [
     baths: 3,
     guests: 8,
     description:
-      "Experience world-class luxury at the Fairmont Pacific Rim — Vancouver's most prestigious waterfront address. Located in the heart of Coal Harbour, this exceptional residence combines the sophistication of a five-star hotel with the privacy and comfort of a modern home. Every detail has been designed for those who expect the finest in architecture, design, and service. <p> Step inside and discover refined interiors featuring high ceilings, rich hardwood flooring, and expansive floor-to-ceiling windows framing panoramic views of the ocean, Stanley Park, and the North Shore Mountains. The gourmet kitchen is equipped with top-of-the-line appliances, sleek cabinetry, and polished stone countertops — perfect for both entertaining and everyday indulgence. <p> As a resident, you'll enjoy 24-hour access to Fairmont Pacific Rim's renowned amenities and white-glove services. This includes a fully equipped fitness centre, a world-class spa, a heated rooftop pool with private cabanas, concierge and valet service, and exclusive access to the resident lounge and private terraces. Whether you're unwinding after a day in the city or hosting guests in elegant surroundings, every moment here feels elevated. <p> Positioned just steps from the seawall, waterfront dining, and the business and entertainment districts, this home offers unparalleled convenience and prestige. From sunrise walks along Coal Harbour to evening cocktails overlooking the ocean, living at Fairmont Pacific Rim Residences is the ultimate Vancouver lifestyle — effortless, sophisticated, and truly unforgettable.",
+      "Experience world-class luxury at the Fairmont Pacific Rim — Vancouver’s most prestigious waterfront address. Located in the heart of Coal Harbour, this exceptional residence combines the sophistication of a five-star hotel with the privacy and comfort of a modern home. Every detail has been designed for those who expect the finest in architecture, design, and service. <p> Step inside and discover refined interiors featuring high ceilings, rich hardwood flooring, and expansive floor-to-ceiling windows framing panoramic views of the ocean, Stanley Park, and the North Shore Mountains. The gourmet kitchen is equipped with top-of-the-line appliances, sleek cabinetry, and polished stone countertops — perfect for both entertaining and everyday indulgence. <p> As a resident, you’ll enjoy 24-hour access to Fairmont Pacific Rim’s renowned amenities and white-glove services. This includes a fully equipped fitness centre, a world-class spa, a heated rooftop pool with private cabanas, concierge and valet service, and exclusive access to the resident lounge and private terraces. Whether you’re unwinding after a day in the city or hosting guests in elegant surroundings, every moment here feels elevated. <p> Positioned just steps from the seawall, waterfront dining, and the business and entertainment districts, this home offers unparalleled convenience and prestige. From sunrise walks along Coal Harbour to evening cocktails overlooking the ocean, living at Fairmont Pacific Rim Residences is the ultimate Vancouver lifestyle — effortless, sophisticated, and truly unforgettable.",
     amenities: [
       "Botanist",
       "Botanist Bar",
@@ -122,7 +122,7 @@ export const properties: Property[] = [
         name: "Oliver Smith",
         rating: 5,
         comment:
-          "Absolutely stunning penthouse and world-class service. From the private terrace with its fire pit to the chef's kitchen, everything exceeded expectations. The location is perfect — close to the waterfront and convention centre. Felt like living in a five-star resort.",
+          "Absolutely stunning penthouse and world-class service. From the private terrace with its fire pit to the chef’s kitchen, everything exceeded expectations. The location is perfect — close to the waterfront and convention centre. Felt like living in a five-star resort.",
       },
       {
         name: "Grace Patel",
@@ -151,7 +151,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home's elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building's calm and professional atmosphere. <p> Situated within one of Vancouver's most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown's business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver's most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and families looking for a central yet peaceful location.",
+      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home’s elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building’s calm and professional atmosphere. <p> Situated within one of Vancouver’s most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown’s business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver’s most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and anyone seeking a peaceful yet central Vancouver stay.",
     amenities: [
       "Gourmet kitchen with Gaggenau appliances",
       "Floor-to-ceiling windows",
@@ -183,7 +183,7 @@ export const properties: Property[] = [
         name: "David Kim",
         rating: 4,
         comment:
-          "Very elegant unit with an unbeatable Coal Harbour location. Everything from the brushed hardwood floors to the concierge service was top-notch. The only reason I'm not giving 5 stars is that parking was a bit tight. Other than that, I'd gladly stay here again.",
+          "Very elegant unit with an unbeatable Coal Harbour location. Everything from the brushed hardwood floors to the concierge service was top-notch. The only reason I’m not giving 5 stars is that parking was a bit tight. Other than that, I’d gladly stay here again.",
       },
       {
         name: "Nina Rivera",
@@ -235,30 +235,31 @@ export const properties: Property[] = [
         name: "Sophie Lin",
         rating: 5,
         comment:
-          "This was such a peaceful and family-friendly getaway. The open-concept living space was perfect for spending time together, and the outdoor deck became our favorite hangout spot. Being walking distance to the lake made it so easy to enjoy the water without any hassle. Everything was clean, cozy, and well-equipped. We'll be back next summer for sure.",
+          "This was such a peaceful and family-friendly getaway. The open-concept living space was perfect for spending time together, and the outdoor deck became our favorite hangout spot. Being walking distance to the lake made it so easy to enjoy the water without any hassle. Everything was clean, cozy, and well-equipped. We’ll be back next summer for sure.",
       },
       {
         name: "Jason Moore",
         rating: 4,
         comment:
-          "Really enjoyed our stay — the location is fantastic, just a short walk to the lake and some great hiking trails. The kitchen was modern and had everything we needed, and the community fire pit was a great touch for evening hangouts. The only thing I'd suggest is adding a couple more fans for the warmer nights.",
+          "Really enjoyed our stay — the location is fantastic, just a short walk to the lake and some great hiking trails. The kitchen was modern and had everything we needed, and the community fire pit was a great touch for evening hangouts. The only thing I’d suggest is adding a couple more fans for the warmer nights.",
       },
       {
         name: "Tara Singh",
         rating: 5,
         comment:
-          "Perfect for a weekend away with friends! The space was much bigger than I expected, and the deck with the BBQ was ideal for dinners and late-night chats. It's rare to find a place that feels remote yet is so close to all the fun of Cultus Lake. The hosts thought of everything — even board games and extra towels.",
+          "Perfect for a weekend away with friends! The space was much bigger than I expected, and the deck with the BBQ was ideal for dinners and late-night chats. It’s rare to find a place that feels remote yet is so close to all the fun of Cultus Lake. The hosts thought of everything — even board games and extra towels.",
       },
     ],
   },
   {
     id: "WaterStreetByThePark",
-    title: "Water Street by the Park - 27th Floor",
+    title: "Water Street by the Park - 27th Floor Penthouse",
     location: "1626 Water Street, Kelowna, BC",
     lat: 49.8891,
     lng: -119.496,
     price: 3500,
-    priceUnit: "week",
+    pricePeriod: "week",
+    rating: 5,
     reviewCount: 0,
     beds: 2,
     baths: 2,
