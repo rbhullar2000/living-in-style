@@ -256,7 +256,7 @@ export const properties: Property[] = [
     location: "1626 Water Street, Kelowna, BC",
     lat: 49.8891,
     lng: -119.496,
-    price: 7500,
+    price: 3500,
     reviewCount: 0,
     beds: 2,
     baths: 2,
