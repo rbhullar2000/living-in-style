@@ -44,16 +44,16 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white py-16 md:py-24">
-        <div className="absolute inset-0 bg-[url('/background.png')] opacity-10 bg-cover bg-center" />
+      <section className="relative bg-gradient-to-br from-amber-100 via-amber-50 to-yellow-50 text-gray-900 py-16 md:py-24">
+        <div className="absolute inset-0 bg-[url('/background.png')] opacity-20 bg-cover bg-center" />
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4 bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1">Get In Touch</Badge>
+            <Badge className="mb-4 bg-amber-600 hover:bg-amber-700 text-white text-sm px-4 py-1">Get In Touch</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Contact Living In Style</h1>
-            <p className="text-xl md:text-2xl mb-4 text-blue-100">
+            <p className="text-xl md:text-2xl mb-4 text-gray-800">
               We're here to help with your luxury accommodation needs
             </p>
-            <p className="text-lg text-blue-200 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Whether you have questions about availability, pricing, or custom stays, our team is ready to assist you.
               Reach out through your preferred contact method below.
             </p>
@@ -77,7 +77,7 @@ export default function ContactPage() {
                   <p className="text-sm text-muted-foreground mb-3">Send us a message anytime</p>
                   <a
                     href="mailto:info@livinginstyle.ca"
-                    className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                    className="text-amber-600 dark:text-amber-400 hover:underline font-medium"
                   >
                     info@livinginstyle.ca
                   </a>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                   <Phone className="h-10 w-10 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold text-lg mb-2">Phone</h3>
                   <p className="text-sm text-muted-foreground mb-3">Call us during business hours</p>
-                  <a href="tel:+17788897964" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  <a href="tel:+17788897964" className="text-amber-600 dark:text-amber-400 hover:underline font-medium">
                     +1 (778) 889-7964
                   </a>
                 </CardContent>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                     href="https://wa.me/17788897964"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                    className="text-amber-600 dark:text-amber-400 hover:underline font-medium"
                   >
                     Message Us
                   </a>
