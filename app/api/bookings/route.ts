@@ -29,11 +29,23 @@ export async function POST(req: NextRequest) {
     const formattedCheckIn = format(new Date(checkIn), "MMMM d, yyyy")
     const formattedCheckOut = format(new Date(checkOut), "MMMM d, yyyy")
 
-    const resendApiKey = process.env.RESEND_API_KEY
+    const nodemailer = await import("nodemailer")
 
-    if (!resendApiKey) {
-      console.error("[v0] RESEND_API_KEY is not configured")
-      return NextResponse.json({ success: false, error: "Email service is not configured" }, { status: 500 })
+    const transporter = nodemailer.default.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: true,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    })
+
+    const recipient = process.env.EMAIL_TO || process.env.SMTP_USER
+
+    if (!recipient) {
+      console.error("EMAIL_TO is missing in environment variables.")
+      return NextResponse.json({ success: false, error: "Recipient email not set." }, { status: 500 })
     }
 
     const isFifaBooking = bookingType === "FIFA 2026"
@@ -42,70 +54,56 @@ export async function POST(req: NextRequest) {
       ? "New FIFA 2026 Event Booking Request – Living In Style"
       : "New Booking Request – Living In Style"
 
-    let emailHtml = `
-      <h2>New ${isFifaBooking ? "FIFA 2026 Event " : ""}Booking Request</h2>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-    `
+    let emailText = `You have received a new ${isFifaBooking ? "FIFA 2026 event " : ""}booking request:
+
+Name: ${name}
+Email: ${email}`
 
     if (phone) {
-      emailHtml += `<p><strong>Phone:</strong> ${phone}</p>`
+      emailText += `\nPhone: ${phone}`
     }
 
     if (isFifaBooking && organization) {
-      emailHtml += `
-        <p><strong>Organization:</strong> ${organization}</p>
-        <p><strong>Organization Type:</strong> ${organizationType || "Not specified"}</p>
-      `
+      emailText += `\nOrganization: ${organization}`
+      emailText += `\nOrganization Type: ${organizationType || "Not specified"}`
     }
 
     if (property) {
-      emailHtml += `<p><strong>Property:</strong> ${property}</p>`
+      emailText += `\nProperty: ${property}`
     }
 
-    emailHtml += `
-      <p><strong>Check-in:</strong> ${formattedCheckIn}</p>
-      <p><strong>Check-out:</strong> ${formattedCheckOut}</p>
-      <p><strong>Guests:</strong> ${guests}</p>
-    `
+    emailText += `
+Check-in: ${formattedCheckIn}
+Check-out: ${formattedCheckOut}
+Guests: ${guests}`
 
     if (price) {
-      emailHtml += `<p><strong>Monthly Rate:</strong> $${Number(price).toLocaleString()}</p>`
+      emailText += `\nMonthly Rate: $${Number(price).toLocaleString()}`
     }
 
     if (message) {
-      emailHtml += `
-        <h3>Additional Message:</h3>
-        <p>${message.replace(/\n/g, "<br>")}</p>
-      `
+      emailText += `
+
+Additional Message:
+${message}`
     }
 
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${resendApiKey}`,
-      },
-      body: JSON.stringify({
-        from: "Living In Style <onboarding@resend.dev>",
-        to: process.env.EMAIL_TO || "rob@livinginstyle.ca",
-        reply_to: email,
-        subject,
-        html: emailHtml,
-      }),
-    })
+    emailText += `
 
-    const responseData = await response.json()
+Please follow up with the client.`
 
-    if (!response.ok) {
-      console.error("[v0] Resend API error:", responseData)
-      throw new Error(responseData.message || `Resend API error: ${response.status}`)
+    const mailOptions = {
+      from: process.env.SMTP_USER,
+      to: recipient,
+      subject,
+      text: emailText,
     }
 
-    console.log("[v0] Booking email sent successfully via Resend")
+    await transporter.sendMail(mailOptions)
+
     return NextResponse.json({ success: true })
   } catch (error: any) {
-    console.error("[v0] Booking email failed:", error)
+    console.error("Booking email failed:", error)
     return NextResponse.json(
       {
         success: false,
