@@ -253,16 +253,6 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">What is the minimum stay requirement?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Most of our properties require a minimum 30-night stay. 
-                  </p>
-                </CardContent>
-              </Card>
 
               <Card>
                 <CardHeader>
