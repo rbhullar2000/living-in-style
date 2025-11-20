@@ -252,7 +252,7 @@ export const properties: Property[] = [
   },
   {
     id: "WaterStreetByThePark",
-    title: "Water Street by the Park - 27th Floor Penthouse",
+    title: "Water Street by the Park - 27th Floor",
     location: "1626 Water Street, Kelowna, BC",
     lat: 49.8891,
     lng: -119.496,
