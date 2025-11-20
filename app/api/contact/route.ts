@@ -1,5 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 
+export const runtime = "nodejs"
+
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json()
@@ -11,28 +13,7 @@ export async function POST(req: NextRequest) {
 
     const resendApiKey = process.env.RESEND_API_KEY
 
-    if (!resendApiKey) {
-      // Fallback to nodemailer if Resend is not configured
-      const nodemailer = await import("nodemailer")
-
-      const smtpPort = Number.parseInt(process.env.SMTP_PORT || "587")
-      const useSSL = smtpPort === 465
-
-      const transporter = nodemailer.default.createTransport({
-        host: process.env.SMTP_HOST,
-        port: smtpPort,
-        secure: useSSL,
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
-        },
-        tls: {
-          rejectUnauthorized: false,
-        },
-        connectionTimeout: 10000,
-        greetingTimeout: 10000,
-      })
-
+    if (resendApiKey) {
       const emailHtml = `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
@@ -44,18 +25,52 @@ export async function POST(req: NextRequest) {
         <p>${message.replace(/\n/g, "<br>")}</p>
       `
 
-      await transporter.sendMail({
-        from: process.env.SMTP_USER,
-        to: process.env.EMAIL_TO,
-        replyTo: email,
-        subject: `New Contact Message – ${subject}`,
-        html: emailHtml,
+      const response = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${resendApiKey}`,
+        },
+        body: JSON.stringify({
+          from: "Living In Style <onboarding@resend.dev>",
+          to: process.env.EMAIL_TO || "rob@livinginstyle.ca",
+          reply_to: email,
+          subject: `New Contact Message – ${subject}`,
+          html: emailHtml,
+        }),
       })
 
+      const responseData = await response.json()
+
+      if (!response.ok) {
+        console.error("[v0] Resend API error:", responseData)
+        throw new Error(responseData.message || `Resend API error: ${response.status}`)
+      }
+
+      console.log("[v0] Email sent successfully via Resend:", responseData)
       return NextResponse.json({ success: true })
     }
 
-    // Use Resend API
+    const nodemailer = await import("nodemailer")
+
+    const smtpPort = Number.parseInt(process.env.SMTP_PORT || "587")
+    const useSSL = smtpPort === 465
+
+    const transporter = nodemailer.default.createTransporter({
+      host: process.env.SMTP_HOST,
+      port: smtpPort,
+      secure: useSSL,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+      tls: {
+        rejectUnauthorized: false,
+      },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+    })
+
     const emailHtml = `
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${name}</p>
@@ -67,25 +82,13 @@ export async function POST(req: NextRequest) {
       <p>${message.replace(/\n/g, "<br>")}</p>
     `
 
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${resendApiKey}`,
-      },
-      body: JSON.stringify({
-        from: "Living In Style <onboarding@resend.dev>", // You'll need to configure your domain in Resend
-        to: process.env.EMAIL_TO,
-        reply_to: email,
-        subject: `New Contact Message – ${subject}`,
-        html: emailHtml,
-      }),
+    await transporter.sendMail({
+      from: process.env.SMTP_USER,
+      to: process.env.EMAIL_TO,
+      replyTo: email,
+      subject: `New Contact Message – ${subject}`,
+      html: emailHtml,
     })
-
-    if (!response.ok) {
-      const errorData = await response.json()
-      throw new Error(errorData.message || "Failed to send email via Resend")
-    }
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
@@ -99,4 +102,3 @@ export async function POST(req: NextRequest) {
     )
   }
 }
- 
