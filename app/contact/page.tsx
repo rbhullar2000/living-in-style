@@ -259,8 +259,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Most of our properties require a minimum 30-night stay. For special events like FIFA 2026, custom
-                    arrangements may apply. Contact us to discuss your specific needs.
+                    Most of our properties require a minimum 30-night stay. 
                   </p>
                 </CardContent>
               </Card>
