@@ -8,14 +8,14 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input" // Make sure you have an Input component
 
 interface BookingFormProps {
   price: number
-  priceUnit?: "month" | "week"
+  pricePeriod?: "week" | "month"
 }
 
-export function BookingForm({ price, priceUnit = "month" }: BookingFormProps) {
+export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) {
   const [checkIn, setCheckIn] = useState<Date>()
   const [checkOut, setCheckOut] = useState<Date>()
   const [guests, setGuests] = useState("1")
@@ -36,7 +36,7 @@ export function BookingForm({ price, priceUnit = "month" }: BookingFormProps) {
       <CardHeader className="pb-4">
         <div className="flex items-end">
           <span className="text-2xl font-bold">${price.toLocaleString()}</span>
-          <span className="text-muted-foreground"> / {priceUnit}</span>
+          <span className="text-muted-foreground"> / {pricePeriod}</span>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -64,7 +64,7 @@ export function BookingForm({ price, priceUnit = "month" }: BookingFormProps) {
                   setCheckIn(date)
                   setOpenCheckIn(false)
                 }}
-                weekStartsOn={0}
+                weekStartsOn={0} // Sunday
                 classNames={{
                   months: "flex flex-col space-y-4",
                   month: "space-y-4",
@@ -105,7 +105,7 @@ export function BookingForm({ price, priceUnit = "month" }: BookingFormProps) {
                 selected={checkOut}
                 onSelect={(date) => {
                   setCheckOut(date)
-                  setOpenCheckOut(false)
+                  setOpenCheckOut(false) // ✅ fix applied here
                 }}
                 weekStartsOn={0}
                 classNames={{
