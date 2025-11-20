@@ -10,7 +10,7 @@ import { FifaBookingForm } from "@/components/fifa-booking-form"
 
 export const metadata = {
   title: "FIFA 2026 Luxury Accommodation | Downtown Vancouver",
-  description: "Premium 1-bedroom luxury suite at L'Hermitage Residences for FIFA World Cup 2026. 30+ night bookings. Walking distance to BC Place. Ideal for media teams, FIFA staff, and corporate sponsors.",
+  description: "30+ night bookings. Walking distance to BC Place. Ideal for media teams, FIFA staff, and corporate sponsors.",
 }
 
 export default function FifaPage() {
