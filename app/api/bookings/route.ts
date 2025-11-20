@@ -31,6 +31,11 @@ export async function POST(req: NextRequest) {
 
     const resendApiKey = process.env.RESEND_API_KEY
 
+    if (!resendApiKey) {
+      console.error("[v0] RESEND_API_KEY is not configured")
+      return NextResponse.json({ success: false, error: "Email service is not configured" }, { status: 500 })
+    }
+
     const isFifaBooking = bookingType === "FIFA 2026"
 
     const subject = isFifaBooking
@@ -75,61 +80,29 @@ export async function POST(req: NextRequest) {
       `
     }
 
-    if (resendApiKey) {
-      const response = await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${resendApiKey}`,
-        },
-        body: JSON.stringify({
-          from: "Living In Style <onboarding@resend.dev>",
-          to: process.env.EMAIL_TO || "rob@livinginstyle.ca",
-          reply_to: email,
-          subject,
-          html: emailHtml,
-        }),
-      })
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${resendApiKey}`,
+      },
+      body: JSON.stringify({
+        from: "Living In Style <onboarding@resend.dev>",
+        to: process.env.EMAIL_TO || "rob@livinginstyle.ca",
+        reply_to: email,
+        subject,
+        html: emailHtml,
+      }),
+    })
 
-      const responseData = await response.json()
+    const responseData = await response.json()
 
-      if (!response.ok) {
-        console.error("[v0] Resend API error:", responseData)
-        throw new Error(responseData.message || `Resend API error: ${response.status}`)
-      }
-
-      console.log("[v0] Booking email sent successfully via Resend:", responseData)
-      return NextResponse.json({ success: true })
+    if (!response.ok) {
+      console.error("[v0] Resend API error:", responseData)
+      throw new Error(responseData.message || `Resend API error: ${response.status}`)
     }
 
-    const nodemailer = await import("nodemailer")
-
-    const smtpPort = Number.parseInt(process.env.SMTP_PORT || "587")
-    const useSSL = smtpPort === 465
-
-    const transporter = nodemailer.default.createTransporter({
-      host: process.env.SMTP_HOST,
-      port: smtpPort,
-      secure: useSSL,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-      tls: {
-        rejectUnauthorized: false,
-      },
-      connectionTimeout: 10000,
-      greetingTimeout: 10000,
-    })
-
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: process.env.EMAIL_TO,
-      replyTo: email,
-      subject,
-      html: emailHtml,
-    })
-
+    console.log("[v0] Booking email sent successfully via Resend")
     return NextResponse.json({ success: true })
   } catch (error: any) {
     console.error("[v0] Booking email failed:", error)
