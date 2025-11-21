@@ -34,9 +34,9 @@ export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) 
   return (
     <Card>
       <CardHeader className="pb-4">
-        <div className="flex items-end">
-          <span className="text-2xl font-bold">${price.toLocaleString()}</span>
-          <span className="text-muted-foreground"> / {pricePeriod}</span>
+        <div className="flex items-baseline gap-1">
+          <span className="text-3xl font-bold">${price.toLocaleString()}</span>
+          <span className="text-muted-foreground">/ {pricePeriod}</span>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
