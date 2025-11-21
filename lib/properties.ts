@@ -41,13 +41,13 @@ export const properties: Property[] = [
     description:
       "This elegant residence at L'Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. <p> The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining. Whether you're preparing dinner in the gourmet kitchen or enjoying a quiet morning coffee on the balcony, this suite provides an elevated living experience. <p> Residents enjoy exclusive access to L'Hermitage Hotel's renowned amenities, including a fitness centre, a beautifully appointed library, an elegant resident lounge, and a tranquil rooftop garden terrace — perfect for reading, socializing, or simply unwinding above the city. The hotel's 24-hour concierge and professional staff ensure every detail is taken care of, offering true peace of mind. <p> Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering a luxurious and timeless experience. L'Orangerie at L'Hermitage offers seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day. <p> Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure.",
     amenities: [  
-    "24/7 Concierge Service",
+     "Fully Furnished",
+      "24/7 Concierge Service",
       "L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons",
       "Rooftop Terrace",
       "Fitness Centre",
       "High-Speed WiFi",
       "Parking",
-      "Fully Furnished",
       "Central air conditioning",
       "Fully equipped gourmet kitchen, In-unit washer/dryer, 2 TVs",
     ],
