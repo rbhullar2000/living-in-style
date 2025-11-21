@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic"
 
 import { notFound } from "next/navigation"
-import { getPropertyById, properties } from "@/lib/properties"
+import { getPropertyById } from "@/lib/properties"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { PropertyGallery } from "@/components/property-gallery"
@@ -12,12 +12,6 @@ import { BookingForm } from "@/components/booking-form"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Calendar, MapPin, Users, Home, Wifi, Tv, Coffee, Car, Shield, Waves, Mountain, Building } from "lucide-react"
-
-export async function generateStaticParams() {
-  return properties.map((property) => ({
-    id: property.id,
-  }))
-}
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
   const { id } = await Promise.resolve(params)
@@ -128,7 +122,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
             <div className="lg:col-span-1">
               <div className="sticky top-8">
-                <BookingForm price={property.price} pricePeriod={property.pricePeriod} />
+                <BookingForm price={property.price} pricePeriod={property.pricePeriod} /> {/* Added pricePeriod prop */}
               </div>
             </div>
           </div>
