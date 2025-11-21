@@ -12,37 +12,35 @@ import { Input } from "@/components/ui/input" // Make sure you have an Input com
 
 interface BookingFormProps {
   price: number
-  pricePeriod?: "week" | "month"
 }
 
-export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) {
+export function BookingForm({ price }: BookingFormProps) {
   const [checkIn, setCheckIn] = useState<Date>()
   const [checkOut, setCheckOut] = useState<Date>()
   const [guests, setGuests] = useState("1")
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
   const [openCheckIn, setOpenCheckIn] = useState(false)
   const [openCheckOut, setOpenCheckOut] = useState(false)
 
   const nights = checkIn && checkOut ? Math.ceil((checkOut.getTime() - checkIn.getTime()) / (1000 * 60 * 60 * 24)) : 0
 
-  const subtotal = price * nights
-  const serviceFee = Math.round(subtotal * 0.12)
-  const cleaningFee = 150
-  const total = subtotal + serviceFee + cleaningFee
-
   return (
     <Card>
       <CardHeader className="pb-4">
-        <div className="flex items-baseline gap-1">
-          <span className="text-3xl font-bold">${price.toLocaleString()}</span>
-          <span className="text-muted-foreground">/ {pricePeriod}</span>
+        <div className="flex items-end">
+          <span className="text-2xl font-bold">${price.toLocaleString()}</span>
+          <span className="text-muted-foreground"> / month</span>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
         <Input type="text" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
 
         <Input type="email" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+        <Input type="tel" placeholder="Your phone number" value={phone} onChange={(e) => setPhone(e.target.value)} />
 
         <div className="grid grid-cols-2 gap-2">
           {/* ✅ Check-in */}
@@ -147,24 +145,12 @@ export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) 
           </SelectContent>
         </Select>
 
-        <div className="pt-4 border-t text-sm space-y-1">
-          <div className="flex justify-between">
-            <span>Subtotal</span>
-            <span>${subtotal.toLocaleString()}</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Service Fee</span>
-            <span>${serviceFee.toLocaleString()}</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Cleaning Fee</span>
-            <span>${cleaningFee.toLocaleString()}</span>
-          </div>
-          <div className="flex justify-between font-semibold pt-2 border-t">
-            <span>Total</span>
-            <span>${total.toLocaleString()}</span>
-          </div>
-        </div>
+        <textarea
+          placeholder="Message (optional)"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          className="w-full min-h-[100px] px-3 py-2 rounded-md border border-input bg-background text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        />
 
         <Button
           className="w-full mt-4"
@@ -180,10 +166,11 @@ export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) 
               body: JSON.stringify({
                 name,
                 email,
+                phone,
+                message,
                 checkIn: checkIn.toISOString(),
                 checkOut: checkOut.toISOString(),
                 guests,
-                total,
                 price,
               }),
             })
