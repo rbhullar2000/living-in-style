@@ -38,11 +38,6 @@ export default function FifaClientPage() {
 
   const propertyImages = [
     "/Lhermitage_kitchen.JPG",
-    "/Lhermitage_livingroom.JPG",
-    "/Lhermitage_bedroom.JPG",
-    "/Lhermitage_bathroom.JPG",
-    "/Lhermitage_office.JPG",
-    "/Lhermitage_kitchen.JPG",
       "/Lhermitage_entry.jpg",
       "/Lhermitage_bedroom.JPG",
        "/Lhermitage_bathroom.JPG",
