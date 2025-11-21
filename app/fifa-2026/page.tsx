@@ -3,14 +3,15 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Users, Wifi, Car, Building2, Shield, Phone, Mail, MessageCircle } from 'lucide-react'
+import { MapPin, Users, Wifi, Car, Building2, Shield, Mail, MessageCircle, UtensilsCrossed } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { FifaBookingForm } from "@/components/fifa-booking-form"
 
 export const metadata = {
   title: "FIFA 2026 Luxury Accommodation | Downtown Vancouver",
-  description: "30+ night bookings. Walking distance to BC Place. Ideal for media teams, FIFA staff, and corporate sponsors.",
+  description:
+    "30+ night bookings. Walking distance to BC Place. Ideal for media teams, FIFA staff, and corporate sponsors.",
 }
 
 export default function FifaPage() {
@@ -29,104 +30,99 @@ export default function FifaPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
                 Luxury FIFA 2026 Accommodation
               </h1>
-              <p className="text-xl md:text-2xl mb-4 text-blue-100">
-                Downtown Vancouver • 30+ Nights Only
-              </p>
+              <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
-                Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing for media teams, FIFA staff, and corporate sponsors.
+                Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing
+                for media teams, FIFA staff, and corporate sponsors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
                   <a href="#booking">Request Event Pricing</a>
                 </Button>
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
-                  <a href="#property">View Property Details</a> 
+                  <a href="#property">View Property Details</a>
                 </Button>
               </div>
             </div>
           </div>
         </section>
 
-{/* Special Event Pricing Section */}
-<section className="py-16 bg-muted">
-  <div className="container">
-    <div className="max-w-4xl mx-auto">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          FIFA 2026 Event Pricing
-        </h2>
-        <p className="text-muted-foreground text-lg">
-          Premium rates for June &amp; July 2026 tournament dates
-        </p>
-      </div>
+        {/* Special Event Pricing Section */}
+        <section className="py-16 bg-muted">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">FIFA 2026 Event Pricing</h2>
+                <p className="text-muted-foreground text-lg">Premium rates for June &amp; July 2026 tournament dates</p>
+              </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {/* Nightly */}
-        <Card className="border-2 border-primary">
-          <CardHeader>
-            <CardTitle className="text-2xl">Nightly Rate</CardTitle>
-            <CardDescription>Flexible short-term pricing</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="text-4xl font-bold mb-2">$1,200 – $3,000</div>
-            <div className="text-muted-foreground mb-4">per night (30-night minimum)</div>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-green-600" />
-                30-night minimum stay
-              </li>
-              <li className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-green-600" />
-                Rates vary by match schedule &amp; demand
-              </li>
-              <li className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-green-600" />
-                Parking included
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Nightly */}
+                <Card className="border-2 border-primary">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Nightly Rate</CardTitle>
+                    <CardDescription>Flexible short-term pricing</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-4xl font-bold mb-2">$1,200 – $3,000</div>
+                    <div className="text-muted-foreground mb-4">per night (30-night minimum)</div>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-green-600" />
+                        30-night minimum stay
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-green-600" />
+                        Rates vary by match schedule &amp; demand
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-green-600" />
+                        Parking included
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
 
-        {/* Event packages */}
-        <Card className="border-2 border-blue-600">
-          <CardHeader>
-            <CardTitle className="text-2xl">Event Packages</CardTitle>
-            <CardDescription>Best value for 30–60+ day stays</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="text-4xl font-bold mb-2">$30,000 – $60,000</div>
-            <div className="text-muted-foreground mb-4">
-              total for June/July stay (pricing depends on exact dates &amp; length of stay)
+                {/* Event packages */}
+                <Card className="border-2 border-blue-600">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Event Packages</CardTitle>
+                    <CardDescription>Best value for 30–60+ day stays</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-4xl font-bold mb-2">$30,000 – $60,000</div>
+                    <div className="text-muted-foreground mb-4">
+                      total for June/July stay (pricing depends on exact dates &amp; length of stay)
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-green-600" />
+                        Priority for full-tournament &amp; full-month bookings
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-green-600" />
+                        Concierge-style support &amp; corporate invoicing available
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-green-600" />
+                        Flexible payment terms for corporate clients
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
+                <p className="text-sm text-muted-foreground mb-2">
+                  Exact pricing is customized based on dates, number of guests and specific requirements.
+                </p>
+                <p className="font-semibold">
+                  Special consideration for full-tournament bookings &amp; corporate packages.
+                </p>
+              </div>
             </div>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-green-600" />
-                Priority for full-tournament &amp; full-month bookings
-              </li>
-              <li className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-green-600" />
-                Concierge-style support &amp; corporate invoicing available
-              </li>
-              <li className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-green-600" />
-                Flexible payment terms for corporate clients
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-      </div>
-
-      <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
-        <p className="text-sm text-muted-foreground mb-2">
-          Exact pricing is customized based on dates, number of guests and specific requirements.
-        </p>
-        <p className="font-semibold">
-          Special consideration for full-tournament bookings &amp; corporate packages.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+          </div>
+        </section>
 
         {/* Property Details Section */}
         <section id="property" className="py-16">
@@ -204,22 +200,40 @@ export default function FifaPage() {
               <div className="prose prose-lg max-w-none mb-12">
                 <h3 className="text-2xl font-bold mb-4">Perfect for FIFA 2026 Teams & Officials</h3>
                 <p className="text-muted-foreground mb-4">
-                  This exceptional 1-bedroom luxury suite at L'Hermitage Residences offers the ideal base for FIFA World Cup 2026 professionals. Located at 788 Richards Street in the heart of downtown Vancouver, you'll be just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action.
+                  This exceptional 1-bedroom luxury suite at L'Hermitage Residences offers the ideal base for FIFA World
+                  Cup 2026 professionals. Located at 788 Richards Street in the heart of downtown Vancouver, you'll be
+                  just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an open-air balcony perfect for relaxing after match days. With hotel-style amenities including 24-hour concierge, rooftop terrace access, fitness center, and resident lounge, you'll have everything needed for a productive and comfortable extended stay during the tournament.
+                  The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an
+                  open-air balcony perfect for relaxing after match days. With hotel-style amenities including 24-hour
+                  concierge, rooftop terrace access, fitness center, and resident lounge, you'll have everything needed
+                  for a productive and comfortable extended stay during the tournament.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  L'Hermitage provides the perfect blend of luxury accommodation and professional functionality. High-speed WiFi ensures seamless connectivity for media teams and broadcast crews, while the building's prestigious address and white-glove service meet the expectations of FIFA officials, corporate sponsors, and international delegations. 
+                  L'Hermitage provides the perfect blend of luxury accommodation and professional functionality.
+                  High-speed WiFi ensures seamless connectivity for media teams and broadcast crews, while the
+                  building's prestigious address and white-glove service meet the expectations of FIFA officials,
+                  corporate sponsors, and international delegations.
                 </p>
-                 <p className="text-muted-foreground mb-4">
-                   Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering a luxurious and timeless experience. L'Orangerie at L'Hermitage offers seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day.
-                  </p> 
-                 <p className="text-muted-foreground mb-4">
-                   Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure.
-                 </p>
-                 <p className="text-muted-foreground">
-                  The location offers unmatched convenience — walking distance to BC Place, direct metro access, world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre. Whether you're covering matches, coordinating events, or entertaining clients, this residence provides a sophisticated home base in Vancouver's most connected neighborhood. 
+                <p className="text-muted-foreground mb-4">
+                  Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering a
+                  luxurious and timeless experience. L'Orangerie at L'Hermitage offers seasonal cuisine, regional wines,
+                  and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate
+                  bites and premium teas — a perfect indulgence any time of day.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and
+                  conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy
+                  coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of
+                  Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and
+                  leisure.
+                </p>
+                <p className="text-muted-foreground">
+                  The location offers unmatched convenience — walking distance to BC Place, direct metro access,
+                  world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre.
+                  Whether you're covering matches, coordinating events, or entertaining clients, this residence provides
+                  a sophisticated home base in Vancouver's most connected neighborhood.
                 </p>
               </div>
 
@@ -229,8 +243,8 @@ export default function FifaPage() {
                   <Shield className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">24/7 Concierge Service</span>
                 </div>
-                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <UtensilsCrossed className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
@@ -331,27 +345,24 @@ export default function FifaPage() {
               <p className="text-muted-foreground mb-8">
                 Get in touch directly for immediate assistance with your FIFA 2026 booking
               </p>
-              
+
               <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <Mail className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <h3 className="font-semibold mb-2">Email Us</h3>
-                    <a 
-                      href="mailto:info@livinginstyle.ca" 
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
+                    <a href="mailto:info@livinginstyle.ca" className="text-blue-600 dark:text-blue-400 hover:underline">
                       info@livinginstyle.ca
                     </a>
                   </CardContent>
                 </Card>
-                
+
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <MessageCircle className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <h3 className="font-semibold mb-2">WhatsApp</h3>
-                    <a 
-                      href="https://wa.me/17788897964" 
+                    <a
+                      href="https://wa.me/17788897964"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -391,7 +402,12 @@ export default function FifaPage() {
               <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
                 <a href="#booking">Request Pricing Now</a>
               </Button>
-              <Button size="lg" variant="outline" asChild className="border-white text-blue-900 hover:bg-blue-50">
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="border-white text-blue-900 hover:bg-blue-50 bg-transparent"
+              >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
