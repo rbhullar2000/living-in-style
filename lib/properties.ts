@@ -3,7 +3,7 @@ export interface Review {
   rating: number
   comment: string
 }
-
+ 
 export interface Property {
   id: string
   title: string
