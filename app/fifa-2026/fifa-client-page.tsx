@@ -26,6 +26,10 @@ import {
   ChevronLeft,
   ChevronRight,
   Grid,
+  Sofa,
+  Mountain,
+  Snowflake,
+  Dumbbell,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -38,15 +42,15 @@ export default function FifaClientPage() {
 
   const propertyImages = [
     "/Lhermitage_kitchen.JPG",
-      "/Lhermitage_entry.jpg",
-      "/Lhermitage_bedroom.JPG",
-       "/Lhermitage_bathroom.JPG",
-      "/Lhermitage_livingroom.JPG",
-      "/Lhermitage_office.JPG",
-      "/Lhermitage_building.jpg",
-      "/Lhermitage_lounge.jpg",
-      "/Lhermitage_boardroom.jpg",
-      "/Lhermitage_gym.jpg",
+    "/Lhermitage_entry.jpg",
+    "/Lhermitage_bedroom.JPG",
+    "/Lhermitage_bathroom.JPG",
+    "/Lhermitage_livingroom.JPG",
+    "/Lhermitage_office.JPG",
+    "/Lhermitage_building.jpg",
+    "/Lhermitage_lounge.jpg",
+    "/Lhermitage_boardroom.jpg",
+    "/Lhermitage_gym.jpg",
   ]
 
   const nextImage = () => {
@@ -191,7 +195,7 @@ export default function FifaClientPage() {
                   {/* Top right - Living room */}
                   <div className="md:col-span-2">
                     <Image
-                      src="/Lhermitage_entry.jpg" 
+                      src="/Lhermitage_entry.jpg"
                       alt="L'Hermitage Entry"
                       width={400}
                       height={300}
@@ -348,15 +352,10 @@ export default function FifaClientPage() {
 
               {/* Amenities Grid */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-                
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Sofa className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fully Furnished</span>
                 </div>
-                
-                
-                
-                
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Shield className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">24/7 Concierge Service</span>
@@ -366,11 +365,11 @@ export default function FifaClientPage() {
                   <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Rooftop Terrace</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Users className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Dumbbell className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fitness Centre</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
@@ -382,7 +381,7 @@ export default function FifaClientPage() {
                   <span className="text-sm">Parking Included</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Snowflake className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Central Air Conditioning</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
@@ -528,7 +527,7 @@ export default function FifaClientPage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white text-blue-900 hover:bg-blue-50"
+                className="border-white text-blue-900 hover:bg-blue-50 bg-transparent"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
