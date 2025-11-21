@@ -1,17 +1,17 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { type NextRequest, NextResponse } from "next/server"
 
-export const runtime = 'nodejs'
+export const runtime = "nodejs"
 
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json()
-    const { name, email, subject, message } = data
+    const { name, email, phone, subject, checkIn, checkOut, guests, propertyInterest, message } = data
 
-    if (!name || !email || !subject || !message) {
-      return NextResponse.json({ success: false, error: 'Missing contact fields' }, { status: 400 })
+    if (!name || !email || !phone || !subject || !message) {
+      return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 })
     }
 
-    const nodemailer = await import('nodemailer')
+    const nodemailer = await import("nodemailer")
 
     const transporter = nodemailer.default.createTransport({
       host: process.env.SMTP_HOST,
@@ -26,8 +26,8 @@ export async function POST(req: NextRequest) {
     const recipient = process.env.EMAIL_TO || process.env.SMTP_USER
 
     if (!recipient) {
-      console.error('EMAIL_TO is missing in environment variables.')
-      return NextResponse.json({ success: false, error: 'Recipient email not set.' }, { status: 500 })
+      console.error("EMAIL_TO is missing in environment variables.")
+      return NextResponse.json({ success: false, error: "Recipient email not set." }, { status: 500 })
     }
 
     const mailOptions = {
@@ -38,7 +38,13 @@ export async function POST(req: NextRequest) {
 
 Name: ${name}
 Email: ${email}
+Phone: ${phone}
 Subject: ${subject}
+
+${checkIn ? `Check-in Date: ${checkIn}` : ""}
+${checkOut ? `Check-out Date: ${checkOut}` : ""}
+${guests ? `Number of Guests: ${guests}` : ""}
+${propertyInterest ? `Property of Interest: ${propertyInterest}` : ""}
 
 Message:
 ${message}
@@ -50,7 +56,7 @@ Please follow up with the client.`,
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
-    console.error('Contact email failed:', error)
-    return NextResponse.json({ success: false, error: 'Email failed to send.' }, { status: 500 })
+    console.error("Contact email failed:", error)
+    return NextResponse.json({ success: false, error: "Email failed to send." }, { status: 500 })
   }
 }
