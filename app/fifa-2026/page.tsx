@@ -229,6 +229,10 @@ export default function FifaPage() {
                   <Shield className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">24/7 Concierge Service</span>
                 </div>
+                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</span>
+                </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Rooftop Terrace</span>
