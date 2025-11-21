@@ -349,6 +349,10 @@ export default function FifaClientPage() {
               {/* Amenities Grid */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Users className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">Fitness Centre</span>
+                </div>
+                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Shield className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">24/7 Concierge Service</span>
                 </div>
@@ -359,10 +363,6 @@ export default function FifaClientPage() {
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Rooftop Terrace</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Users className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Fitness Centre</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Wifi className="h-5 w-5 text-primary flex-shrink-0" />
