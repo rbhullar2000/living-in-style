@@ -38,26 +38,53 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
   const getAmenityIcon = (amenity: string, index: number) => {
     const a = amenity.toLowerCase()
-    if (a.includes("furnished")) return Sofa
-    if (a.includes("wifi")) return Wifi
-    if (a.includes("tv")) return Tv
-    if (a.includes("kitchen") || a.includes("gourmet")) return CookingPot // Using CookingPot for kitchen amenities
-    if (a.includes("parking")) return Car
-    if (a.includes("security") || a.includes("doorman") || a.includes("concierge")) return Shield
-    if (a.includes("pool")) return Waves
-    if (a.includes("mountain") || a.includes("deck") || a.includes("terrace") || a.includes("rooftop")) return Mountain
-    if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Dumbbell
-    if (a.includes("air") || a.includes("conditioning") || a.includes("ac")) return Snowflake
-    if (a.includes("washer") || a.includes("laundry")) return Home
+
+    // Dining and food-related
     if (
+      a.includes("orangerie") ||
       a.includes("café") ||
       a.includes("cafe") ||
       a.includes("restaurant") ||
-      a.includes("orangerie") ||
       a.includes("tim hortons") ||
-      a.includes("iga")
+      a.includes("iga") ||
+      a.includes("medina")
     )
       return Utensils
+
+    // Furniture and furnishings
+    if (a.includes("furnished")) return Sofa
+
+    // Internet
+    if (a.includes("wifi")) return Wifi
+
+    // Television
+    if (a.includes("tv") || a.includes("television")) return Tv
+
+    // Kitchen
+    if (a.includes("kitchen") || a.includes("gourmet")) return CookingPot
+
+    // Parking
+    if (a.includes("parking")) return Car
+
+    // Security and services
+    if (a.includes("security") || a.includes("doorman") || a.includes("concierge")) return Shield
+
+    // Pool
+    if (a.includes("pool")) return Waves
+
+    // Outdoor spaces
+    if (a.includes("mountain") || a.includes("deck") || a.includes("terrace") || a.includes("rooftop")) return Mountain
+
+    // Fitness
+    if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Dumbbell
+
+    // Climate control
+    if (a.includes("air") || a.includes("conditioning") || a.includes("ac")) return Snowflake
+
+    // Laundry
+    if (a.includes("washer") || a.includes("laundry") || a.includes("dryer")) return Home
+
+    // Default fallback icons
     const icons = [Wifi, Tv, Coffee, Home, Users, Car, Calendar, Shield, Waves, Mountain]
     return icons[index % icons.length]
   }
