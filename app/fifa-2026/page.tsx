@@ -134,33 +134,65 @@ export default function FifaPage() {
               </div>
 
               {/* Property Images */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-                <div className="md:col-span-2 lg:col-span-2 row-span-2">
+              <div className="grid md:grid-cols-5 gap-4 mb-12">
+                {/* Large main image - Kitchen */}
+                <div className="md:col-span-3 md:row-span-2">
                   <Image
-                    src="/Lhermitage_livingroom.JPG"
-                    alt="L'Hermitage Living Room"
+                    src="/lhermitage_kitchen.jpg"
+                    alt="L'Hermitage Kitchen"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
-                <div>
+
+                {/* Top right - Living room */}
+                <div className="md:col-span-2">
                   <Image
-                    src="/Lhermitage_kitchen.JPG"
-                    alt="L'Hermitage Kitchen"
+                    src="/lhermitage_livingroom.jpg"
+                    alt="L'Hermitage Living Room"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
-                <div>
+
+                {/* Top right second - Bedroom */}
+                <div className="md:col-span-2">
                   <Image
-                    src="/Lhermitage_bedroom.JPG"
+                    src="/lhermitage_bedroom.jpg"
                     alt="L'Hermitage Bedroom"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover rounded-lg"
                   />
+                </div>
+
+                {/* Bottom right - Bathroom */}
+                <div className="md:col-span-2">
+                  <Image
+                    src="/lhermitage_bathroom.jpg"
+                    alt="L'Hermitage Bathroom"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+
+                {/* Bottom right second - Office with View All Photos overlay */}
+                <div className="md:col-span-2 relative group">
+                  <Image
+                    src="/lhermitage_office.jpg"
+                    alt="L'Hermitage Office"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center">
+                    <Button variant="secondary" size="lg" className="font-semibold">
+                      View All Photos
+                    </Button>
+                  </div>
                 </div>
               </div>
 
