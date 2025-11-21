@@ -54,14 +54,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     // Furniture and furnishings
     if (a.includes("furnished")) return Sofa
 
+    if (a.includes("kitchen") || a.includes("gourmet")) return Building2
+
     // Internet
     if (a.includes("wifi")) return Wifi
 
-    // Television
-    if (a.includes("tv") || a.includes("television")) return Tv
-
-    // Kitchen
-    if (a.includes("kitchen") || a.includes("gourmet")) return Building2
+    // Television - only match if it's primarily about TV (starts with it or is standalone)
+    if (a.startsWith("tv") || a.startsWith("television") || a === "tv" || a === "television") return Tv
 
     // Parking
     if (a.includes("parking")) return Car
