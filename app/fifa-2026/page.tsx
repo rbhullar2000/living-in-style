@@ -138,7 +138,7 @@ export default function FifaPage() {
                 {/* Large main image - Kitchen */}
                 <div className="md:col-span-3 md:row-span-2">
                   <Image
-                    src="/lhermitage_kitchen.jpg"
+                    src="/Lhermitage_kitchen.JPG"
                     alt="L'Hermitage Kitchen"
                     width={800}
                     height={600}
@@ -149,7 +149,7 @@ export default function FifaPage() {
                 {/* Top right - Living room */}
                 <div className="md:col-span-2">
                   <Image
-                    src="/lhermitage_livingroom.jpg"
+                    src="/Lhermitage_livingroom.JPG"
                     alt="L'Hermitage Living Room"
                     width={400}
                     height={300}
@@ -160,7 +160,7 @@ export default function FifaPage() {
                 {/* Top right second - Bedroom */}
                 <div className="md:col-span-2">
                   <Image
-                    src="/lhermitage_bedroom.jpg"
+                    src="/Lhermitage_bedroom.JPG"
                     alt="L'Hermitage Bedroom"
                     width={400}
                     height={300}
@@ -171,7 +171,7 @@ export default function FifaPage() {
                 {/* Bottom right - Bathroom */}
                 <div className="md:col-span-2">
                   <Image
-                    src="/lhermitage_bathroom.jpg"
+                    src="/Lhermitage_bathroom.JPG"
                     alt="L'Hermitage Bathroom"
                     width={400}
                     height={300}
@@ -182,7 +182,7 @@ export default function FifaPage() {
                 {/* Bottom right second - Office with View All Photos overlay */}
                 <div className="md:col-span-2 relative group">
                   <Image
-                    src="/lhermitage_office.jpg"
+                    src="/Lhermitage_office.JPG"
                     alt="L'Hermitage Office"
                     width={400}
                     height={300}
