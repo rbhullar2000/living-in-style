@@ -28,6 +28,7 @@ import {
   Dumbbell,
   Snowflake,
   Building2,
+  Sparkles,
 } from "lucide-react"
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
@@ -39,7 +40,6 @@ export default async function PropertyPage({ params }: { params: { id: string } 
   const getAmenityIcon = (amenity: string, index: number) => {
     const a = amenity.toLowerCase()
 
-    // Dining and food-related
     if (
       a.includes("orangerie") ||
       a.includes("café") ||
@@ -47,14 +47,19 @@ export default async function PropertyPage({ params }: { params: { id: string } 
       a.includes("restaurant") ||
       a.includes("tim hortons") ||
       a.includes("iga") ||
-      a.includes("medina")
+      a.includes("medina") ||
+      a.includes("botanist") ||
+      a.includes("bar") ||
+      a.includes("lounge")
     )
       return UtensilsCrossed
+
+    if (a.includes("spa")) return Sparkles
 
     // Furniture and furnishings
     if (a.includes("furnished")) return Sofa
 
-    if (a.includes("kitchen") || a.includes("gourmet")) return Building2
+    if (a.includes("kitchen") || a.includes("gourmet") || a.includes("appliances")) return Building2
 
     // Internet
     if (a.includes("wifi")) return Wifi
@@ -71,8 +76,16 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     // Pool
     if (a.includes("pool")) return Waves
 
-    // Outdoor spaces
-    if (a.includes("mountain") || a.includes("deck") || a.includes("terrace") || a.includes("rooftop")) return Mountain
+    if (
+      a.includes("mountain") ||
+      a.includes("deck") ||
+      a.includes("terrace") ||
+      a.includes("rooftop") ||
+      a.includes("balcony") ||
+      a.includes("patio") ||
+      a.includes("fire pit")
+    )
+      return Mountain
 
     // Fitness
     if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Dumbbell
@@ -82,6 +95,8 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
     // Laundry
     if (a.includes("washer") || a.includes("laundry") || a.includes("dryer")) return Home
+
+    if (a.includes("floor") || a.includes("ceiling") || a.includes("hardwood") || a.includes("marble")) return Building2
 
     // Default fallback icons
     const icons = [Wifi, Tv, Coffee, Home, Users, Car, Calendar, Shield, Waves, Mountain]
