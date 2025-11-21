@@ -39,7 +39,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "This elegant residence at L'Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. <p> The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining. Whether you're preparing dinner in the gourmet kitchen or enjoying a quiet morning coffee on the balcony, this suite provides an elevated living experience. <p> Residents enjoy exclusive access to L'Hermitage Hotel's renowned amenities, including a fitness centre, a beautifully appointed library, an elegant resident lounge, and a tranquil rooftop garden terrace — perfect for reading, socializing, or simply unwinding above the city. The hotel's 24-hour concierge and professional staff ensure every detail is taken care of, offering true peace of mind. <p> Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering a luxurious and timeless experience. L'Orangerie at L'Hermitage offers seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day. <p> Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure.",
+      "This elegant residence at L'Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. <p> The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining. Whether you're preparing dinner in the gourmet kitchen or enjoying a quiet morning coffee on the balcony, this suite provides an elevated living experience. <p> Residents enjoy exclusive access to L'Hermitage Hotel's renowned amenities, including a fitness centre, a beautifully appointed library, an elegant resident lounge, and a tranquil rooftop garden terrace — perfect for reading, socializing, or simply unwinding above the city. The hotel's 24-hour concierge and professional staff ensure every detail is taken care of, offering true peace of mind. <p> Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. L'Orangerie at L'Hermitage offers signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day. <p> Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure.",
     amenities: [
       "24/7 Concierge Service",
       "L'Orangerie at L'Hermitage",
@@ -59,16 +59,16 @@ export const properties: Property[] = [
     ],
     availability: "Located In Heart Of Downtown",
     images: [
-      "/Lhermitage_kitchen.JPG?height=600&width=800&text=Modern+Condo+Kitchen",
-      "/Lhermitage_livingroom.JPG?height=600&width=800&text=Modern+Condo+Living+Room",
-      "/Lhermitage_bedroom.JPG?height=600&width=800&text=Modern+Condo+Bedroom",
-      "/Lhermitage_bathroom.JPG?height=600&width=800&text=Modern+Condo+Bathroom",
-      "/Lhermitage_office.JPG?height=600&width=800&text=Modern+Condo+Office",
-      "/Lhermitage_building.JPG?height=600&width=800&text=Building+Exterior",
-      "/Lhermitage_boardroom.JPG?height=600&width=800&text=Professional+Boardroom",
-      "/Lhermitage_gym.JPG?height=600&width=800&text=Fitness+Center",
-      "/Lhermitage_entry.JPG?height=600&width=800&text=Elegant+Entrance",
-      "/Lhermitage_lounge.JPG?height=600&width=800&text=Resident+Lounge",
+      "/lhermitage_kitchen.jpg?height=600&width=800&text=Modern+Condo+Kitchen",
+      "/lhermitage_livingroom.jpg?height=600&width=800&text=Modern+Condo+Living+Room",
+      "/lhermitage_bedroom.jpg?height=600&width=800&text=Modern+Condo+Bedroom",
+      "/lhermitage_bathroom.jpg?height=600&width=800&text=Modern+Condo+Bathroom",
+      "/lhermitage_office.jpg?height=600&width=800&text=Modern+Condo+Office",
+      "/lhermitage_building.jpg?height=600&width=800&text=Building+Exterior",
+      "/lhermitage_boardroom.jpg?height=600&width=800&text=Professional+Boardroom",
+      "/lhermitage_gym.jpg?height=600&width=800&text=Fitness+Center",
+      "/lhermitage_entry.jpg?height=600&width=800&text=Elegant+Entrance",
+      "/lhermitage_lounge.jpg?height=600&width=800&text=Resident+Lounge",
     ],
     featured: true,
     reviewsList: [
@@ -161,7 +161,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home's elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building's calm and professional atmosphere. <p> Situated within one of Vancouver's most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown's business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver's most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and families looking for a serene yet central Vancouver stay.",
+      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home's elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building's calm and professional atmosphere. <p> Situated within one of Vancouver's most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown's business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver's most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and families.",
     amenities: [
       "Gourmet kitchen with Gaggenau appliances",
       "Floor-to-ceiling windows",
@@ -176,10 +176,10 @@ export const properties: Property[] = [
     ],
     availability: "Blocks from Stanley Park",
     images: [
-      "/coalHarbour_livingroom.jpg?height=600&width=800&text=Coal_Harbour+Living+Room",
-      "/coalHarbour_kitchen.jpg?height=600&width=800&text=Coal_Harbour+Kitchen",
-      "/coalHarbour_washroom.jpg?height=600&width=800&text=Coal_Harbour+Washroom",
-      "/coalHarbour_building.jpg?height=600&width=800&text=Coal_Harbour+Building",
+      "/coalharbour_livingroom.jpg?height=600&width=800&text=Coal_Harbour+Living+Room",
+      "/coalharbour_kitchen.jpg?height=600&width=800&text=Coal_Harbour+Kitchen",
+      "/coalharbour_washroom.jpg?height=600&width=800&text=Coal_Harbour+Washroom",
+      "/coalharbour_building.jpg?height=600&width=800&text=Coal_Harbour+Building",
     ],
     featured: true,
     reviewsList: [
