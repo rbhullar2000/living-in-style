@@ -167,7 +167,7 @@ export const properties: Property[] = [
       "Floor-to-ceiling windows",
       "9-foot ceilings",
       "Brushed hardwood floors",
-      "Spa-inspired marble and glass bathrooms",
+      "Spa-inspired marble and glass bathrooms", 
       "Private balcony with stunning views",
       "24/7 concierge service",
       "Secure underground parking",
