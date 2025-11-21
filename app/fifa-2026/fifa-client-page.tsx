@@ -38,7 +38,7 @@ export default function FifaClientPage() {
 
   const propertyImages = [
     "/Lhermitage_kitchen.JPG",
-      "/Lhermitage_entry.jpg",
+      "/Lhermitage_entry.JPG",
       "/Lhermitage_bedroom.JPG",
        "/Lhermitage_bathroom.JPG",
       "/Lhermitage_livingroom.JPG",
@@ -191,7 +191,7 @@ export default function FifaClientPage() {
                   {/* Top right - Living room */}
                   <div className="md:col-span-2">
                     <Image
-                      src="/"/Lhermitage_entry.jpg"
+                      src="/Lhermitage_entry.JPG"
                       alt="L'Hermitage Entry"
                       width={400}
                       height={300}
