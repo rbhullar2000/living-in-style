@@ -11,7 +11,21 @@ import { PropertyMap } from "@/components/property-map"
 import { BookingForm } from "@/components/booking-form"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Calendar, MapPin, Users, Home, Wifi, Tv, Coffee, Car, Shield, Waves, Mountain, Building } from "lucide-react"
+import {
+  Calendar,
+  MapPin,
+  Users,
+  Home,
+  Wifi,
+  Tv,
+  Coffee,
+  Car,
+  Shield,
+  Waves,
+  Mountain,
+  Building,
+  UtensilsCrossed,
+} from "lucide-react"
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
   const { id } = await Promise.resolve(params)
@@ -25,11 +39,20 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     if (a.includes("tv")) return Tv
     if (a.includes("kitchen")) return Coffee
     if (a.includes("parking")) return Car
-    if (a.includes("security") || a.includes("doorman")) return Shield
+    if (a.includes("security") || a.includes("doorman") || a.includes("concierge")) return Shield
     if (a.includes("pool")) return Waves
-    if (a.includes("mountain") || a.includes("deck")) return Mountain
+    if (a.includes("mountain") || a.includes("deck") || a.includes("terrace") || a.includes("rooftop")) return Mountain
     if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Building
     if (a.includes("washer") || a.includes("laundry")) return Home
+    if (
+      a.includes("café") ||
+      a.includes("cafe") ||
+      a.includes("restaurant") ||
+      a.includes("orangerie") ||
+      a.includes("tim hortons") ||
+      a.includes("iga")
+    )
+      return UtensilsCrossed
     const icons = [Wifi, Tv, Coffee, Home, Users, Car, Calendar, Shield, Waves, Mountain]
     return icons[index % icons.length]
   }
@@ -93,13 +116,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
               <div className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Amenities</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {property.amenities.map((a, i) => {
                     const Icon = getAmenityIcon(a, i)
                     return (
-                      <div key={i} className="flex items-center">
-                        <Icon className="h-5 w-5 mr-3" />
-                        <span>{a}</span>
+                      <div key={i} className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                        <Icon className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="text-sm">{a}</span>
                       </div>
                     )
                   })}
