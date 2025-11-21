@@ -23,11 +23,11 @@ import {
   Shield,
   Waves,
   Mountain,
-  Utensils,
+  UtensilsCrossed,
   Sofa,
   Dumbbell,
   Snowflake,
-  CookingPot,
+  Building2,
 } from "lucide-react"
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
@@ -49,7 +49,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
       a.includes("iga") ||
       a.includes("medina")
     )
-      return Utensils
+      return UtensilsCrossed
 
     // Furniture and furnishings
     if (a.includes("furnished")) return Sofa
@@ -61,7 +61,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     if (a.includes("tv") || a.includes("television")) return Tv
 
     // Kitchen
-    if (a.includes("kitchen") || a.includes("gourmet")) return CookingPot
+    if (a.includes("kitchen") || a.includes("gourmet")) return Building2
 
     // Parking
     if (a.includes("parking")) return Car
