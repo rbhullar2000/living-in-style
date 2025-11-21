@@ -1,7 +1,7 @@
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic"
 
 import { notFound } from "next/navigation"
-import { getPropertyById } from "@/lib/properties"
+import { getPropertyById, properties } from "@/lib/properties"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { PropertyGallery } from "@/components/property-gallery"
@@ -11,10 +11,13 @@ import { PropertyMap } from "@/components/property-map"
 import { BookingForm } from "@/components/booking-form"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import {
-  Calendar, MapPin, Users, Home, Wifi, Tv, Coffee, Car,
-  Shield, Waves, Mountain, Building
-} from "lucide-react"
+import { Calendar, MapPin, Users, Home, Wifi, Tv, Coffee, Car, Shield, Waves, Mountain, Building } from "lucide-react"
+
+export async function generateStaticParams() {
+  return properties.map((property) => ({
+    id: property.id,
+  }))
+}
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
   const { id } = await Promise.resolve(params)
@@ -85,12 +88,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
               <div className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">About this property</h2>
                 <div className="text-muted-foreground whitespace-pre-line">
-  {property.description
-    .replace(/<p>\s*/g, "\n\n")   // turn <p> into paragraph breaks
-    .replace(/<\/p>/g, "")        // remove </p>
-    .replace(/<br\s*\/?>/g, "\n") // support <br>
-  }
-</div>
+                  {
+                    property.description
+                      .replace(/<p>\s*/g, "\n\n") // turn <p> into paragraph breaks
+                      .replace(/<\/p>/g, "") // remove </p>
+                      .replace(/<br\s*\/?>/g, "\n") // support <br>
+                  }
+                </div>
               </div>
 
               <div className="mb-8">
@@ -120,13 +124,11 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                 <PropertyReviews property={property} />
               </div>
               */}
-
-             
             </div>
 
             <div className="lg:col-span-1">
               <div className="sticky top-8">
-                <BookingForm price={property.price} />
+                <BookingForm price={property.price} pricePeriod={property.pricePeriod} />
               </div>
             </div>
           </div>
