@@ -23,8 +23,10 @@ import {
   Shield,
   Waves,
   Mountain,
-  Building,
   UtensilsCrossed,
+  Sofa,
+  Dumbbell,
+  Snowflake,
 } from "lucide-react"
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
@@ -35,6 +37,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
   const getAmenityIcon = (amenity: string, index: number) => {
     const a = amenity.toLowerCase()
+    if (a.includes("furnished")) return Sofa
     if (a.includes("wifi")) return Wifi
     if (a.includes("tv")) return Tv
     if (a.includes("kitchen")) return Coffee
@@ -42,7 +45,8 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     if (a.includes("security") || a.includes("doorman") || a.includes("concierge")) return Shield
     if (a.includes("pool")) return Waves
     if (a.includes("mountain") || a.includes("deck") || a.includes("terrace") || a.includes("rooftop")) return Mountain
-    if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Building
+    if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Dumbbell
+    if (a.includes("air") || a.includes("conditioning") || a.includes("ac")) return Snowflake
     if (a.includes("washer") || a.includes("laundry")) return Home
     if (
       a.includes("café") ||
