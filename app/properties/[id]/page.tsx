@@ -27,7 +27,7 @@ import {
   Sofa,
   Dumbbell,
   Snowflake,
-  ChefHat,
+  CookingPot,
 } from "lucide-react"
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
@@ -41,7 +41,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     if (a.includes("furnished")) return Sofa
     if (a.includes("wifi")) return Wifi
     if (a.includes("tv")) return Tv
-    if (a.includes("kitchen") || a.includes("gourmet")) return ChefHat
+    if (a.includes("kitchen") || a.includes("gourmet")) return CookingPot // Using CookingPot for kitchen amenities
     if (a.includes("parking")) return Car
     if (a.includes("security") || a.includes("doorman") || a.includes("concierge")) return Shield
     if (a.includes("pool")) return Waves
