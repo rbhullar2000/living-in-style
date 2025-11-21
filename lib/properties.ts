@@ -63,6 +63,11 @@ export const properties: Property[] = [
       "/Lhermitage_bedroom.JPG?height=600&width=800&text=Modern+Condo+Bedroom",
       "/Lhermitage_bathroom.JPG?height=600&width=800&text=Modern+Condo+Bathroom",
       "/Lhermitage_office.JPG?height=600&width=800&text=Modern+Condo+Office",
+      "/Lhermitage_building.JPG?height=600&width=800&text=Modern+Condo+Building",
+      "/Lhermitage_entry.JPG?height=600&width=800&text=Modern+Condo+Entry",
+      "/Lhermitage_lounge.JPG?height=600&width=800&text=Modern+Condo+Lounge",
+      "/Lhermitage_boardroom.JPG?height=600&width=800&text=Modern+Condo+Boardroom",
+      "/Lhermitage_gym.JPG?height=600&width=800&text=Modern+Condo+Gym",
     ],
     featured: true,
     reviewsList: [
