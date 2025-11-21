@@ -213,8 +213,11 @@ export default function FifaPage() {
                   L'Hermitage provides the perfect blend of luxury accommodation and professional functionality. High-speed WiFi ensures seamless connectivity for media teams and broadcast crews, while the building's prestigious address and white-glove service meet the expectations of FIFA officials, corporate sponsors, and international delegations. L'Orangerie at L'Hermitage which offers seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day.
                 </p>
                 <p className="text-muted-foreground">
-                  The location offers unmatched convenience — walking distance to BC Place, direct metro access, world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre. Whether you're covering matches, coordinating events, or entertaining clients, this residence provides a sophisticated home base in Vancouver's most connected neighborhood. The building also includes Café Medina, IGA Grocery, and a Tim Hortons.
+                  The location offers unmatched convenience — walking distance to BC Place, direct metro access, world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre. Whether you're covering matches, coordinating events, or entertaining clients, this residence provides a sophisticated home base in Vancouver's most connected neighborhood. 
                 </p>
+                 <p className="text-muted-foreground">
+                   Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure.
+</p>
               </div>
 
               {/* Amenities Grid */}
