@@ -3,7 +3,7 @@ export interface Review {
   rating: number
   comment: string
 }
- 
+
 export interface Property {
   id: string
   title: string
@@ -62,7 +62,7 @@ export const properties: Property[] = [
       "/Lhermitage_kitchen.JPG",
       "/Lhermitage_entry.jpg",
       "/Lhermitage_bedroom.JPG",
-       "/Lhermitage_bathroom.JPG",
+      "/Lhermitage_bathroom.JPG",
       "/Lhermitage_livingroom.JPG",
       "/Lhermitage_office.JPG",
       "/Lhermitage_building.jpg",
