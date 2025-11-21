@@ -9,7 +9,7 @@ interface PropertyCardProps {
   title: string
   location: string
   price: number
-  priceUnit?: "month" | "week"
+  pricePeriod?: "week" | "month"
   image: string
   rating?: number
   reviews?: number
@@ -24,7 +24,7 @@ export function PropertyCard({
   title,
   location,
   price,
-  priceUnit = "month",
+  pricePeriod = "month",
   image,
   rating,
   reviews,
@@ -68,7 +68,7 @@ export function PropertyCard({
         <CardFooter className="p-4 pt-0 flex items-center justify-between">
           <div className="font-semibold">
             ${price.toLocaleString()}
-            <span className="text-muted-foreground font-normal">/{priceUnit}</span>
+            <span className="text-muted-foreground font-normal">/{pricePeriod}</span>
           </div>
           {!available && (
             <Badge variant="outline" className="text-muted-foreground">
