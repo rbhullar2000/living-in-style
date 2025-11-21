@@ -5,14 +5,52 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Users, Wifi, Car, Building2, Shield, Mail, MessageCircle, UtensilsCrossed } from "lucide-react"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import {
+  MapPin,
+  Users,
+  Wifi,
+  Car,
+  Building2,
+  Shield,
+  Mail,
+  MessageCircle,
+  UtensilsCrossed,
+  ChevronLeft,
+  ChevronRight,
+  Grid,
+} from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { FifaBookingForm } from "@/components/fifa-booking-form"
-import { useState } from "react" // Added useState for gallery state
+import { useState } from "react"
 
 export default function FifaClientPage() {
   const [showAllPhotos, setShowAllPhotos] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  const propertyImages = [
+    "/Lhermitage_kitchen.JPG",
+    "/Lhermitage_livingroom.JPG",
+    "/Lhermitage_bedroom.JPG",
+    "/Lhermitage_bathroom.JPG",
+    "/Lhermitage_office.JPG",
+  ]
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % propertyImages.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + propertyImages.length) % propertyImages.length)
+  }
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -132,80 +170,103 @@ export default function FifaClientPage() {
                 <p className="text-xl text-muted-foreground">788 Richards Street, Downtown Vancouver</p>
               </div>
 
-              {/* Photo Gallery */}
-              <div className="grid md:grid-cols-6 gap-4 mb-12">
-                {/* Main large image - Kitchen */}
-                <div className="md:col-span-4 md:row-span-2">
-                  <Image
-                    src="/Lhermitage_kitchen.JPG"
-                    alt="L'Hermitage Kitchen"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
+              <div className="relative mb-12">
+                <div className="grid md:grid-cols-6 gap-4">
+                  {/* Main large image - Kitchen */}
+                  <div className="md:col-span-4 md:row-span-2">
+                    <Image
+                      src="/Lhermitage_kitchen.JPG"
+                      alt="L'Hermitage Kitchen"
+                      width={800}
+                      height={600}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
 
-                {/* Top right - Living room */}
-                <div className="md:col-span-2">
-                  <Image
-                    src="/Lhermitage_livingroom.JPG"
-                    alt="L'Hermitage Living Room"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
+                  {/* Top right - Living room */}
+                  <div className="md:col-span-2">
+                    <Image
+                      src="/Lhermitage_livingroom.JPG"
+                      alt="L'Hermitage Living Room"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
 
-                {/* Top right second - Bedroom */}
-                <div className="md:col-span-2">
-                  <Image
-                    src="/Lhermitage_bedroom.JPG"
-                    alt="L'Hermitage Bedroom"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-
-                {showAllPhotos && (
-                  <>
-                    {/* Bottom right - Bathroom */}
-                    <div className="md:col-span-2">
-                      <Image
-                        src="/Lhermitage_bathroom.JPG"
-                        alt="L'Hermitage Bathroom"
-                        width={400}
-                        height={300}
-                        className="w-full h-full object-cover rounded-lg"
-                      />
+                  {/* Bottom right - Bedroom with View All Photos button overlay */}
+                  <div className="md:col-span-2 relative">
+                    <Image
+                      src="/Lhermitage_bedroom.JPG"
+                      alt="L'Hermitage Bedroom"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="secondary" className="gap-2">
+                            <Grid className="h-4 w-4" />
+                            View All Photos
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-5xl">
+                          <DialogHeader>
+                            <DialogTitle>L'Hermitage Property Photos</DialogTitle>
+                            <DialogDescription>Browse all photos of this luxury suite</DialogDescription>
+                          </DialogHeader>
+                          <div className="relative h-[60vh] mt-4">
+                            <Image
+                              src={propertyImages[currentImageIndex] || "/placeholder.svg"}
+                              alt={`Property image ${currentImageIndex + 1}`}
+                              fill
+                              className="object-contain"
+                            />
+                            <Button
+                              variant="outline"
+                              size="icon"
+                              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-background/80"
+                              onClick={prevImage}
+                            >
+                              <ChevronLeft className="h-4 w-4" />
+                              <span className="sr-only">Previous image</span>
+                            </Button>
+                            <Button
+                              variant="outline"
+                              size="icon"
+                              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-background/80"
+                              onClick={nextImage}
+                            >
+                              <ChevronRight className="h-4 w-4" />
+                              <span className="sr-only">Next image</span>
+                            </Button>
+                            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-background/80 px-2 py-1 rounded-md text-sm">
+                              {currentImageIndex + 1} / {propertyImages.length}
+                            </div>
+                          </div>
+                          <div className="grid grid-cols-5 gap-2 mt-4">
+                            {propertyImages.map((image, index) => (
+                              <button
+                                key={index}
+                                className={`relative h-20 ${index === currentImageIndex ? "ring-2 ring-primary" : ""}`}
+                                onClick={() => setCurrentImageIndex(index)}
+                              >
+                                <Image
+                                  src={image || "/placeholder.svg"}
+                                  alt={`Property thumbnail ${index + 1}`}
+                                  fill
+                                  className="object-cover rounded"
+                                />
+                              </button>
+                            ))}
+                          </div>
+                        </DialogContent>
+                      </Dialog>
                     </div>
-
-                    {/* Bottom right second - Office */}
-                    <div className="md:col-span-2">
-                      <Image
-                        src="/Lhermitage_office.JPG"
-                        alt="L'Hermitage Office"
-                        width={400}
-                        height={300}
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                    </div>
-                  </>
-                )}
+                  </div>
+                </div>
               </div>
-
-              {!showAllPhotos && (
-                <div className="flex justify-center mb-12">
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    className="font-semibold"
-                    onClick={() => setShowAllPhotos(true)}
-                  >
-                    View All Photos
-                  </Button>
-                </div>
-              )}
 
               {/* Key Features */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
