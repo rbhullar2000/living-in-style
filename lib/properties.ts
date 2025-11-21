@@ -283,7 +283,7 @@ export const properties: Property[] = [
       "Fitness center",
       "Resident lounge",
     ],
-    availability: "Taking bookings for Summer 2026",
+    availability: "Taking bookings for Spring 2026",
     images: [
       "/waterstreet_view.jpg?height=600&width=800&text=Water+Street+View",
       "/waterstreet_balcony.jpg?height=600&width=800&text=Water+Street+Balcony",
