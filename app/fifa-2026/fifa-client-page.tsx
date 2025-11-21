@@ -191,8 +191,8 @@ export default function FifaClientPage() {
                   {/* Top right - Living room */}
                   <div className="md:col-span-2">
                     <Image
-                      src="/Lhermitage_livingroom.JPG"
-                      alt="L'Hermitage Living Room"
+                      src="/"/Lhermitage_entry.jpg"
+                      alt="L'Hermitage Entry"
                       width={400}
                       height={300}
                       className="w-full h-full object-cover rounded-lg"
