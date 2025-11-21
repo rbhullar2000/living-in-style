@@ -12,9 +12,10 @@ import { Input } from "@/components/ui/input" // Make sure you have an Input com
 
 interface BookingFormProps {
   price: number
+  pricePeriod?: "week" | "month" // Added pricePeriod prop
 }
 
-export function BookingForm({ price }: BookingFormProps) {
+export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) {
   const [checkIn, setCheckIn] = useState<Date>()
   const [checkOut, setCheckOut] = useState<Date>()
   const [guests, setGuests] = useState("1")
@@ -32,7 +33,8 @@ export function BookingForm({ price }: BookingFormProps) {
       <CardHeader className="pb-4">
         <div className="flex items-end">
           <span className="text-2xl font-bold">${price.toLocaleString()}</span>
-          <span className="text-muted-foreground"> / month</span>
+          <span className="text-muted-foreground"> / {pricePeriod}</span>{" "}
+          {/* Use pricePeriod prop instead of hardcoded "month" */}
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
