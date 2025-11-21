@@ -376,6 +376,10 @@ export default function FifaClientPage() {
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fully Furnished</span>
                 </div>
+                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">Central Air Conditioning</span>
+                </div>
               </div>
             </div>
           </div>
