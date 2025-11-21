@@ -8,10 +8,10 @@ export interface Property {
   id: string
   title: string
   location: string
-  lat: number // Added missing lat property
-  lng: number // Added missing lng property
+  lat: number
+  lng: number
   price: number
-  pricePeriod?: "week" | "month" // Added missing pricePeriod property
+  pricePeriod?: "week" | "month"
   rating: number
   reviewCount: number
   beds: number
@@ -39,7 +39,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "This elegant residence at L'Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. <p> The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining. Whether you're preparing dinner in the gourmet kitchen or enjoying a quiet morning coffee on the balcony, this suite provides an elevated living experience. <p> Residents enjoy exclusive access to L'Hermitage Hotel's renowned amenities, including a fitness centre, a beautifully appointed library, an elegant resident lounge, and a tranquil rooftop garden terrace — perfect for reading, socializing, or simply unwinding above the city. The hotel's 24-hour concierge and professional staff ensure every detail is taken care of, offering true peace of mind. <p> Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering a luxurious and timeless experience. L'Orangerie at L'Hermitage offers seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day. <p> Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and leisure.",
+      "This elegant residence at L'Hermitage Hotel & Residences offers the perfect blend of luxury and convenience in the heart of downtown Vancouver. Situated at 788 Richards Street, this beautifully designed condo features a fully equipped kitchen with stainless steel appliances, an open-air balcony, and sophisticated furnishings that create a modern, welcoming atmosphere. The residence showcases thoughtful design elements such as hardwood flooring, large windows, and refined lighting accents that enhance every space. The open-concept layout allows natural light to flow throughout, creating a bright and airy environment ideal for both relaxation and entertaining.",
     amenities: [
       "24/7 Concierge Service",
       "L'Orangerie at L'Hermitage",
@@ -58,16 +58,16 @@ export const properties: Property[] = [
     ],
     availability: "Located In Heart Of Downtown",
     images: [
-      "/Lhermitage_kitchen.JPG?height=600&width=800&text=Modern+Condo+Kitchen",
-      "/Lhermitage_livingroom.JPG?height=600&width=800&text=Modern+Condo+Living+Room",
-      "/Lhermitage_bedroom.JPG?height=600&width=800&text=Modern+Condo+Bedroom",
-      "/Lhermitage_bathroom.JPG?height=600&width=800&text=Modern+Condo+Bathroom",
-      "/Lhermitage_office.JPG?height=600&width=800&text=Modern+Condo+Office",
-      "/Lhermitage_building.JPG?height=600&width=800&text=Modern+Condo+Building",
-      "/Lhermitage_entry.JPG?height=600&width=800&text=Modern+Condo+Entry",
-      "/Lhermitage_lounge.JPG?height=600&width=800&text=Modern+Condo+Lounge",
-      "/Lhermitage_boardroom.JPG?height=600&width=800&text=Modern+Condo+Boardroom",
-      "/Lhermitage_gym.JPG?height=600&width=800&text=Modern+Condo+Gym",
+      "/Lhermitage_kitchen.JPG",
+      "/Lhermitage_livingroom.JPG",
+      "/Lhermitage_bedroom.JPG",
+      "/Lhermitage_bathroom.JPG",
+      "/Lhermitage_office.JPG",
+      "/Lhermitage_building.jpg",
+      "/Lhermitage_entry.jpg",
+      "/Lhermitage_lounge.jpg",
+      "/Lhermitage_boardroom.jpg",
+      "/Lhermitage_gym.jpg",
     ],
     featured: true,
     reviewsList: [
@@ -104,7 +104,7 @@ export const properties: Property[] = [
     baths: 3,
     guests: 8,
     description:
-      "Experience world-class luxury at the Fairmont Pacific Rim — Vancouver's most prestigious waterfront address. Located in the heart of Coal Harbour, this exceptional residence combines the sophistication of a five-star hotel with the privacy and comfort of a modern home. Every detail has been designed for those who expect the finest in architecture, design, and service. <p> Step inside and discover refined interiors featuring high ceilings, rich hardwood flooring, and expansive floor-to-ceiling windows framing panoramic views of the ocean, Stanley Park, and the North Shore Mountains. The gourmet kitchen is equipped with top-of-the-line appliances, sleek cabinetry, and polished stone countertops — perfect for both entertaining and everyday indulgence. <p> As a resident, you'll enjoy 24-hour access to Fairmont Pacific Rim's renowned amenities and white-glove services. This includes a fully equipped fitness centre, a world-class spa, a heated rooftop pool with private cabanas, concierge and valet service, and exclusive access to the resident lounge and private terraces. Whether you're unwinding after a day in the city or hosting guests in elegant surroundings, every moment here feels elevated. <p> Positioned just steps from the seawall, waterfront dining, and the business and entertainment districts, this home offers unparalleled convenience and prestige. From sunrise walks along Coal Harbour to evening cocktails overlooking the ocean, living at Fairmont Pacific Rim Residences is the ultimate Vancouver lifestyle — effortless, sophisticated, and truly unforgettable.",
+      "Experience world-class luxury at the Fairmont Pacific Rim — Vancouver's most prestigious waterfront address. Located in the heart of Coal Harbour, this exceptional residence combines the sophistication of a five-star hotel with the privacy and comfort of a modern home. Every detail has been designed for those who expect the finest in architecture, design, and service.",
     amenities: [
       "Botanist",
       "Botanist Bar",
@@ -119,11 +119,11 @@ export const properties: Property[] = [
     ],
     availability: "World-class Luxury",
     images: [
-      "/fairmont_livingroom.jpg?height=600&width=800&text=Penthouse+Living+Room",
-      "/fairmont_livingroom2.jpg?height=600&width=800&text=Penthouse+Living+Room+2",
-      "/fairmont_balcony.jpg?height=600&width=800&text=Penthouse+Balcony",
-      "/fairmont_bathroom.jpg?height=600&width=800&text=Penthouse+Bathroom",
-      "/fairmont_lobby.jpg?height=600&width=800&text=Penthouse+Lobby",
+      "/fairmont_livingroom.jpg",
+      "/fairmont_livingroom2.jpg",
+      "/fairmont_balcony.jpg",
+      "/fairmont_bathroom.jpg",
+      "/fairmont_lobby.jpg",
     ],
     featured: true,
     reviewsList: [
@@ -160,7 +160,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home's elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building's calm and professional atmosphere. <p> Situated within one of Vancouver's most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown's business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver's most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and anyone seeking a luxurious urban retreat.",
+      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views.",
     amenities: [
       "Gourmet kitchen with Gaggenau appliances",
       "Floor-to-ceiling windows",
@@ -175,10 +175,10 @@ export const properties: Property[] = [
     ],
     availability: "Blocks from Stanley Park",
     images: [
-      "/coalHarbour_livingroom.jpg?height=600&width=800&text=Coal_Harbour+Living+Room",
-      "/coalHarbour_kitchen.jpg?height=600&width=800&text=Coal_Harbour+Kitchen",
-      "/coalHarbour_washroom.jpg?height=600&width=800&text=Coal_Harbour+Washroom",
-      "/coalHarbour_building.jpg?height=600&width=800&text=Coal_Harbour+Building",
+      "/coalHarbour_livingroom.jpg",
+      "/coalHarbour_kitchen.jpg",
+      "/coalHarbour_washroom.jpg",
+      "/coalHarbour_building.jpg",
     ],
     featured: true,
     reviewsList: [
@@ -230,13 +230,13 @@ export const properties: Property[] = [
     ],
     availability: "A Perfect Escape",
     images: [
-      "/cabin_outside.jpg?height=600&width=800&text=Studio+Main+Area",
-      "/cabin_outside2.jpg?height=600&width=800&text=Studio+Kitchen",
-      "/cabin_kitchen.jpg?height=600&width=800&text=Studio+Bathroom",
-      "/cabin_patio.jpg?height=600&width=800&text=Studio+Workspace",
-      "/cabin_clubhouse.jpg?height=600&width=800&text=Studio+Workspace",
-      "/cabin_swimmingpool.jpg?height=600&width=800&text=Studio+Workspace",
-      "/cultus.jpg?height=600&width=800&text=Studio+Workspace",
+      "/cabin_outside.jpg",
+      "/cabin_outside2.jpg",
+      "/cabin_kitchen.jpg",
+      "/cabin_patio.jpg",
+      "/cabin_clubhouse.jpg",
+      "/cabin_swimmingpool.jpg",
+      "/cultus.jpg",
     ],
     featured: true,
     reviewsList: [
@@ -274,7 +274,7 @@ export const properties: Property[] = [
     baths: 2,
     guests: 4,
     description:
-      "Experience breathtaking luxury on the 27th floor of Water Street by the Park, Kelowna's newest and most prestigious waterfront development. This brand-new 2-bedroom, 2-bathroom condo offers spectacular panoramic views of Okanagan Lake, the surrounding mountains, and the vibrant downtown marina. <p> This stunning residence features floor-to-ceiling windows that frame postcard-perfect lake and mountain vistas from every room. The open-concept layout showcases premium finishes throughout, including engineered hardwood flooring, contemporary lighting, and a gourmet kitchen equipped with high-end stainless steel appliances, quartz countertops, and sleek custom cabinetry. <p> The master bedroom boasts a generous walk-in closet and a luxurious ensuite bathroom with spa-inspired finishes. The second bedroom offers flexible space perfect for guests or as a home office. Step out onto your expansive 378 sq ft private balcony to enjoy morning coffee while watching sailboats drift across the lake or evening sunsets painting the mountains in golden hues. <p> As a resident of Water Street by the Park, you'll enjoy access to world-class amenities and be positioned in the heart of Kelowna's Cultural District. The building's prime location places you steps from the marina, waterfront parks, the renowned Prospera Place arena, and an exceptional collection of restaurants, wineries, boutiques, and cafés. <p> Whether you're visiting for the summer season, relocating to the Okanagan, or seeking an extended stay in wine country, this penthouse residence offers the perfect blend of modern sophistication and resort-style living. Now taking bookings for summer 2026 — don't miss your chance to experience Kelowna from the top.",
+      "Experience breathtaking luxury on the 27th floor of Water Street by the Park, Kelowna's newest and most prestigious waterfront development. This brand-new 2-bedroom, 2-bathroom condo offers spectacular panoramic views of Okanagan Lake, the surrounding mountains, and the vibrant downtown marina.",
     amenities: [
       "Floor-to-ceiling windows",
       "Panoramic lake and mountain views",
@@ -294,11 +294,11 @@ export const properties: Property[] = [
     ],
     availability: "Taking bookings for Spring 2026",
     images: [
-      "/waterstreet_view.jpg?height=600&width=800&text=Water+Street+View",
-      "/waterstreet_balcony.jpg?height=600&width=800&text=Water+Street+Balcony",
-      "/waterstreet_balcony2.jpg?height=600&width=800&text=Water+Street+Balcony+2",
-      "/waterstreet_floorplan.png?height=600&width=800&text=Water+Street+Floor+Plan",
-      "/waterstreet_model.jpg?height=600&width=800&text=Water+Street+Development",
+      "/waterstreet_view.jpg",
+      "/waterstreet_balcony.jpg",
+      "/waterstreet_balcony2.jpg",
+      "/waterstreet_floorplan.png",
+      "/waterstreet_model.jpg",
     ],
     featured: true,
     reviewsList: [],
