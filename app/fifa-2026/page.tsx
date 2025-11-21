@@ -387,7 +387,7 @@ export default function FifaPage() {
               <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
                 <a href="#booking">Request Pricing Now</a>
               </Button>
-              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" asChild className="border-white text-blue-900 hover:bg-blue-50">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
