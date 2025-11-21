@@ -56,7 +56,7 @@ export const properties: Property[] = [
       "In-unit washer/dryer",
       "Central air conditioning",
     ],
-    availability: "Located In Heart Of Downtown",
+    availability: "Located In Heart Of Downtown Vancouver",
     images: [
       "/Lhermitage_kitchen.JPG",
       "/Lhermitage_entry.jpg",
