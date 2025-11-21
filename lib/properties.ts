@@ -56,53 +56,6 @@ export const properties: Property[] = [
       "In-unit washer/dryer",
       "Central air conditioning",
     ],
- {/* Amenities Grid */}
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-                
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Fully Furnished</span>
-                </div>
-                
-                
-                
-                
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Shield className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">24/7 Concierge Service</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <UtensilsCrossed className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Rooftop Terrace</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Users className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Fitness Centre</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Wifi className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">High-Speed WiFi</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Car className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Parking Included</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Central Air Conditioning</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Fully equipped gourmet kitchen, In-unit washer/dryer, 2 televisions</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
     
     availability: "Located In Heart Of Downtown Vancouver",
     images: [
