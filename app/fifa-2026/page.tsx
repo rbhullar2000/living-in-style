@@ -210,10 +210,10 @@ export default function FifaPage() {
                   The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an open-air balcony perfect for relaxing after match days. With hotel-style amenities including 24-hour concierge, rooftop terrace access, fitness center, and resident lounge, you'll have everything needed for a productive and comfortable extended stay during the tournament.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  L'Hermitage provides the perfect blend of luxury accommodation and professional functionality. High-speed WiFi ensures seamless connectivity for media teams and broadcast crews, while the building's prestigious address and white-glove service meet the expectations of FIFA officials, corporate sponsors, and international delegations.
+                  L'Hermitage provides the perfect blend of luxury accommodation and professional functionality. High-speed WiFi ensures seamless connectivity for media teams and broadcast crews, while the building's prestigious address and white-glove service meet the expectations of FIFA officials, corporate sponsors, and international delegations. L'Orangerie at L'Hermitage which offers seasonal cuisine, regional wines, and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate bites and premium teas — a perfect indulgence any time of day.
                 </p>
                 <p className="text-muted-foreground">
-                  The location offers unmatched convenience — walking distance to BC Place, direct metro access, world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre. Whether you're covering matches, coordinating events, or entertaining clients, this residence provides a sophisticated home base in Vancouver's most connected neighborhood.
+                  The location offers unmatched convenience — walking distance to BC Place, direct metro access, world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre. Whether you're covering matches, coordinating events, or entertaining clients, this residence provides a sophisticated home base in Vancouver's most connected neighborhood. The building also includes Café Medina, IGA Grocery, and a Tim Hortons.
                 </p>
               </div>
 
