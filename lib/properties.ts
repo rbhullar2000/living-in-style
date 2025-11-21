@@ -55,6 +55,7 @@ export const properties: Property[] = [
       "Fully equipped gourmet kitchen",
       "In-unit washer/dryer",
       "Central air conditioning",
+      "Hotel lounge",
     ],
     availability: "Located In Heart Of Downtown",
     images: [
@@ -63,6 +64,11 @@ export const properties: Property[] = [
       "/Lhermitage_bedroom.JPG?height=600&width=800&text=Modern+Condo+Bedroom",
       "/Lhermitage_bathroom.JPG?height=600&width=800&text=Modern+Condo+Bathroom",
       "/Lhermitage_office.JPG?height=600&width=800&text=Modern+Condo+Office",
+      "/Lhermitage_building.JPG?height=600&width=800&text=Building+Exterior",
+      "/Lhermitage_boardroom.JPG?height=600&width=800&text=Professional+Boardroom",
+      "/Lhermitage_gym.JPG?height=600&width=800&text=Fitness+Center",
+      "/Lhermitage_entry.JPG?height=600&width=800&text=Elegant+Entrance",
+      "/Lhermitage_lounge.JPG?height=600&width=800&text=Resident+Lounge",
     ],
     featured: true,
     reviewsList: [
@@ -155,7 +161,7 @@ export const properties: Property[] = [
     baths: 1,
     guests: 4,
     description:
-      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home's elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building's calm and professional atmosphere. <p> Situated within one of Vancouver's most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown's business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver's most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and anyone seeking a luxurious urban retreat.",
+      "Located at 1477 West Pender Street in the heart of Downtown Vancouver, this exceptional residence offers a prestigious Coal Harbour address just blocks from Stanley Park and the world-famous Seawall. <p> This refined condominium combines sophistication with modern comfort, featuring expansive floor-to-ceiling windows that flood the interior with natural light and capture stunning city and water views. The spacious open layout is complemented by 9-foot ceilings, brushed hardwood floors, and a warm, neutral palette that enhances the home's elegant character. <p> The Italian Dada kitchen is equipped with premium Gaggenau appliances, quartz countertops, custom cabinetry, and a large central island — ideal for both everyday living and entertaining. The spa-inspired bathrooms showcase sleek marble finishes, frameless glass showers, and deep soaker tubs, creating a true retreat experience. <p> Thoughtfully designed for comfort and functionality, this residence also features a private balcony overlooking the city, in-suite laundry, and high-end fixtures throughout. <p> The building itself offers a collection of amenities designed to support a luxurious urban lifestyle — including a fitness centre, indoor pool, hot tub, and 24-hour concierge service. Secure underground parking and controlled access provide peace of mind, while the welcoming lobby sets the tone for the building's calm and professional atmosphere. <p> Situated within one of Vancouver's most desirable neighbourhoods, residents enjoy immediate access to the Coal Harbour Marina, waterfront dining, and a variety of upscale boutiques and cafés. Within minutes, you can walk to Stanley Park, the Vancouver Convention Centre, and downtown's business and entertainment districts. <p> This property represents a rare opportunity to live in one of Vancouver's most sought-after waterfront communities — where architecture, location, and lifestyle come together in perfect balance. Ideal for professionals, executives, and families looking for a serene yet central Vancouver stay.",
     amenities: [
       "Gourmet kitchen with Gaggenau appliances",
       "Floor-to-ceiling windows",
