@@ -147,7 +147,7 @@ export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) 
           </SelectContent>
         </Select>
 
-        {/* <div className="pt-4 border-t text-sm space-y-1">
+        <div className="pt-4 border-t text-sm space-y-1">
           <div className="flex justify-between">
             <span>Subtotal</span>
             <span>${subtotal.toLocaleString()}</span>
@@ -164,7 +164,7 @@ export function BookingForm({ price, pricePeriod = "month" }: BookingFormProps) 
             <span>Total</span>
             <span>${total.toLocaleString()}</span>
           </div>
-        </div> */}
+        </div>
 
         <Button
           className="w-full mt-4"
