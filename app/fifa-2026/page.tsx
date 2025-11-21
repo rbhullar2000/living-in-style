@@ -173,7 +173,7 @@ export default function FifaPage() {
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">L'Hermitage</h3>
+                    <h3 className="font-semibold mb-1">L'Hermitage Hotel & Residences</h3>
                     <p className="text-sm text-muted-foreground">Luxury Residences</p>
                   </CardContent>
                 </Card>
