@@ -10,12 +10,17 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Mail, Phone, MessageCircle, MapPin, Clock, Send } from "lucide-react"
+import { Mail, Phone, MessageCircle, MapPin, Clock, Send, Calendar, Users } from "lucide-react"
 
 export default function ContactPage() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
   const [subject, setSubject] = useState("")
+  const [checkIn, setCheckIn] = useState("")
+  const [checkOut, setCheckOut] = useState("")
+  const [guests, setGuests] = useState("")
+  const [propertyInterest, setPropertyInterest] = useState("")
   const [message, setMessage] = useState("")
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
 
@@ -26,14 +31,19 @@ export default function ContactPage() {
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, subject, message }),
+      body: JSON.stringify({ name, email, phone, subject, checkIn, checkOut, guests, propertyInterest, message }),
     })
 
     if (res.ok) {
       setStatus("success")
       setName("")
       setEmail("")
+      setPhone("")
       setSubject("")
+      setCheckIn("")
+      setCheckOut("")
+      setGuests("")
+      setPropertyInterest("")
       setMessage("")
     } else {
       setStatus("error")
@@ -169,7 +179,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="text-sm font-medium mb-1.5 block">
-                      Your Name
+                      Your Name *
                     </label>
                     <Input
                       id="name"
@@ -182,7 +192,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="email" className="text-sm font-medium mb-1.5 block">
-                      Email Address
+                      Email Address *
                     </label>
                     <Input
                       id="email"
@@ -194,9 +204,24 @@ export default function ContactPage() {
                     />
                   </div>
                 </div>
+
+                <div>
+                  <label htmlFor="phone" className="text-sm font-medium mb-1.5 block">
+                    Phone Number *
+                  </label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="+1 (778) 123-4567"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    required
+                  />
+                </div>
+
                 <div>
                   <label htmlFor="subject" className="text-sm font-medium mb-1.5 block">
-                    Subject
+                    Subject *
                   </label>
                   <Input
                     id="subject"
@@ -207,19 +232,73 @@ export default function ContactPage() {
                     required
                   />
                 </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="checkIn" className="text-sm font-medium mb-1.5 block flex items-center gap-2">
+                      <Calendar className="h-4 w-4" />
+                      Preferred Check-in Date
+                    </label>
+                    <Input id="checkIn" type="date" value={checkIn} onChange={(e) => setCheckIn(e.target.value)} />
+                  </div>
+                  <div>
+                    <label htmlFor="checkOut" className="text-sm font-medium mb-1.5 block flex items-center gap-2">
+                      <Calendar className="h-4 w-4" />
+                      Preferred Check-out Date
+                    </label>
+                    <Input id="checkOut" type="date" value={checkOut} onChange={(e) => setCheckOut(e.target.value)} />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="guests" className="text-sm font-medium mb-1.5 block flex items-center gap-2">
+                      <Users className="h-4 w-4" />
+                      Number of Guests
+                    </label>
+                    <Input
+                      id="guests"
+                      type="number"
+                      min="1"
+                      placeholder="2"
+                      value={guests}
+                      onChange={(e) => setGuests(e.target.value)}
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="propertyInterest"
+                      className="text-sm font-medium mb-1.5 block flex items-center gap-2"
+                    >
+                      <MapPin className="h-4 w-4" />
+                      Property of Interest
+                    </label>
+                    <Input
+                      id="propertyInterest"
+                      type="text"
+                      placeholder="e.g., Vancouver Downtown, Kelowna"
+                      value={propertyInterest}
+                      onChange={(e) => setPropertyInterest(e.target.value)}
+                    />
+                  </div>
+                </div>
+
                 <div>
                   <label htmlFor="message" className="text-sm font-medium mb-1.5 block">
-                    Message
+                    Message *
                   </label>
                   <Textarea
                     id="message"
-                    placeholder="Tell us more about your needs..."
+                    placeholder="Tell us more about your needs, special requests, or questions..."
                     rows={6}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
                   />
                 </div>
+
+                <p className="text-sm text-muted-foreground">* Required fields</p>
+
                 <Button type="submit" className="w-full" size="lg" disabled={status === "sending"}>
                   {status === "sending" ? "Sending..." : "Send Message"}
                 </Button>
@@ -253,6 +332,17 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">What is the minimum stay requirement?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Most of our properties require a minimum 30-night stay. For special events like FIFA 2026, custom
+                    arrangements may apply. Contact us to discuss your specific needs.
+                  </p>
+                </CardContent>
+              </Card>
 
               <Card>
                 <CardHeader>
