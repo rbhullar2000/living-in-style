@@ -42,6 +42,11 @@ export default function FifaClientPage() {
     "/Lhermitage_bedroom.JPG",
     "/Lhermitage_bathroom.JPG",
     "/Lhermitage_office.JPG",
+    "/Lhermitage_building.jpg",
+    "/Lhermitage_entry.jpg",
+    "/Lhermitage_lounge.jpg",
+    "/Lhermitage_boardroom.jpg",
+    "/Lhermitage_gym.jpg",
   ]
 
   const nextImage = () => {
