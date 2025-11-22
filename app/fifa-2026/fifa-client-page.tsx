@@ -34,6 +34,7 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import { FifaBookingForm } from "@/components/fifa-booking-form"
+import { PropertyMap } from "@/components/property-map"
 import { useState } from "react"
 
 export default function FifaClientPage() {
@@ -293,14 +294,6 @@ export default function FifaClientPage() {
                     <p className="text-sm text-muted-foreground">Walking Distance</p>
                   </CardContent>
                 </Card>
-                 <Card>
-                  <CardContent className="pt-6 text-center">
-                    <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials (In Building)</h3>
-                    <p className="text-sm text-muted-foreground">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</p>
-                  </CardContent>
-                </Card>
-                
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
@@ -308,7 +301,15 @@ export default function FifaClientPage() {
                     <p className="text-sm text-muted-foreground">Included</p>
                   </CardContent>
                 </Card>
-               
+                <Card>
+                  <CardContent className="pt-6 text-center">
+                    <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
+                    <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
+                    <p className="text-sm text-muted-foreground">
+                      L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
 
               {/* FIFA-Optimized Description */}
@@ -390,11 +391,17 @@ export default function FifaClientPage() {
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fully equipped gourmet kitchen</span>
                 </div>
-               <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">In-suite laundry</span>
                 </div>
-               </div>
+              </div>
+
+              {/* Location Section */}
+              <div className="mt-12">
+                <h3 className="text-2xl font-bold mb-4">Location</h3>
+                <PropertyMap lat={49.2799} lng={-123.1207} title="L'Hermitage Residences - FIFA 2026" />
+              </div>
             </div>
           </div>
         </section>
