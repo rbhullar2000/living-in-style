@@ -378,7 +378,7 @@ export default function FifaClientPage() {
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Car className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Parking Included</span>
+                  <span className="text-sm">Secure Underground Parking Included</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Snowflake className="h-5 w-5 text-primary flex-shrink-0" />
@@ -386,9 +386,13 @@ export default function FifaClientPage() {
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Fully equipped gourmet kitchen, In-unit washer/dryer, 2 televisions</span>
+                  <span className="text-sm">Fully equipped gourmet kitchen</span>
                 </div>
-              </div>
+               <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">In-suite laundry</span>
+                </div>
+               </div>
             </div>
           </div>
         </section>
