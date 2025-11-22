@@ -163,15 +163,8 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                     <Card>
                       <CardContent className="pt-6 text-center">
                         <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
-                        <h3 className="font-semibold mb-1">BC Place</h3>
+                        <h3 className="font-semibold mb-1">BC Place, Rogers Arena, Robson Street Shopping, Pacific Centre Mall</h3>
                         <p className="text-sm text-muted-foreground">Walking Distance</p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardContent className="pt-6 text-center">
-                        <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
-                        <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
-                        <p className="text-sm text-muted-foreground">Included</p>
                       </CardContent>
                     </Card>
                     <Card>
@@ -181,6 +174,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                         <p className="text-sm text-muted-foreground">
                           L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons
                         </p>
+                      </CardContent>
+                    </Card>
+                   <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
+                        <p className="text-sm text-muted-foreground">Available</p>
                       </CardContent>
                     </Card>
                   </div>
