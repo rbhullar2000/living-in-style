@@ -49,7 +49,7 @@ export const properties: Property[] = [
       "High-Speed WiFi",
       "Secure underground parking",
       "Central air conditioning",
-      "Fully equipped gourmet kitchen, 
+      "Fully equipped gourmet kitchen", 
       "In-suite laundry",
     ],
     
