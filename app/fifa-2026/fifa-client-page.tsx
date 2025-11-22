@@ -80,7 +80,7 @@ export default function FifaClientPage() {
               <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
                 Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing
-                for media teams, FIFA staff, and corporate sponsors.
+                for media teams, FIFA staff, and corporate sponsors. Only 1 suite available for FIFA June-July 2026 — enquire now to reserve.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
@@ -139,7 +139,7 @@ export default function FifaClientPage() {
                   <CardContent>
                     <div className="text-4xl font-bold mb-2">$30,000 – $60,000</div>
                     <div className="text-muted-foreground mb-4">
-                      total for June/July stay (pricing depends on exact dates &amp; length of stay)
+                      total for June/July stay (pricing depends on exact dates &amp; length of stay) Example: June (30 days) starts at ~$30k; June + July (60 days) full-event packages up to ~$60k depending on dates and requirements.
                     </div>
                     <ul className="space-y-2 text-sm">
                       <li className="flex items-center gap-2">
@@ -161,7 +161,7 @@ export default function FifaClientPage() {
 
               <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
                 <p className="text-sm text-muted-foreground mb-2">
-                  Exact pricing is customized based on dates, number of guests and specific requirements.
+                  Exact pricing is customized based on dates, number of guests and specific requirements. Example: Full June stay (30 days) might start at ~$30k; full June-July (60 days) packages available up to ~$60k. Only one suite remains for FIFA 2026.
                 </p>
                 <p className="font-semibold">
                   Special consideration for full-tournament bookings &amp; corporate packages.
@@ -290,8 +290,8 @@ export default function FifaClientPage() {
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">BC Place</h3>
-                    <p className="text-sm text-muted-foreground">Walking Distance</p>
+                    <h3 className="font-semibold mb-1">BC Place Stadium & FIFA 2026 match hubƒwalk</h3>
+                    <p className="text-sm text-muted-foreground">10-Minute Walk</p>
                   </CardContent>
                 </Card>
                 <Card>
@@ -318,11 +318,11 @@ export default function FifaClientPage() {
                 <p className="text-muted-foreground mb-4">
                   This exceptional 1-bedroom luxury suite at L'Hermitage Residences offers the ideal base for FIFA World
                   Cup 2026 professionals. Located at 788 Richards Street in the heart of downtown Vancouver, you'll be
-                  just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action.
+                  just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action. Also minutes from Rogers Arena, Yaletown, Skytrain and Robson shopping.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an
-                  open-air balcony perfect for relaxing after match days. With hotel-style amenities including 24-hour
+                  open-air balcony perfect for relaxing after match days. It also has a fast WiFi/in-suite workspace. With hotel-style amenities including 24-hour
                   concierge, rooftop terrace access, fitness center, and resident lounge, you'll have everything needed
                   for a productive and comfortable extended stay during the tournament.
                 </p>
@@ -339,8 +339,7 @@ export default function FifaClientPage() {
                   bites and premium teas — a perfect indulgence any time of day.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Step outside and you'll find yourself surrounded by Vancouver's most desirable attractions and
-                  conveniences. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy
+                  Just a 10-minute walk from BC Place Stadium (FIFA 2026 match hub) and minutes from Rogers Arena, the Vancouver Public Library & SkyTrain access, this residence offers event-ready convenience. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy
                   coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of
                   Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and
                   leisure.
