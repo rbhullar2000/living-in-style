@@ -296,13 +296,13 @@ export default function FifaClientPage() {
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">Parking</h3>
+                    <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
                     <p className="text-sm text-muted-foreground">Included</p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardContent className="pt-6 text-center">
-                    <Wifi className="h-8 w-8 mx-auto mb-3 text-primary" />
+                    <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
                     <p className="text-sm text-muted-foreground">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</p>
                   </CardContent>
