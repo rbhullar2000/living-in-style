@@ -281,40 +281,40 @@ export default function FifaClientPage() {
 
               {/* Key Features */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                
-                <Card>
-                  <CardContent className="pt-6 text-center">
-                    <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">L'Hermitage Hotel & Residences</h3>
-                    <p className="text-sm text-muted-foreground">Luxury Residences</p>
-                  </CardContent>
-                </Card>
-                
-                <Card>
-                  <CardContent className="pt-6 text-center">
-                    <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">BC Place Stadium & FIFA 2026 match hub</h3>
-                    <p className="text-sm text-muted-foreground">10-Minute Walk</p>
-                  </CardContent>
-                </Card>
-               
-                <Card>
-                  <CardContent className="pt-6 text-center">
-                    <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
-                    <p className="text-sm text-muted-foreground">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</p>
-                  </CardContent>
-                <Card>
-                  
-                  <Card>
-                  <CardContent className="pt-6 text-center">
-                    <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
-                    <p className="text-sm text-muted-foreground">Included</p>
-                  </CardContent>
-                </Card>
-               
-              </div>
+  
+  <Card>
+    <CardContent className="pt-6 text-center">
+      <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
+      <h3 className="font-semibold mb-1">L'Hermitage Hotel & Residences</h3>
+      <p className="text-sm text-muted-foreground">Luxury Residences</p>
+    </CardContent>
+  </Card>
+  
+  <Card>
+    <CardContent className="pt-6 text-center">
+      <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
+      <h3 className="font-semibold mb-1">BC Place Stadium & FIFA 2026 match hub</h3>
+      <p className="text-sm text-muted-foreground">10-Minute Walk</p>
+    </CardContent>
+  </Card>
+ 
+  <Card>
+    <CardContent className="pt-6 text-center">
+      <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
+      <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
+      <p className="text-sm text-muted-foreground">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</p>
+    </CardContent>
+  </Card>
+  
+  <Card>
+    <CardContent className="pt-6 text-center">
+      <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
+      <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
+      <p className="text-sm text-muted-foreground">Included</p>
+    </CardContent>
+  </Card>
+ 
+</div>
 
               {/* FIFA-Optimized Description */}
               <div className="prose prose-lg max-w-none mb-12">
