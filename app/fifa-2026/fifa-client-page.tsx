@@ -78,9 +78,10 @@ export default function FifaClientPage() {
                 Luxury FIFA 2026 Accommodation
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
+              <p className="text-xl md:text-2xl mb-4 text-blue-100">Only 1 suite available for FIFA June-July 2026 — enquire now to reserve.</p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
                 Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing
-                for media teams, FIFA staff, and corporate sponsors. Only 1 suite available for FIFA June-July 2026 — enquire now to reserve.
+                for media teams, FIFA staff, and corporate sponsors. 
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
