@@ -160,13 +160,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                         <p className="text-sm text-muted-foreground">Luxury Residences</p>
                       </CardContent>
                     </Card>
-                    <Card>
-                      <CardContent className="pt-6 text-center">
-                        <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
-                        <h3 className="font-semibold mb-1">BC Place, Rogers Arena, Robson Street Shopping, Pacific Centre Mall</h3>
-                        <p className="text-sm text-muted-foreground">Walking Distance</p>
-                      </CardContent>
-                    </Card>
+                   
                     <Card>
                       <CardContent className="pt-6 text-center">
                         <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
@@ -174,6 +168,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                         <p className="text-sm text-muted-foreground">
                           L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons
                         </p>
+                      </CardContent>
+                    </Card>
+                     <Card>
+                      <CardContent className="pt-6 text-center">
+                        <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">BC Place, Rogers Arena, Robson Street Shopping, Pacific Centre Mall</h3>
+                        <p className="text-sm text-muted-foreground">Walking Distance</p>
                       </CardContent>
                     </Card>
                    <Card>
