@@ -49,7 +49,8 @@ export const properties: Property[] = [
       "High-Speed WiFi",
       "Secure underground parking",
       "Central air conditioning",
-      "Fully equipped gourmet kitchen, In-unit washer/dryer, 2 televisions",
+      "Fully equipped gourmet kitchen, 
+      "In-suite laundry",
     ],
     
     availability: "Located In Heart Of Downtown Vancouver",
