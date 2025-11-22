@@ -187,6 +187,150 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                 </div>
               )}
 
+              {property.id === "FairmontPacificRim" && (
+                <div className="mb-8">
+                  <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Fairmont Pacific Rim</h3>
+                        <p className="text-sm text-muted-foreground">Five-Star Luxury</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Waves className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Infinity Pool & Spa</h3>
+                        <p className="text-sm text-muted-foreground">Rooftop with Cabanas</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Shield className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Concierge & Valet</h3>
+                        <p className="text-sm text-muted-foreground">24/7 Service</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Waterfront Location</h3>
+                        <p className="text-sm text-muted-foreground">Steps to Seawall & Convention Centre</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              )}
+
+              {property.id === "CoalHarbour" && (
+                <div className="mb-8">
+                  <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Italian Dada Kitchen</h3>
+                        <p className="text-sm text-muted-foreground">Gaggenau Appliances</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Mountain className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Stanley Park</h3>
+                        <p className="text-sm text-muted-foreground">Blocks Away</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Waves className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Indoor Pool & Hot Tub</h3>
+                        <p className="text-sm text-muted-foreground">Building Amenities</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Coal Harbour Marina</h3>
+                        <p className="text-sm text-muted-foreground">Prestigious Waterfront Address</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              )}
+
+              {property.id === "CultusLake" && (
+                <div className="mb-8">
+                  <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Waves className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Cultus Lake Access</h3>
+                        <p className="text-sm text-muted-foreground">Walking Distance</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Mountain className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Hiking Trails</h3>
+                        <p className="text-sm text-muted-foreground">Nature at Your Doorstep</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Users className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Pet-Friendly</h3>
+                        <p className="text-sm text-muted-foreground">Bring Your Furry Friends</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Coffee className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Large Outdoor Deck</h3>
+                        <p className="text-sm text-muted-foreground">BBQ & Fire Pit</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              )}
+
+              {property.id === "WaterStreetByThePark" && (
+                <div className="mb-8">
+                  <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">27th Floor Penthouse</h3>
+                        <p className="text-sm text-muted-foreground">Brand New 2026</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Mountain className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Panoramic Views</h3>
+                        <p className="text-sm text-muted-foreground">Okanagan Lake & Mountains</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <Sofa className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">378 sq ft Balcony</h3>
+                        <p className="text-sm text-muted-foreground">Private Outdoor Space</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="pt-6 text-center">
+                        <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
+                        <h3 className="font-semibold mb-1">Cultural District</h3>
+                        <p className="text-sm text-muted-foreground">Marina, Wineries & Dining</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              )}
+
               <div className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">About this property</h2>
                 <div className="text-muted-foreground whitespace-pre-line">
