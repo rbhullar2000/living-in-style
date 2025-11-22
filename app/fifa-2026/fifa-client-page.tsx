@@ -400,7 +400,7 @@ export default function FifaClientPage() {
               {/* Location Section */}
               <div className="mt-12">
                 <h3 className="text-2xl font-bold mb-4">Location</h3>
-                <PropertyMap lat={49.2809} lng={-123.1143} title="788 Richards Street - FIFA 2026" />
+                <PropertyMap latitude={49.2809} longitude={-123.1166} title="788 Richards Street - FIFA 2026" />
               </div>
             </div>
           </div>
