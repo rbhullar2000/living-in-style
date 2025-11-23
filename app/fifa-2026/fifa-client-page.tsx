@@ -106,7 +106,10 @@ export default function FifaClientPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Nightly */}
-                <Card className="border-2 border-primary">
+               
+           {/*     
+               
+             <Card className="border-2 border-primary">
                   <CardHeader>
                     <CardTitle className="text-2xl">Nightly Rate</CardTitle>
                     <CardDescription>Flexible short-term pricing</CardDescription>
@@ -130,7 +133,7 @@ export default function FifaClientPage() {
                     </ul>
                   </CardContent>
                 </Card>
-
+*/}
                 {/* Event packages */}
                 <Card className="border-2 border-blue-600">
                   <CardHeader>
