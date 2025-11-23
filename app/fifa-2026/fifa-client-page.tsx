@@ -114,22 +114,33 @@ export default function FifaClientPage() {
                     <CardDescription className="text-base">Best value for 30–60+ day stays</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <div className="mb-6">
-                      <div className="text-muted-foreground text-sm uppercase tracking-wider mb-2">
+                    <div className="mb-8 py-6 px-4 bg-muted/30 rounded-lg">
+                      <div className="text-muted-foreground text-xs uppercase tracking-widest mb-3 font-medium">
                         Tournament Package Pricing
                       </div>
-                      <div className="flex items-center justify-center gap-3">
-                        <span className="text-4xl md:text-5xl font-semibold">$30,000</span>
-                        <span className="text-2xl text-muted-foreground">–</span>
-                        <span className="text-4xl md:text-5xl font-semibold">$60,000</span>
+                      <div className="flex items-baseline justify-center gap-4 mb-3">
+                        <div className="text-center">
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$30,000</div>
+                        </div>
+                        <span className="text-xl text-muted-foreground font-light">to</span>
+                        <div className="text-center">
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$60,000</div>
+                        </div>
                       </div>
+                      <p className="text-sm text-muted-foreground italic">Based on exact dates and length of stay</p>
                     </div>
-                    <div className="text-muted-foreground mb-6 max-w-2xl mx-auto text-balance leading-relaxed">
-                      total for June/July stay (pricing depends on exact dates &amp; length of stay) Example: June (30
-                      days) starts at ~$30k; June + July (60 days) full-event packages up to ~$60k depending on dates
-                      and requirements.
+                    <div className="text-muted-foreground text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
+                      <p className="text-balance">
+                        Pricing is customized for your specific dates and requirements during the June/July tournament
+                        period.
+                      </p>
+                      <p className="text-xs text-muted-foreground/80">
+                        <span className="font-medium">Example:</span> June (30 days) packages start at approximately
+                        $30,000. Full June + July (60 days) tournament packages available up to $60,000 depending on
+                        exact dates and requirements.
+                      </p>
                     </div>
-                    <ul className="space-y-3 text-left max-w-xl mx-auto">
+                    <ul className="space-y-3 text-left max-w-xl mx-auto text-sm">
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                         <span>Priority for full-tournament &amp; full-month bookings</span>
