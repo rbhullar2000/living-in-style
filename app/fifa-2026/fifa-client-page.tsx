@@ -115,7 +115,7 @@ export default function FifaClientPage() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <div className="mb-8 py-6 px-4 bg-muted/30 rounded-lg">
-                      <div className="text-muted-foreground text-xs uppercase tracking-widest mb-3 font-medium">
+                      <div className="text-gray-600 text-xs uppercase tracking-widest mb-3 font-medium">
                         Tournament Package Pricing
                       </div>
                       <div className="flex items-baseline justify-center gap-4 mb-3">
@@ -127,14 +127,14 @@ export default function FifaClientPage() {
                           <div className="text-3xl md:text-4xl font-light tracking-tight">$60,000</div>
                         </div>
                       </div>
-                      <p className="text-sm text-muted-foreground italic">Based on exact dates and length of stay</p>
+                      <p className="text-sm text-gray-600 italic">Based on exact dates and length of stay</p>
                     </div>
-                    <div className="text-muted-foreground text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
+                    <div className="text-gray-700 text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
                       <p className="text-balance">
                         Pricing is customized for your specific dates and requirements during the June/July tournament
                         period.
                       </p>
-                      <p className="text-xs text-muted-foreground/80">
+                      <p className="text-xs text-gray-600">
                         <span className="font-medium">Example:</span> June (30 days) packages start at approximately
                         $30,000. Full June + July (60 days) tournament packages available up to $60,000 depending on
                         exact dates and requirements.
