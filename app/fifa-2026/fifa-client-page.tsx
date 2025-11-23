@@ -114,8 +114,17 @@ export default function FifaClientPage() {
                     <CardDescription className="text-base">Best value for 30–60+ day stays</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <div className="text-5xl md:text-6xl font-bold mb-4">$30,000 – $60,000</div>
-                    <div className="text-muted-foreground mb-6 max-w-2xl mx-auto text-balance">
+                    <div className="mb-6">
+                      <div className="text-muted-foreground text-sm uppercase tracking-wider mb-2">
+                        Tournament Package Pricing
+                      </div>
+                      <div className="flex items-center justify-center gap-3">
+                        <span className="text-4xl md:text-5xl font-semibold">$30,000</span>
+                        <span className="text-2xl text-muted-foreground">–</span>
+                        <span className="text-4xl md:text-5xl font-semibold">$60,000</span>
+                      </div>
+                    </div>
+                    <div className="text-muted-foreground mb-6 max-w-2xl mx-auto text-balance leading-relaxed">
                       total for June/July stay (pricing depends on exact dates &amp; length of stay) Example: June (30
                       days) starts at ~$30k; June + July (60 days) full-event packages up to ~$60k depending on dates
                       and requirements.
