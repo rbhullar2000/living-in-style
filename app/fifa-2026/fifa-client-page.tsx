@@ -78,10 +78,12 @@ export default function FifaClientPage() {
                 Luxury FIFA 2026 Accommodation
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
-              <p className="text-xl md:text-2xl mb-4 text-blue-100">Only 1 suite available for FIFA June-July 2026 — enquire now to reserve.</p>
+              <p className="text-xl md:text-2xl mb-4 text-blue-100">
+                Only 1 suite available for FIFA June-July 2026 — enquire now to reserve.
+              </p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
                 Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing
-                for media teams, FIFA staff, and corporate sponsors. 
+                for media teams, FIFA staff, and corporate sponsors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
@@ -104,59 +106,32 @@ export default function FifaClientPage() {
                 <p className="text-muted-foreground text-lg">Premium rates for June &amp; July 2026 tournament dates</p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* Nightly */}
-               
-           {/*     
-               
-             <Card className="border-2 border-primary">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Nightly Rate</CardTitle>
-                    <CardDescription>Flexible short-term pricing</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-4xl font-bold mb-2">$1,200 – $3,000</div>
-                    <div className="text-muted-foreground mb-4">per night (30-night minimum)</div>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        30-night minimum stay
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Rates vary by match schedule &amp; demand
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Parking included
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-*/}
+              <div className="max-w-3xl mx-auto">
                 {/* Event packages */}
                 <Card className="border-2 border-blue-600">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Event Packages</CardTitle>
-                    <CardDescription>Best value for 30–60+ day stays</CardDescription>
+                  <CardHeader className="text-center">
+                    <CardTitle className="text-3xl">Event Packages</CardTitle>
+                    <CardDescription className="text-base">Best value for 30–60+ day stays</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="text-4xl font-bold mb-2">$30,000 – $60,000</div>
-                    <div className="text-muted-foreground mb-4">
-                      total for June/July stay (pricing depends on exact dates &amp; length of stay) Example: June (30 days) starts at ~$30k; June + July (60 days) full-event packages up to ~$60k depending on dates and requirements.
+                  <CardContent className="text-center">
+                    <div className="text-5xl md:text-6xl font-bold mb-4">$30,000 – $60,000</div>
+                    <div className="text-muted-foreground mb-6 max-w-2xl mx-auto text-balance">
+                      total for June/July stay (pricing depends on exact dates &amp; length of stay) Example: June (30
+                      days) starts at ~$30k; June + July (60 days) full-event packages up to ~$60k depending on dates
+                      and requirements.
                     </div>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Priority for full-tournament &amp; full-month bookings
+                    <ul className="space-y-3 text-left max-w-xl mx-auto">
+                      <li className="flex items-start gap-3">
+                        <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span>Priority for full-tournament &amp; full-month bookings</span>
                       </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Concierge-style support &amp; corporate invoicing available
+                      <li className="flex items-start gap-3">
+                        <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span>Concierge-style support &amp; corporate invoicing available</span>
                       </li>
-                      <li className="flex items-center gap-2">
-                        <Shield className="h-4 w-4 text-green-600" />
-                        Flexible payment terms for corporate clients
+                      <li className="flex items-start gap-3">
+                        <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span>Flexible payment terms for corporate clients</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -165,7 +140,9 @@ export default function FifaClientPage() {
 
               <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
                 <p className="text-sm text-muted-foreground mb-2">
-                  Exact pricing is customized based on dates, number of guests and specific requirements. Example: Full June stay (30 days) might start at ~$30k; full June-July (60 days) packages available up to ~$60k. Only one suite remains for FIFA 2026.
+                  Exact pricing is customized based on dates, number of guests and specific requirements. Example: Full
+                  June stay (30 days) might start at ~$30k; full June-July (60 days) packages available up to ~$60k.
+                  Only one suite remains for FIFA 2026.
                 </p>
                 <p className="font-semibold">
                   Special consideration for full-tournament bookings &amp; corporate packages.
@@ -284,40 +261,37 @@ export default function FifaClientPage() {
 
               {/* Key Features */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-  
-  <Card>
-    <CardContent className="pt-6 text-center">
-      <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
-      <h3 className="font-semibold mb-1">L'Hermitage Hotel & Residences</h3>
-      <p className="text-sm text-muted-foreground">Luxury Residences</p>
-    </CardContent>
-  </Card>
-  
-  <Card>
-    <CardContent className="pt-6 text-center">
-      <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
-      <h3 className="font-semibold mb-1">BC Place Stadium & FIFA 2026 match hub</h3>
-      <p className="text-sm text-muted-foreground">10-Minute Walk</p>
-    </CardContent>
-  </Card>
- 
-  <Card>
-    <CardContent className="pt-6 text-center">
-      <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
-      <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
-      <p className="text-sm text-muted-foreground">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</p>
-    </CardContent>
-  </Card>
-  
-  <Card>
-    <CardContent className="pt-6 text-center">
-      <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
-      <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
-      <p className="text-sm text-muted-foreground">Included</p>
-    </CardContent>
-  </Card>
- 
-</div>
+                <Card>
+                  <CardContent className="pt-6 text-center">
+                    <Building2 className="h-8 w-8 mx-auto mb-3 text-primary" />
+                    <h3 className="font-semibold mb-1">L'Hermitage Hotel & Residences</h3>
+                    <p className="text-sm text-muted-foreground">Luxury Residences</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6 text-center">
+                    <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
+                    <h3 className="font-semibold mb-1">BC Place Stadium & FIFA 2026 match hub</h3>
+                    <p className="text-sm text-muted-foreground">10-Minute Walk</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6 text-center">
+                    <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
+                    <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
+                    <p className="text-sm text-muted-foreground">
+                      L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6 text-center">
+                    <Car className="h-8 w-8 mx-auto mb-3 text-primary" />
+                    <h3 className="font-semibold mb-1">Secure Underground Parking</h3>
+                    <p className="text-sm text-muted-foreground">Included</p>
+                  </CardContent>
+                </Card>
+              </div>
 
               {/* FIFA-Optimized Description */}
               <div className="prose prose-lg max-w-none mb-12">
@@ -325,13 +299,15 @@ export default function FifaClientPage() {
                 <p className="text-muted-foreground mb-4">
                   This exceptional 1-bedroom luxury suite at L'Hermitage Residences offers the ideal base for FIFA World
                   Cup 2026 professionals. Located at 788 Richards Street in the heart of downtown Vancouver, you'll be
-                  just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action. Also minutes from Rogers Arena, Yaletown, Skytrain and Robson shopping.
+                  just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action. Also
+                  minutes from Rogers Arena, Yaletown, Skytrain and Robson shopping.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an
-                  open-air balcony perfect for relaxing after match days. It also has a fast WiFi/in-suite workspace. With hotel-style amenities including 24-hour
-                  concierge, rooftop terrace access, fitness center, and resident lounge, you'll have everything needed
-                  for a productive and comfortable extended stay during the tournament.
+                  open-air balcony perfect for relaxing after match days. It also has a fast WiFi/in-suite workspace.
+                  With hotel-style amenities including 24-hour concierge, rooftop terrace access, fitness center, and
+                  resident lounge, you'll have everything needed for a productive and comfortable extended stay during
+                  the tournament.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   L'Hermitage provides the perfect blend of luxury accommodation and professional functionality.
@@ -346,10 +322,11 @@ export default function FifaClientPage() {
                   bites and premium teas — a perfect indulgence any time of day.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Just a 10-minute walk from BC Place Stadium (FIFA 2026 match hub) and minutes from Rogers Arena, the Vancouver Public Library & SkyTrain access, this residence offers event-ready convenience. Stroll to Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy
-                  coffee at Tim Hortons — all just moments from your door. The neighbourhood is also home to several of
-                  Vancouver's best salons, restaurants, and boutique shops, giving you endless options for dining and
-                  leisure.
+                  Just a 10-minute walk from BC Place Stadium (FIFA 2026 match hub) and minutes from Rogers Arena, the
+                  Vancouver Public Library & SkyTrain access, this residence offers event-ready convenience. Stroll to
+                  Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all
+                  just moments from your door. The neighbourhood is also home to several of Vancouver's best salons,
+                  restaurants, and boutique shops, giving you endless options for dining and leisure.
                 </p>
                 <p className="text-muted-foreground">
                   The location offers unmatched convenience — walking distance to BC Place, direct metro access,
