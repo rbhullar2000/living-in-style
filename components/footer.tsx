@@ -101,6 +101,22 @@ export function Footer() {
           </div>
         </div>
 
+<div className="flex justify-right items-center gap-8 mb-8">
+    <Image
+      src="/LISlogo_black.png"
+      alt="Living In Style Logo"
+      width={180}
+      height={50}
+    />
+    <Image
+      src="/ccglogo_black.png"
+      alt="Caprock Capital Group Logo"
+      width={180}
+      height={50}
+    />
+  </div>
+
+        
         <div className="border-t mt-12 pt-8 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Caprock Capital Group Inc. All rights reserved.</p>
         </div>
