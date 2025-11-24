@@ -401,6 +401,10 @@ export default function FifaClientPage() {
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">In-suite laundry</span>
                 </div>
+                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">5-minute walk to sky train station (Vancouver City Centre Station</span>
+                </div>
               </div>
 
               {/* Location Section */}
