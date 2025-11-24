@@ -313,47 +313,50 @@ export default function FifaClientPage() {
               </div>
 
               {/* FIFA-Optimized Description */}
-              <div className="prose prose-lg max-w-none mb-12">
-                <h3 className="text-2xl font-bold mb-4">Perfect for FIFA 2026 Teams & Officials</h3>
-                <p className="text-muted-foreground mb-4">
-                  This exceptional 1-bedroom luxury suite at L'Hermitage Residences offers the ideal base for FIFA World
-                  Cup 2026 professionals. Located at 788 Richards Street in the heart of downtown Vancouver, you'll be
-                  just a 10-minute walk from BC Place Stadium — the epicenter of Vancouver's FIFA 2026 action. Also
-                  minutes from Rogers Arena, Yaletown, Skytrain and Robson shopping.
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an
-                  open-air balcony perfect for relaxing after match days. It includes 1 queen bed plus 1 sofa bed. 
-                  It also has a fast WiFi/in-suite workspace. With hotel-style amenities including 24-hour concierge, rooftop terrace access, fitness center, and
-                  resident lounge, you'll have everything needed for a productive and comfortable extended stay during
-                  the tournament.
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  L'Hermitage provides the perfect blend of luxury accommodation and professional functionality.
-                  High-speed WiFi ensures seamless connectivity for media teams and broadcast crews, while the
-                  building's prestigious address and white-glove service meet the expectations of FIFA officials,
-                  corporate sponsors, and international delegations.
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  Experience the heart and soul of L'Hermitage in our exquisite lounge, L'Orangerie, offering a
-                  luxurious and timeless experience. L'Orangerie at L'Hermitage offers seasonal cuisine, regional wines,
-                  and handcrafted cocktails in a refined lounge setting. Enjoy the signature High Tea with delicate
-                  bites and premium teas — a perfect indulgence any time of day.
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  Just a 10-minute walk from BC Place Stadium (FIFA 2026 match hub) and minutes from Rogers Arena, the
-                  Vancouver Public Library & SkyTrain access, this residence offers event-ready convenience. Stroll to
-                  Café Medina for brunch, pick up essentials from IGA Marketplace, or enjoy coffee at Tim Hortons — all
-                  just moments from your door. The neighbourhood is also home to several of Vancouver's best salons,
-                  restaurants, and boutique shops, giving you endless options for dining and leisure.
-                </p>
-                <p className="text-muted-foreground">
-                  The location offers unmatched convenience — walking distance to BC Place, direct metro access,
-                  world-class dining in Yaletown, and proximity to Rogers Arena and the Vancouver Convention Centre.
-                  Whether you're covering matches, coordinating events, or entertaining clients, this residence provides
-                  a sophisticated home base in Vancouver's most connected neighborhood.
-                </p>
-              </div>
+<div className="prose prose-lg max-w-none mb-12">
+  <h3 className="text-2xl font-bold mb-4">Ideal for FIFA 2026 Teams, Media & Officials</h3>
+
+  <p className="text-muted-foreground mb-4">
+    This exceptional 1-bedroom luxury suite at L'Hermitage Residences is the perfect home base for
+    FIFA World Cup 2026 professionals. Located at 788 Richards Street in downtown Vancouver,
+    you're just a 10-minute walk from BC Place Stadium — the center of Vancouver’s FIFA action —
+    and steps from Rogers Arena, SkyTrain access, Yaletown dining, and Robson’s premier shopping.
+  </p>
+
+  <p className="text-muted-foreground mb-4">
+    The suite is fully furnished and designed for extended-event stays, featuring a gourmet kitchen,
+    modern appliances, an open-air balcony, and a dedicated in-suite workspace with fast WiFi.
+    Sleeping arrangements include one queen bed plus a sofa bed. Hotel-style comforts continue with
+    24-hour concierge service, a fitness center, rooftop terrace access, and an elegant resident
+    lounge — ensuring a productive, comfortable stay throughout the tournament.
+  </p>
+
+  <p className="text-muted-foreground mb-4">
+    L'Hermitage merges luxury living with professional functionality. High-speed internet supports
+    media crews and broadcast teams, while the building’s prestigious address and white-glove
+    services meet the expectations of FIFA officials, corporate sponsors, and international
+    delegations looking for a secure, premium environment.
+  </p>
+
+  <p className="text-muted-foreground mb-4">
+    Experience the renowned L'Orangerie lounge — a refined space offering seasonal cuisine,
+    regional wines, handcrafted cocktails, and the signature High Tea service. It’s an ideal spot
+    for meetings, post-match relaxation, or unwinding between tournament commitments.
+  </p>
+
+  <p className="text-muted-foreground mb-4">
+    Beyond the stadium proximity, the neighbourhood provides unmatched convenience: Café Medina
+    for brunch, IGA Marketplace for essentials, Tim Hortons steps away, and some of Vancouver’s
+    best restaurants, salons, and boutique shops all within moments of your door. Everything you
+    need — work, dining, leisure, and event access — is effortlessly walkable.
+  </p>
+
+  <p className="text-muted-foreground">
+    Whether you're covering matches, coordinating operations, or hosting clients, this residence
+    offers a sophisticated, event-ready base in one of Vancouver’s most connected and desirable
+    neighbourhoods.
+  </p>
+</div>
 
               {/* Amenities Grid */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
