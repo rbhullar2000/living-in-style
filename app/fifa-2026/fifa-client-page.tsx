@@ -165,15 +165,12 @@ export default function FifaClientPage() {
                   <span>Flexible payment schedules for corporate and media clients</span>
                 </li>
               </ul>
+             <p className="font-semibold">
+          Special consideration for full-tournament bookings.
+        </p>
             </div>
           </CardContent>
         </Card>
-      </div>
-
-      <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
-        <p className="font-semibold">
-          Special consideration for full-tournament bookings.
-        </p>
       </div>
     </div>
   </div>
