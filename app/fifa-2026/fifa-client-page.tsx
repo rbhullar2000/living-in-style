@@ -119,11 +119,11 @@ export default function FifaClientPage() {
                       </div>
                       <div className="flex items-baseline justify-center gap-4 mb-3">
                         <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$30,000</div>
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$39,000</div>
                         </div>
                         <span className="text-xl text-muted-foreground font-light">to</span>
                         <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$55,000</div>
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$75,000</div>
                         </div>
                       </div>
                       <p className="text-sm text-gray-600 italic">Based on exact dates and length of stay</p>
@@ -135,7 +135,7 @@ export default function FifaClientPage() {
                       </p>
                       <p className="text-xs text-gray-600">
                         <span className="font-medium">Example:</span> June (30 days) packages start at approximately
-                        $30,000. Full June + July (60 days) tournament packages available up to $55,000 depending on
+                        $39,000. Full June + July (60 days) tournament packages available up to $75,000 depending on
                         exact dates and requirements.
                       </p>
                     </div>
@@ -160,7 +160,7 @@ export default function FifaClientPage() {
               <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
                 <p className="text-sm text-muted-foreground mb-2">
                   Exact pricing is customized based on dates, number of guests and specific requirements. Example: Full
-                  June stay (30 days) might start at ~$30k; full June-July (60 days) packages available up to ~$55k.
+                  June stay (30 days) might start at ~$39k; full June-July (60 days) packages available up to ~$75k.
                   Only one suite remains for FIFA 2026.
                 </p>
                 <p className="font-semibold">
