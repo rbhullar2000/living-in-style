@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -8,10 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Furnished Stay</h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              
-            </p>
-          {/*}  <div className="flex space-x-4">
+            <p className="text-sm text-muted-foreground mb-4"></p>
+            {/*}  <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-foreground">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
@@ -35,7 +33,7 @@ export function Footer() {
                   About Us
                 </Link>
               </li>
-            {/*}  <li>
+              {/*}  <li>
                 <Link href="/careers" className="text-muted-foreground hover:text-foreground">
                   Careers
                 </Link>
@@ -52,7 +50,7 @@ export function Footer() {
               </li> */}
             </ul>
           </div>
-{/*}
+          {/*}
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-sm">
@@ -82,7 +80,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
-             {/*} <li>
+              {/*} <li>
                 <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
                   Privacy Policy
                 </Link>
@@ -92,31 +90,32 @@ export function Footer() {
                   Terms of Service
                 </Link>
               </li>
-             {/*} <li>
+              {/*} <li>
                 <Link href="/sitemap" className="text-muted-foreground hover:text-foreground">
                   Sitemap
                 </Link>
               </li> */}
             </ul>
           </div>
+
+          <div className="flex items-center justify-center md:justify-end gap-6">
+            <Image
+              src="/LISlogo_black.png"
+              alt="Living In Style Logo"
+              width={140}
+              height={40}
+              className="h-auto w-auto max-h-[40px]"
+            />
+            <Image
+              src="/ccglogo_black.png"
+              alt="Caprock Capital Group Logo"
+              width={140}
+              height={40}
+              className="h-auto w-auto max-h-[40px]"
+            />
+          </div>
         </div>
 
-<div className="flex justify-center items-center gap-8 mb-8">
-    <Image
-      src="/LISlogo_black.png"
-      alt="Living In Style Logo"
-      width={180}
-      height={50}
-    />
-    <Image
-      src="/ccglogo_black.png"
-      alt="Caprock Capital Group Logo"
-      width={180}
-      height={50}
-    />
-  </div>
-
-        
         <div className="border-t mt-12 pt-8 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Caprock Capital Group Inc. All rights reserved.</p>
         </div>
