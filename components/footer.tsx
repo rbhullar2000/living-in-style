@@ -102,16 +102,16 @@ export function Footer() {
             <Image
               src="/LISlogo_black.png"
               alt="Living In Style Logo"
-              width={140}
-              height={40}
-              className="h-auto w-auto max-h-[40px]"
+              width={200}
+              height={60}
+              className="h-auto w-auto max-h-[60px]"
             />
             <Image
               src="/ccglogo_black.png"
               alt="Caprock Capital Group Logo"
-              width={140}
-              height={40}
-              className="h-auto w-auto max-h-[40px]"
+              width={200}
+              height={60}
+              className="h-auto w-auto max-h-[60px]"
             />
           </div>
         </div>
