@@ -101,61 +101,78 @@ export default function FifaClientPage() {
           </div>
         </section>
 
-        {/* Special Event Pricing Section */}
-        <section className="py-16 bg-muted">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">FIFA 2026 Event Pricing</h2>
-                <p className="text-muted-foreground text-lg">Premium rates for June &amp; July 2026 tournament dates</p>
+{/* Special Event Pricing Section */}
+<section className="py-16 bg-muted">
+  <div className="container">
+    <div className="max-w-4xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">FIFA 2026 Event Pricing</h2>
+        <p className="text-muted-foreground text-lg">Premium rates for June &amp; July 2026 tournament dates</p>
+      </div>
+
+      <div className="max-w-3xl mx-auto">
+        {/* Event packages */}
+        <Card className="border-2 border-blue-600">
+          <CardHeader className="text-center">
+            <CardTitle className="text-3xl">Event Packages</CardTitle>
+            <CardDescription className="text-base">Best value for 30–60+ day stays</CardDescription>
+          </CardHeader>
+
+          <CardContent className="text-center">
+            <div className="mb-8 py-6 px-4 bg-muted/30 rounded-lg">
+              <div className="text-gray-600 text-xs uppercase tracking-widest mb-3 font-medium">
+                Tournament Package Pricing
               </div>
 
-              <div className="max-w-3xl mx-auto">
-                {/* Event packages */}
-                <Card className="border-2 border-blue-600">
-                  <CardHeader className="text-center">
-                    <CardTitle className="text-3xl">Event Packages</CardTitle>
-                    <CardDescription className="text-base">Best value for 30–60+ day stays</CardDescription>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <div className="mb-8 py-6 px-4 bg-muted/30 rounded-lg">
-                      <div className="text-gray-600 text-xs uppercase tracking-widest mb-3 font-medium">
-                        Tournament Package Pricing
-                      </div>
-                      <div className="flex items-baseline justify-center gap-4 mb-3">
-                        <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$39,000</div>
-                        </div>
-                        <span className="text-xl text-muted-foreground font-light">to</span>
-                        <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$75,000</div>
-                        </div>
-                      </div>
-                      <p className="text-sm text-gray-600 italic">Based on exact dates and length of stay</p>
-                    </div>
-                    <div className="text-gray-700 text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
-                      <p className="text-balance">
-                        Pricing is customized based on your exact stay dates and requirements during the June–July 2026 tournament period. 
-                      </p>
-                      <p className="text-xs text-gray-600">
-                        <span className="font-medium">Example:  •	June-only (30 nights) stays typically begin around $39,000. 	•	Full tournament (61 nights: June + July) packages are available up to $75,000, depending on the specific dates, number of guests, and service needs.</span></p>
-                    <ul className="space-y-3 text-left max-w-xl mx-auto text-sm">
-                      <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                        <span>Priority for full-tournament &amp; full-month bookings</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                        <span>Concierge-style support &amp; corporate invoicing available</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                        <span>Flexible payment terms for corporate clients</span>
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
+              <div className="flex items-baseline justify-center gap-4 mb-3">
+                <div className="text-center">
+                  <div className="text-3xl md:text-4xl font-light tracking-tight">$39,000</div>
+                </div>
+                <span className="text-xl text-muted-foreground font-light">to</span>
+                <div className="text-center">
+                  <div className="text-3xl md:text-4xl font-light tracking-tight">$75,000</div>
+                </div>
               </div>
+
+              <p className="text-sm text-gray-600 italic">Based on exact dates and length of stay</p>
+            </div>
+
+            <div className="text-gray-700 text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
+              <p className="text-balance">
+                Pricing is customized based on your exact stay dates and requirements during the June–July 2026 tournament period.
+              </p>
+
+              {/* FIXED: properly closed <p> tag */}
+              <p className="text-xs text-gray-600">
+                <span className="font-medium">
+                  Example: • June-only (30 nights) stays typically begin around $39,000.  
+                  • Full tournament (61 nights: June + July) packages are available up to $75,000, depending on the specific dates, number of guests, and service needs.
+                </span>
+              </p>
+
+              <ul className="space-y-3 text-left max-w-xl mx-auto text-sm">
+                <li className="flex items-start gap-3">
+                  <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Priority access for full-tournament and full-month bookings</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Concierge-style support &amp; corporate invoicing</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span>Flexible payment schedules for corporate and media clients</span>
+                </li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>
 
               <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
                 <p className="text-sm text-muted-foreground mb-2">
