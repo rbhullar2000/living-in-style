@@ -46,6 +46,7 @@ export const properties: Property[] = [
       "L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons",
       "Rooftop Terrace",
       "Fitness Centre",
+      "Boardroom / meeting space"
       "High-Speed WiFi",
       "Secure underground parking",
       "Central air conditioning",
