@@ -160,7 +160,7 @@ export default function FifaClientPage() {
               <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg text-center">
                 <p className="text-sm text-muted-foreground mb-2">
                   Exact pricing is customized based on dates, number of guests and specific requirements. Example: Full
-                  June stay (30 days) might start at ~$30k; full June-July (60 days) packages available up to ~$60k.
+                  June stay (30 days) might start at ~$30k; full June-July (60 days) packages available up to ~$55k.
                   Only one suite remains for FIFA 2026.
                 </p>
                 <p className="font-semibold">
