@@ -370,7 +370,7 @@ export default function FifaClientPage() {
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <UtensilsCrossed className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</span>
+                  <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons (On-Site Amenities)</span>
                 </div>
                  <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
