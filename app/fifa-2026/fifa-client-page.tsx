@@ -1,4 +1,4 @@
-"use client" // Converting to client component for interactive gallery
+ƒ"use client" // Converting to client component for interactive gallery
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -123,7 +123,7 @@ export default function FifaClientPage() {
                         </div>
                         <span className="text-xl text-muted-foreground font-light">to</span>
                         <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$60,000</div>
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$55,000</div>
                         </div>
                       </div>
                       <p className="text-sm text-gray-600 italic">Based on exact dates and length of stay</p>
@@ -135,7 +135,7 @@ export default function FifaClientPage() {
                       </p>
                       <p className="text-xs text-gray-600">
                         <span className="font-medium">Example:</span> June (30 days) packages start at approximately
-                        $30,000. Full June + July (60 days) tournament packages available up to $60,000 depending on
+                        $30,000. Full June + July (60 days) tournament packages available up to $55,000 depending on
                         exact dates and requirements.
                       </p>
                     </div>
