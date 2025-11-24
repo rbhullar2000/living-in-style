@@ -82,8 +82,7 @@ export default function FifaClientPage() {
                 Limited Availability: Only One Suite at L'Hermitage for FIFA June-July 2026 — enquire now to reserve.
               </p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
-                Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing
-                for media teams, FIFA staff, and corporate sponsors.
+                Premium 1-bedroom suite at L’Hermitage Residences — just a 10-minute walk to BC Place. Steps from SkyTrain, Yaletown, and Robson shopping. Exclusive event-period pricing available for media crews, FIFA staff, and corporate sponsors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
