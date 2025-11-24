@@ -290,8 +290,8 @@ export default function FifaClientPage() {
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <MapPin className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">BC Place Stadium & FIFA 2026 match hub</h3>
-                    <p className="text-sm text-muted-foreground">10-Minute Walk</p>
+                    <h3 className="font-semibold mb-1">BC Place, Rogers Arena, Robson Street Shopping, Pacific Centre Mall, Skytrain</h3>
+                    <p className="text-sm text-muted-foreground">Walking Distance</p>
                   </CardContent>
                 </Card>
                 <Card>
