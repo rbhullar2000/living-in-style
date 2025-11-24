@@ -174,7 +174,7 @@ export function FifaBookingForm() {
               <strong>Please note:</strong> This property requires a 30-day minimum stay for FIFA 2026 dates.
             </p>
             <p>
-              Event pricing ranges from $30,000-$55,000/month depending on dates and duration.
+              Event pricing ranges from $39,000-$75,000/month depending on dates and duration.
             </p>
           </div>
 
