@@ -101,7 +101,7 @@ export function Footer() {
           </div>
         </div>
 
-<div className="flex justify-right items-center gap-8 mb-8">
+<div className="flex justify-center items-center gap-8 mb-8">
     <Image
       src="/LISlogo_black.png"
       alt="Living In Style Logo"
