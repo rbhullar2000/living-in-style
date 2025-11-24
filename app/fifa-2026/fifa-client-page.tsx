@@ -75,7 +75,7 @@ export default function FifaClientPage() {
                 FIFA World Cup 2026
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
-                Luxury FIFA 2026 Accommodation
+                Premium Accommodation for FIFA World Cup 2026 in Downtown Vancouver
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">
