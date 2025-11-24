@@ -84,6 +84,10 @@ export default function FifaClientPage() {
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
                 Premium 1-Bedroom Condo at L’Hermitage Hotel & Residences (1 Queen Bed + 1 Sofa Bed), located just a 10-minute walk from BC Place — Vancouver’s FIFA 2026 venue. Steps from SkyTrain, Yaletown dining, and Robson Street shopping. Event-period rates available for media teams, FIFA officials, and corporate partners.
               </p>
+             <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
+                Full security deposit & booking terms provided upon inquiry.
+              </p>
+              
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
                   <a href="#booking">Request Event Pricing</a>
@@ -91,9 +95,7 @@ export default function FifaClientPage() {
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
                   <a href="#property">View Property Details</a> 
                 </Button>
-              <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
-                Full security deposit & booking terms provided upon inquiry.
-              </p>
+              
               
               </div>
             </div>
