@@ -51,7 +51,7 @@ export const properties: Property[] = [
       "Central air conditioning",
       "Fully equipped gourmet kitchen", 
       "In-suite laundry",
-      "5-minute walk to Skytrain station,
+      "5-minute walk to Skytrain station",
     ],
     
     availability: "Located In Heart Of Downtown Vancouver",
