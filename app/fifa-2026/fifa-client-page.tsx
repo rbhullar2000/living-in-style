@@ -79,7 +79,7 @@ export default function FifaClientPage() {
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">
-                Only 1 suite available for FIFA June-July 2026 — enquire now to reserve.
+                Limited Availability: Only One Suite at L'Hermitage for FIFA June-July 2026 — enquire now to reserve.
               </p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
                 Premium 1-bedroom suite at L'Hermitage Residences. Walking distance to BC Place. Exclusive event pricing
@@ -369,6 +369,10 @@ export default function FifaClientPage() {
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <UtensilsCrossed className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons</span>
+                </div>
+                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">Boardroom / meeting space</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
