@@ -77,12 +77,12 @@ export default function FifaClientPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
                 Premium Accommodation for FIFA World Cup 2026 in Downtown Vancouver
               </h1>
-              <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Nights Only</p>
+              <p className="text-xl md:text-2xl mb-4 text-blue-100">Downtown Vancouver • 30+ Night Minimum (June–July 2026)</p>
               <p className="text-xl md:text-2xl mb-4 text-blue-100">
-                Limited Availability: Only One Condo at L'Hermitage Hotel & Residences for FIFA June-July 2026 — enquire now to reserve.
+                Limited Availability: Only One Condo at L'Hermitage Hotel & Residences for FIFA June-July 2026 — inquire now to reserve.
               </p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
-                Premium 1-Bedroom Condo at L’Hermitage Hotel & Residences (1-Queen Bed / 1-Sofa Bed) — just a 10-minute walk to BC Place. Steps from SkyTrain, Yaletown, and Robson shopping. Exclusive event-period pricing available for media crews, FIFA staff, and corporate sponsors.
+                Premium 1-Bedroom Condo at L’Hermitage Hotel & Residences (1 Queen Bed + 1 Sofa Bed), located just a 10-minute walk from BC Place — Vancouver’s FIFA 2026 venue. Steps from SkyTrain, Yaletown dining, and Robson Street shopping. Event-period rates available for media teams, FIFA officials, and corporate partners.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
@@ -91,6 +91,10 @@ export default function FifaClientPage() {
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
                   <a href="#property">View Property Details</a> 
                 </Button>
+              <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
+                Full security deposit & booking terms provided upon inquiry.
+              </p>
+              
               </div>
             </div>
           </div>
