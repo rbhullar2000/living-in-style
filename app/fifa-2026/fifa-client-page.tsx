@@ -403,7 +403,7 @@ export default function FifaClientPage() {
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">5-minute walk to sky train station (Vancouver City Centre Station</span>
+                  <span className="text-sm">5-minute walk to Skytrain station</span>
                 </div>
               </div>
 
