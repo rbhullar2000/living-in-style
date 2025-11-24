@@ -82,7 +82,7 @@ export default function FifaClientPage() {
                 Limited Availability: Only One Suite at L'Hermitage for FIFA June-July 2026 — enquire now to reserve.
               </p>
               <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
-                Premium 1-bedroom suite at L’Hermitage Residences — just a 10-minute walk to BC Place. Steps from SkyTrain, Yaletown, and Robson shopping. Exclusive event-period pricing available for media crews, FIFA staff, and corporate sponsors.
+                Premium 1-Bedroom + 1 Sofa bed suite at L’Hermitage Residences — just a 10-minute walk to BC Place. Steps from SkyTrain, Yaletown, and Robson shopping. Exclusive event-period pricing available for media crews, FIFA staff, and corporate sponsors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-white text-blue-900 hover:bg-blue-50">
@@ -323,8 +323,8 @@ export default function FifaClientPage() {
                 </p>
                 <p className="text-muted-foreground mb-4">
                   The suite features a fully furnished interior with a gourmet kitchen, modern appliances, and an
-                  open-air balcony perfect for relaxing after match days. It also has a fast WiFi/in-suite workspace.
-                  With hotel-style amenities including 24-hour concierge, rooftop terrace access, fitness center, and
+                  open-air balcony perfect for relaxing after match days. It includes 1 queen bed plus 1 sofa bed. 
+                  It also has a fast WiFi/in-suite workspace. With hotel-style amenities including 24-hour concierge, rooftop terrace access, fitness center, and
                   resident lounge, you'll have everything needed for a productive and comfortable extended stay during
                   the tournament.
                 </p>
@@ -359,7 +359,7 @@ export default function FifaClientPage() {
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Sofa className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Fully Furnished</span>
+                  <span className="text-sm">Fully Furnished Suite with 1 Queen Bed + 1 Sofa Bed</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Shield className="h-5 w-5 text-primary flex-shrink-0" />
