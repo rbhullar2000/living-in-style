@@ -1,4 +1,4 @@
-ƒ"use client" // Converting to client component for interactive gallery
+"use client" // Converting to client component for interactive gallery
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
