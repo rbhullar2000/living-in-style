@@ -311,9 +311,9 @@ export default function FifaClientPage() {
                 <Card>
                   <CardContent className="pt-6 text-center">
                     <UtensilsCrossed className="h-8 w-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials</h3>
+                    <h3 className="font-semibold mb-1">Signature Dining & Everyday Essentials (On-Site Amenities)</h3>
                     <p className="text-sm text-muted-foreground">
-                      L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons
+                      L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons 
                     </p>
                   </CardContent>
                 </Card>
