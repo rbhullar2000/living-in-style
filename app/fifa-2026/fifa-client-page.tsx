@@ -136,7 +136,7 @@ export default function FifaClientPage() {
                         <span className="text-xl text-muted-foreground font-light">to</span>
 
                         <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">75,000</div>
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$75,000</div>
                         </div>
                       </div>
 
@@ -151,11 +151,9 @@ export default function FifaClientPage() {
                       </p>
 
                       <p className="text-xs text-gray-600">
-                        <span className="font-medium">
-                          Example:</span> June (30 days) packages start at approximately
+                        <span className="font-medium">Example:</span> June (30 days) packages start at approximately
                         $39,000. Full June + July (61 days) tournament packages available up to $75,000 depending on
                         exact dates and requirements.
-                        </span>
                       </p>
                     </div>
 
