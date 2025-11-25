@@ -33,6 +33,7 @@ import {
   Globe,
   HardDrive,
   Camera,
+  Coffee,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -413,7 +414,7 @@ export default function FifaClientPage() {
                   <span className="text-sm">Central Air Conditioning</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Coffee className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fully equipped gourmet kitchen</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
