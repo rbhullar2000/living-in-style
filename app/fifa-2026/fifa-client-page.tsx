@@ -130,13 +130,13 @@ export default function FifaClientPage() {
 
                       <div className="flex items-baseline justify-center gap-4 mb-3">
                         <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$30,000</div>
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">$39,000</div>
                         </div>
 
                         <span className="text-xl text-muted-foreground font-light">to</span>
 
                         <div className="text-center">
-                          <div className="text-3xl md:text-4xl font-light tracking-tight">$60,000</div>
+                          <div className="text-3xl md:text-4xl font-light tracking-tight">75,000</div>
                         </div>
                       </div>
 
@@ -146,15 +146,15 @@ export default function FifaClientPage() {
                     {/* Text area */}
                     <div className="text-gray-700 text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-3">
                       <p className="text-balance">
-                        Pricing is customized based on your exact stay dates and requirements during the June–July 2026
-                        tournament period.
+                        Pricing is customized for your specific dates and requirements during the June/July tournament
+                        period.
                       </p>
 
                       <p className="text-xs text-gray-600">
                         <span className="font-medium">
-                          Example: June-only (30 nights) stays typically begin around $30,000. Full tournament (61
-                          nights: June + July) packages are available up to $60,000, depending on the specific dates,
-                          number of guests, and service needs.
+                          Example:</span> June (30 days) packages start at approximately
+                        $39,000. Full June + July (61 days) tournament packages available up to $75,000 depending on
+                        exact dates and requirements.
                         </span>
                       </p>
                     </div>
@@ -163,7 +163,7 @@ export default function FifaClientPage() {
                     <ul className="space-y-3 text-left max-w-xl mx-auto text-sm mb-6">
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                        <span>Priority access for full-tournament and full-month bookings</span>
+                        <span>Priority for full-tournament &amp; full-month bookings</span>
                       </li>
 
                       <li className="flex items-start gap-3">
