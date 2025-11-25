@@ -152,9 +152,9 @@ export default function FifaClientPage() {
                 </span>
               </p>
 
-              {/* spacer 
-              <div className="my-4" aria-hidden />*/}
- <div className="text-gray-700 text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
+              {/* spacer />*/}
+              <div className="my-4" aria-hidden 
+
 
               
               {/* Features */}
