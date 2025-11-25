@@ -91,6 +91,13 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     // Fitness
     if (a.includes("fitness") || a.includes("center") || a.includes("gym")) return Dumbbell
 
+    // Location
+    if (a.includes("walk") || a.includes("location") || a.includes("BC Place")) return MapPin
+
+    // Location
+    if (a.includes("Boardroom") || a.includes("Meeting") || a.includes("Space")) return Users
+
+
     // Climate control
     if (a.includes("air") || a.includes("conditioning") || a.includes("ac")) return Snowflake
 
