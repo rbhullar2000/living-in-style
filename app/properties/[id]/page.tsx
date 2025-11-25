@@ -60,7 +60,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     // Furniture and furnishings
     if (a.includes("furnished")) return Sofa
 
-    if (a.includes("kitchen") || a.includes("gourmet") || a.includes("appliances")) return Building2
+    if (a.includes("kitchen") || a.includes("gourmet") || a.includes("appliances")) return Coffee
 
     // Internet
     if (a.includes("wifi")) return Wifi
@@ -82,7 +82,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
       a.includes("deck") ||
       a.includes("terrace") ||
       a.includes("rooftop") ||
-      a.includes("balcony") ||
+      a.includes("Balcony") ||
       a.includes("patio") ||
       a.includes("fire pit")
     )
@@ -104,7 +104,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
     // Laundry
     if (a.includes("washer") || a.includes("laundry") || a.includes("dryer")) return Home
 
-    if (a.includes("floor") || a.includes("ceiling") || a.includes("hardwood") || a.includes("marble")) return Building2
+    if (a.includes("floor") || a.includes("ceiling") || a.includes("hardwood") || a.includes("marble")) || a.includes("coutertops")) return Building2
 
     // Default fallback icons
     const icons = [Wifi, Tv, Coffee, Home, Users, Car, Calendar, Shield, Waves, Mountain]
