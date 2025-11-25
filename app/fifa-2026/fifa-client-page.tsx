@@ -383,13 +383,14 @@ export default function FifaClientPage() {
                   <UtensilsCrossed className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">L'Orangerie at L'Hermitage, Café Medina, IGA Marketplace, Tim Hortons (On-Site Amenities)</span>
                 </div>
+               
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">Boardroom / meeting space</span>
+                </div>
+                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Rooftop Terrace</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">Boardroom / meeting space</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Dumbbell className="h-5 w-5 text-primary flex-shrink-0" />
@@ -403,10 +404,7 @@ export default function FifaClientPage() {
                   <Car className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Secure Underground Parking Included</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Snowflake className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-sm">5-minute walk to Skytrain station</span>
-                </div>
+              
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Snowflake className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Central Air Conditioning</span>
@@ -418,6 +416,10 @@ export default function FifaClientPage() {
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
                   <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">In-suite laundry</span>
+                </div>
+                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">5-minute walk to Skytrain station</span>
                 </div>
               </div>
 
