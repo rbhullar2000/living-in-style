@@ -410,11 +410,11 @@ export default function FifaClientPage() {
                   <span className="text-sm">Central Air Conditioning</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <ChevronLeft className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fully equipped gourmet kitchen</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">In-suite laundry</span>
                 </div>
                  <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
