@@ -31,6 +31,7 @@ import {
   Snowflake,
   Dumbbell,
   Globe,
+  HardDrive,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -468,7 +469,7 @@ export default function FifaClientPage() {
                 </Card>
                 <Card>
                   <CardContent className="pt-6">
-                    <Wifi className="h-8 w-8 mb-3 text-primary" />
+                    <HardDrive className="h-8 w-8 mb-3 text-primary" />
                     <h3 className="font-semibold mb-2">Production Crews</h3>
                     <p className="text-sm text-muted-foreground">
                       Broadcast production and technical teams with connectivity needs
