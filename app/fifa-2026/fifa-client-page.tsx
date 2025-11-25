@@ -485,7 +485,7 @@ export default function FifaClientPage() {
                 </Card>
                 <Card>
                   <CardContent className="pt-6">
-                    <MapPin className="h-8 w-8 mb-3 text-primary" />
+                    <Shield className="h-8 w-8 mb-3 text-primary" />
                     <h3 className="font-semibold mb-2">Federations</h3>
                     <p className="text-sm text-muted-foreground">
                       International football federations and delegation members
