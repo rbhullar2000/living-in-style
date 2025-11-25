@@ -107,7 +107,7 @@ export default function FifaClientPage() {
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">FIFA 2026 Event Pricing</h2>
-        <p className="text-muted-foreground text-lg">Premium rates for June & July 2026 tournament dates</p>
+        <p className="text-muted-foreground text-lg">Premium rates for June &amp; July 2026 tournament dates</p>
       </div>
 
       <div className="max-w-3xl mx-auto">
@@ -128,7 +128,9 @@ export default function FifaClientPage() {
                 <div className="text-center">
                   <div className="text-3xl md:text-4xl font-light tracking-tight">$39,000</div>
                 </div>
+
                 <span className="text-xl text-muted-foreground font-light">to</span>
+
                 <div className="text-center">
                   <div className="text-3xl md:text-4xl font-light tracking-tight">$75,000</div>
                 </div>
@@ -150,8 +152,8 @@ export default function FifaClientPage() {
                 </span>
               </p>
 
-              {/* SPACER */}
-              <Separator className="my-4" />
+              {/* spacer */}
+              <div className="my-4" aria-hidden />
 
               {/* Features */}
               <ul className="space-y-3 text-left max-w-xl mx-auto text-sm">
@@ -162,7 +164,7 @@ export default function FifaClientPage() {
 
                 <li className="flex items-start gap-3">
                   <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Concierge-style support & corporate invoicing</span>
+                  <span>Concierge-style support &amp; corporate invoicing</span>
                 </li>
 
                 <li className="flex items-start gap-3">
@@ -171,8 +173,8 @@ export default function FifaClientPage() {
                 </li>
               </ul>
 
-              {/* SPACER */}
-              <Separator className="my-4" />
+              {/* spacer */}
+              <div className="my-4" aria-hidden />
 
               <p className="font-semibold text-center">
                 Special consideration for full-tournament bookings.
@@ -185,7 +187,7 @@ export default function FifaClientPage() {
     </div>
   </div>
 </section>
-
+        
         {/* Property Details Section */}
         <section id="property" className="py-16">
           <div className="container">
