@@ -558,7 +558,7 @@ export default function FifaClientPage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white text-blue-900 hover:bg-blue-50 bg-transparent"
+                className="border-white text-blue-900 hover:bg-blue-50"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
