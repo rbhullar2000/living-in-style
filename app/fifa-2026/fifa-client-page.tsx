@@ -385,11 +385,11 @@ export default function FifaClientPage() {
                 </div>
                
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Users className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Boardroom / meeting space</span>
                 </div>
                  <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Grid className="h-5 w-5 text-primary flex-shrink-0" />
+                  <Mountain className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Rooftop Terrace</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
@@ -410,11 +410,11 @@ export default function FifaClientPage() {
                   <span className="text-sm">Central Air Conditioning</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <ChevronLeft className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">Fully equipped gourmet kitchen</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-                  <Building2 className="h-5 w-5 text-primary flex-shrink-0" />
+                  <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm">In-suite laundry</span>
                 </div>
                  <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
