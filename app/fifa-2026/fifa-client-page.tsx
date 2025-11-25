@@ -107,7 +107,7 @@ export default function FifaClientPage() {
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">FIFA 2026 Event Pricing</h2>
-        <p className="text-muted-foreground text-lg">Premium rates for June &amp; July 2026 tournament dates</p>
+        <p className="text-muted-foreground text-lg">Premium rates for June & July 2026 tournament dates</p>
       </div>
 
       <div className="max-w-3xl mx-auto">
@@ -118,6 +118,7 @@ export default function FifaClientPage() {
           </CardHeader>
 
           <CardContent className="text-center">
+            {/* Pricing box */}
             <div className="mb-8 py-6 px-4 bg-muted/30 rounded-lg">
               <div className="text-gray-600 text-xs uppercase tracking-widest mb-3 font-medium">
                 Tournament Package Pricing
@@ -127,9 +128,7 @@ export default function FifaClientPage() {
                 <div className="text-center">
                   <div className="text-3xl md:text-4xl font-light tracking-tight">$39,000</div>
                 </div>
-
                 <span className="text-xl text-muted-foreground font-light">to</span>
-
                 <div className="text-center">
                   <div className="text-3xl md:text-4xl font-light tracking-tight">$75,000</div>
                 </div>
@@ -138,7 +137,9 @@ export default function FifaClientPage() {
               <p className="text-sm text-gray-600 italic">Based on exact dates and length of stay</p>
             </div>
 
+            {/* Text area */}
             <div className="text-gray-700 text-sm mb-8 max-w-2xl mx-auto leading-relaxed space-y-2">
+
               <p className="text-balance">
                 Pricing is customized based on your exact stay dates and requirements during the June–July 2026 tournament period.
               </p>
@@ -149,6 +150,10 @@ export default function FifaClientPage() {
                 </span>
               </p>
 
+              {/* SPACER */}
+              <Separator className="my-4" />
+
+              {/* Features */}
               <ul className="space-y-3 text-left max-w-xl mx-auto text-sm">
                 <li className="flex items-start gap-3">
                   <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -157,7 +162,7 @@ export default function FifaClientPage() {
 
                 <li className="flex items-start gap-3">
                   <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Concierge-style support &amp; corporate invoicing</span>
+                  <span>Concierge-style support & corporate invoicing</span>
                 </li>
 
                 <li className="flex items-start gap-3">
@@ -165,9 +170,14 @@ export default function FifaClientPage() {
                   <span>Flexible payment schedules for corporate and media clients</span>
                 </li>
               </ul>
-             <p className="font-semibold">
-          Special consideration for full-tournament bookings.
-        </p>
+
+              {/* SPACER */}
+              <Separator className="my-4" />
+
+              <p className="font-semibold text-center">
+                Special consideration for full-tournament bookings.
+              </p>
+
             </div>
           </CardContent>
         </Card>
